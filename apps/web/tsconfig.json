@@ -1,10 +1,9 @@
 {
-  "extends": "@workspace/typescript-config/nextjs.json",
+  "extends": "@albatroaz/ts-cfg/nextjs.json",
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "@workspace/ui/*": ["../../packages/ui/src/*"]
+      "@albatroaz/ui/*": ["../../packages/ui/src/*"]
     },
     "plugins": [
       {

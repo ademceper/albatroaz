@@ -1,0 +1,35 @@
+{
+  "name": "auth",
+  "version": "0.0.0",
+  "description": "Keycloakify auth theme",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build-keycloak-theme": "pnpm build && keycloakify build",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006"
+  },
+  "dependencies": {
+    "keycloakify": "^11.15.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@albatroaz/ts-cfg": "workspace:*",
+    "@storybook/react": "^8.1.10",
+    "@storybook/react-vite": "^8.1.10",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "storybook": "^8.1.10",
+    "typescript": "^5.9.3",
+    "vite": "^5.0.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

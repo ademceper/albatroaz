@@ -7,13 +7,12 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "turbo format",
-    "typecheck": "turbo typecheck"
+    "typecheck": "turbo typecheck",
+    "check": "biome check --write ."
   },
   "devDependencies": {
-    "@workspace/eslint-config": "workspace:*",
-    "@workspace/typescript-config": "workspace:*",
-    "prettier": "^3.8.1",
-    "prettier-plugin-tailwindcss": "^0.7.2",
+    "@biomejs/biome": "^2.0.0",
+    "@albatroaz/ts-cfg": "workspace:*",
     "turbo": "^2.8.17",
     "typescript": "5.9.3"
   },

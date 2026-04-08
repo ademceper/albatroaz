@@ -1,0 +1,8 @@
+{
+  "extends": "@albatroaz/ts-cfg/vite.json",
+  "compilerOptions": {
+    "noUncheckedIndexedAccess": false
+  },
+  "include": ["src", "vite.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
