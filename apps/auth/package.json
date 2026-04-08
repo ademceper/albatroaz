@@ -14,18 +14,22 @@
     "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
+    "@albatroaz/ui": "workspace:*",
+    "@phosphor-icons/react": "^2.1.10",
     "keycloakify": "^11.15.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@albatroaz/ts-cfg": "workspace:*",
     "@storybook/react": "^8.1.10",
     "@storybook/react-vite": "^8.1.10",
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^4.2.1",
     "storybook": "^8.1.10",
+    "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
     "vite": "^5.0.8"
   },

@@ -2,83 +2,83 @@ import { Suspense, lazy } from "react";
 import type { ClassKey } from "keycloakify/login";
 import type { KcContext } from "./KcContext";
 import { useI18n } from "./i18n";
-import Template from "keycloakify/login/Template";
+import Template from "./Template";
 
 const UserProfileFormFields = lazy(
     () => import("keycloakify/login/UserProfileFormFields")
 );
 
-const Code = lazy(() => import("keycloakify/login/pages/Code"));
+const Code = lazy(() => import("./pages/Code"));
 const DeleteAccountConfirm = lazy(
-    () => import("keycloakify/login/pages/DeleteAccountConfirm")
+    () => import("./pages/DeleteAccountConfirm")
 );
-const DeleteCredential = lazy(() => import("keycloakify/login/pages/DeleteCredential"));
-const ErrorPage = lazy(() => import("keycloakify/login/pages/Error"));
+const DeleteCredential = lazy(() => import("./pages/DeleteCredential"));
+const ErrorPage = lazy(() => import("./pages/Error"));
 const FrontchannelLogout = lazy(
-    () => import("keycloakify/login/pages/FrontchannelLogout")
+    () => import("./pages/FrontchannelLogout")
 );
 const IdpReviewUserProfile = lazy(
-    () => import("keycloakify/login/pages/IdpReviewUserProfile")
+    () => import("./pages/IdpReviewUserProfile")
 );
-const Info = lazy(() => import("keycloakify/login/pages/Info"));
-const LinkIdpAction = lazy(() => import("keycloakify/login/pages/LinkIdpAction"));
-const Login = lazy(() => import("keycloakify/login/pages/Login"));
-const LoginConfigTotp = lazy(() => import("keycloakify/login/pages/LoginConfigTotp"));
+const Info = lazy(() => import("./pages/Info"));
+const LinkIdpAction = lazy(() => import("./pages/LinkIdpAction"));
+const Login = lazy(() => import("./pages/Login"));
+const LoginConfigTotp = lazy(() => import("./pages/LoginConfigTotp"));
 const LoginIdpLinkConfirm = lazy(
-    () => import("keycloakify/login/pages/LoginIdpLinkConfirm")
+    () => import("./pages/LoginIdpLinkConfirm")
 );
 const LoginIdpLinkConfirmOverride = lazy(
-    () => import("keycloakify/login/pages/LoginIdpLinkConfirmOverride")
+    () => import("./pages/LoginIdpLinkConfirmOverride")
 );
 const LoginIdpLinkEmail = lazy(
-    () => import("keycloakify/login/pages/LoginIdpLinkEmail")
+    () => import("./pages/LoginIdpLinkEmail")
 );
 const LoginOauth2DeviceVerifyUserCode = lazy(
-    () => import("keycloakify/login/pages/LoginOauth2DeviceVerifyUserCode")
+    () => import("./pages/LoginOauth2DeviceVerifyUserCode")
 );
-const LoginOauthGrant = lazy(() => import("keycloakify/login/pages/LoginOauthGrant"));
-const LoginOtp = lazy(() => import("keycloakify/login/pages/LoginOtp"));
-const LoginPageExpired = lazy(() => import("keycloakify/login/pages/LoginPageExpired"));
+const LoginOauthGrant = lazy(() => import("./pages/LoginOauthGrant"));
+const LoginOtp = lazy(() => import("./pages/LoginOtp"));
+const LoginPageExpired = lazy(() => import("./pages/LoginPageExpired"));
 const LoginPasskeysConditionalAuthenticate = lazy(
-    () => import("keycloakify/login/pages/LoginPasskeysConditionalAuthenticate")
+    () => import("./pages/LoginPasskeysConditionalAuthenticate")
 );
-const LoginPassword = lazy(() => import("keycloakify/login/pages/LoginPassword"));
+const LoginPassword = lazy(() => import("./pages/LoginPassword"));
 const LoginRecoveryAuthnCodeConfig = lazy(
-    () => import("keycloakify/login/pages/LoginRecoveryAuthnCodeConfig")
+    () => import("./pages/LoginRecoveryAuthnCodeConfig")
 );
 const LoginRecoveryAuthnCodeInput = lazy(
-    () => import("keycloakify/login/pages/LoginRecoveryAuthnCodeInput")
+    () => import("./pages/LoginRecoveryAuthnCodeInput")
 );
-const LoginResetOtp = lazy(() => import("keycloakify/login/pages/LoginResetOtp"));
+const LoginResetOtp = lazy(() => import("./pages/LoginResetOtp"));
 const LoginResetPassword = lazy(
-    () => import("keycloakify/login/pages/LoginResetPassword")
+    () => import("./pages/LoginResetPassword")
 );
 const LoginUpdatePassword = lazy(
-    () => import("keycloakify/login/pages/LoginUpdatePassword")
+    () => import("./pages/LoginUpdatePassword")
 );
 const LoginUpdateProfile = lazy(
-    () => import("keycloakify/login/pages/LoginUpdateProfile")
+    () => import("./pages/LoginUpdateProfile")
 );
-const LoginUsername = lazy(() => import("keycloakify/login/pages/LoginUsername"));
-const LoginVerifyEmail = lazy(() => import("keycloakify/login/pages/LoginVerifyEmail"));
-const LoginX509Info = lazy(() => import("keycloakify/login/pages/LoginX509Info"));
-const LogoutConfirm = lazy(() => import("keycloakify/login/pages/LogoutConfirm"));
-const Register = lazy(() => import("keycloakify/login/pages/Register"));
-const SamlPostForm = lazy(() => import("keycloakify/login/pages/SamlPostForm"));
+const LoginUsername = lazy(() => import("./pages/LoginUsername"));
+const LoginVerifyEmail = lazy(() => import("./pages/LoginVerifyEmail"));
+const LoginX509Info = lazy(() => import("./pages/LoginX509Info"));
+const LogoutConfirm = lazy(() => import("./pages/LogoutConfirm"));
+const Register = lazy(() => import("./pages/Register"));
+const SamlPostForm = lazy(() => import("./pages/SamlPostForm"));
 const SelectAuthenticator = lazy(
-    () => import("keycloakify/login/pages/SelectAuthenticator")
+    () => import("./pages/SelectAuthenticator")
 );
 const SelectOrganization = lazy(
-    () => import("keycloakify/login/pages/SelectOrganization")
+    () => import("./pages/SelectOrganization")
 );
-const Terms = lazy(() => import("keycloakify/login/pages/Terms"));
-const UpdateEmail = lazy(() => import("keycloakify/login/pages/UpdateEmail"));
+const Terms = lazy(() => import("./pages/Terms"));
+const UpdateEmail = lazy(() => import("./pages/UpdateEmail"));
 const WebauthnAuthenticate = lazy(
-    () => import("keycloakify/login/pages/WebauthnAuthenticate")
+    () => import("./pages/WebauthnAuthenticate")
 );
-const WebauthnError = lazy(() => import("keycloakify/login/pages/WebauthnError"));
+const WebauthnError = lazy(() => import("./pages/WebauthnError"));
 const WebauthnRegister = lazy(
-    () => import("keycloakify/login/pages/WebauthnRegister")
+    () => import("./pages/WebauthnRegister")
 );
 
 const doMakeUserConfirmPassword = true;

@@ -61,5 +61,16 @@
     "formatter": {
       "enabled": true
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": [
+        "**/apps/auth/src/login/pages/*.tsx",
+        "!**/*.stories.tsx"
+      ],
+      "linter": {
+        "enabled": false
+      }
+    }
+  ]
 }
