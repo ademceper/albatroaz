@@ -1,15 +1,15 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { createKcPageStory } from "../KcPageStory";
+import type { Meta, StoryObj } from "@storybook/react"
+import { createKcPageStory } from "../KcPageStory"
 
-const { KcPageStory } = createKcPageStory({ pageId: "webauthn-error.ftl" });
+const { KcPageStory } = createKcPageStory({ pageId: "webauthn-error.ftl" })
 
 const meta = {
-    title: "login/webauthn-error.ftl",
-    component: KcPageStory
-} satisfies Meta<typeof KcPageStory>;
+  title: "login/webauthn-error.ftl",
+  component: KcPageStory,
+} satisfies Meta<typeof KcPageStory>
 
-export default meta;
+export default meta
 
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof meta>
 
-export const Default: Story = { render: () => <KcPageStory /> };
+export const Default: Story = { render: () => <KcPageStory /> }

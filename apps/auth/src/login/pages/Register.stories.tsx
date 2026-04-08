@@ -1,75 +1,75 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { createKcPageStory } from "../KcPageStory";
+import type { Meta, StoryObj } from "@storybook/react"
+import { createKcPageStory } from "../KcPageStory"
 
-const { KcPageStory } = createKcPageStory({ pageId: "register.ftl" });
+const { KcPageStory } = createKcPageStory({ pageId: "register.ftl" })
 
 const meta = {
-    title: "login/register.ftl",
-    component: KcPageStory
-} satisfies Meta<typeof KcPageStory>;
+  title: "login/register.ftl",
+  component: KcPageStory,
+} satisfies Meta<typeof KcPageStory>
 
-export default meta;
+export default meta
 
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-    render: () => <KcPageStory />
-};
+  render: () => <KcPageStory />,
+}
 
 export const WithEmailAlreadyExists: Story = {
-    render: () => (
-        <KcPageStory
-            kcContext={{
-                profile: {
-                    attributesByName: {
-                        email: { value: "max.mustermann@mail.com" }
-                    }
-                },
-                messagesPerField: {
-                    existsError: (fieldName: string, ...otherFieldNames: string[]) => {
-                        const fieldNames = [fieldName, ...otherFieldNames];
-                        return fieldNames.includes("email");
-                    },
-                    get: (fieldName: string) =>
-                        fieldName === "email"
-                            ? "Email already exists."
-                            : ""
-                }
-            }}
-        />
-    )
-};
+  render: () => (
+    <KcPageStory
+      kcContext={{
+        profile: {
+          attributesByName: {
+            email: { value: "max.mustermann@mail.com" },
+          },
+        },
+        messagesPerField: {
+          existsError: (fieldName: string, ...otherFieldNames: string[]) => {
+            const fieldNames = [fieldName, ...otherFieldNames]
+            return fieldNames.includes("email")
+          },
+          get: (fieldName: string) =>
+            fieldName === "email" ? "Email already exists." : "",
+        },
+      }}
+    />
+  ),
+}
 
 export const WithRecaptcha: Story = {
-    render: () => (
-        <KcPageStory
-            kcContext={{
-                scripts: ["https://www.google.com/recaptcha/api.js"],
-                recaptchaRequired: true,
-                recaptchaSiteKey: "6LcFEAkTAAAAAEKTYufJSWMz5JrM5XDuRueDUMUf"
-            }}
-        />
-    )
-};
+  render: () => (
+    <KcPageStory
+      kcContext={{
+        scripts: ["https://www.google.com/recaptcha/api.js"],
+        recaptchaRequired: true,
+        recaptchaSiteKey: "6LcFEAkTAAAAAEKTYufJSWMz5JrM5XDuRueDUMUf",
+      }}
+    />
+  ),
+}
 
 export const WithPasswordPolicies: Story = {
-    render: () => (
-        <KcPageStory
-            kcContext={{
-                passwordPolicies: {
-                    length: 8,
-                    digits: 2,
-                    lowerCase: 1,
-                    upperCase: 1,
-                    specialChars: 1,
-                    notUsername: true,
-                    notEmail: true
-                }
-            }}
-        />
-    )
-};
+  render: () => (
+    <KcPageStory
+      kcContext={{
+        passwordPolicies: {
+          length: 8,
+          digits: 2,
+          lowerCase: 1,
+          upperCase: 1,
+          specialChars: 1,
+          notUsername: true,
+          notEmail: true,
+        },
+      }}
+    />
+  ),
+}
 
 export const French: Story = {
-    render: () => <KcPageStory kcContext={{ locale: { currentLanguageTag: "fr" } }} />
-};
+  render: () => (
+    <KcPageStory kcContext={{ locale: { currentLanguageTag: "fr" } }} />
+  ),
+}

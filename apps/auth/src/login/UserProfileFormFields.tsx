@@ -204,8 +204,7 @@ function FieldErrors(props: {
       aria-live="polite"
     >
       {errors.map(({ errorMessage }, i) => (
-        // biome-ignore lint/suspicious/noArrayIndexKey: stable error list
-        <Fragment key={i}>
+        <Fragment key={`${attribute.name}-${fieldIndex ?? "single"}-${errorMessage}`}>
           {errorMessage}
           {i < errors.length - 1 && <br />}
         </Fragment>
