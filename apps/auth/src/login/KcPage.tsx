@@ -5,7 +5,7 @@ import { useI18n } from "./i18n";
 import Template from "./Template";
 
 const UserProfileFormFields = lazy(
-    () => import("keycloakify/login/UserProfileFormFields")
+    () => import("./UserProfileFormFields")
 );
 
 const Code = lazy(() => import("./pages/Code"));
