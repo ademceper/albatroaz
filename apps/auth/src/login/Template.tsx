@@ -1,13 +1,5 @@
 import { Alert, AlertDescription } from "@albatroaz/ui/components/alert"
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@albatroaz/ui/components/card"
-import {
   Select,
   SelectContent,
   SelectItem,
@@ -71,7 +63,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
 
   return (
     <div className="bg-background flex min-h-svh w-full items-center justify-center p-4 sm:p-6">
-      <div className="w-full max-w-md space-y-4">
+      <div className="w-full max-w-md space-y-6">
         {realm.internationalizationEnabled &&
           enabledLanguages !== undefined &&
           enabledLanguages.length > 1 && (
@@ -98,79 +90,84 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
               </Select>
             </div>
           )}
-        <Card>
-          <CardHeader>
-            {auth?.showUsername && !auth.showResetCredentials ? (
-              <>
-                <CardTitle>{msg("loginAccountTitle")}</CardTitle>
-                <CardDescription className="flex items-center gap-2">
-                  <span>{auth.attemptedUsername}</span>
-                  <a
-                    href={url.loginRestartFlowUrl}
-                    aria-label={msgStr("restartLoginTooltip")}
-                    className="text-primary hover:underline"
-                  >
-                    {msg("restartLoginTooltip")}
-                  </a>
-                </CardDescription>
-              </>
-            ) : (
-              <CardTitle>{headerNode}</CardTitle>
-            )}
-            {displayRequiredFields && (
-              <CardDescription>
-                <span className="text-destructive">*</span>{" "}
-                {msg("requiredFields")}
-              </CardDescription>
-            )}
-          </CardHeader>
-          <CardContent className="space-y-4">
-            {displayMessage && message !== undefined && (
-              <Alert
-                variant={message.type === "error" ? "destructive" : "default"}
-              >
-                {messageIcon}
-                <AlertDescription>
-                  <span
-                    // biome-ignore lint/security/noDangerouslySetInnerHtml: kcSanitize is applied
-                    dangerouslySetInnerHTML={{
-                      __html: kcSanitize(message.summary),
-                    }}
-                  />
-                </AlertDescription>
-              </Alert>
-            )}
-            {children}
-            {auth?.showTryAnotherWayLink && (
-              <form
-                id="kc-select-try-another-way-form"
-                action={url.loginAction}
-                method="post"
-              >
-                <input type="hidden" name="tryAnotherWay" value="on" />
-                <button
-                  type="submit"
-                  className="text-primary text-xs hover:underline"
+
+        <header className="space-y-1">
+          {auth?.showUsername && !auth.showResetCredentials ? (
+            <>
+              <h1 className="font-heading text-lg font-medium">
+                {msg("loginAccountTitle")}
+              </h1>
+              <p className="text-muted-foreground flex items-center gap-2 text-xs">
+                <span>{auth.attemptedUsername}</span>
+                <a
+                  href={url.loginRestartFlowUrl}
+                  aria-label={msgStr("restartLoginTooltip")}
+                  className="text-primary hover:underline"
                 >
-                  {msg("doTryAnotherWay")}
-                </button>
-              </form>
-            )}
-            {socialProvidersNode}
-            {displayInfo && (
-              <div className="text-muted-foreground text-center text-xs">
-                {infoNode}
-              </div>
-            )}
-          </CardContent>
-          {isAppInitiatedAction && (
-            <CardFooter className="text-muted-foreground text-xs justify-center">
-              {msg("backToApplication")}
-            </CardFooter>
+                  {msg("restartLoginTooltip")}
+                </a>
+              </p>
+            </>
+          ) : (
+            <h1 className="font-heading text-lg font-medium">{headerNode}</h1>
           )}
-        </Card>
+          {displayRequiredFields && (
+            <p className="text-muted-foreground text-xs">
+              <span className="text-destructive">*</span> {msg("requiredFields")}
+            </p>
+          )}
+        </header>
+
+        <div className="space-y-4">
+          {displayMessage && message !== undefined && (
+            <Alert
+              variant={message.type === "error" ? "destructive" : "default"}
+            >
+              {messageIcon}
+              <AlertDescription>
+                <span
+                  // biome-ignore lint/security/noDangerouslySetInnerHtml: kcSanitize is applied
+                  dangerouslySetInnerHTML={{
+                    __html: kcSanitize(message.summary),
+                  }}
+                />
+              </AlertDescription>
+            </Alert>
+          )}
+
+          {children}
+
+          {auth?.showTryAnotherWayLink && (
+            <form
+              id="kc-select-try-another-way-form"
+              action={url.loginAction}
+              method="post"
+            >
+              <input type="hidden" name="tryAnotherWay" value="on" />
+              <button
+                type="submit"
+                className="text-primary text-xs hover:underline"
+              >
+                {msg("doTryAnotherWay")}
+              </button>
+            </form>
+          )}
+
+          {socialProvidersNode}
+
+          {displayInfo && (
+            <div className="text-muted-foreground text-center text-xs">
+              {infoNode}
+            </div>
+          )}
+        </div>
+
+        {isAppInitiatedAction && (
+          <p className="text-muted-foreground text-center text-xs">
+            {msg("backToApplication")}
+          </p>
+        )}
       </div>
     </div>
   )
 }
-
