@@ -28,7 +28,7 @@ export default function LogoutConfirm(
         <input type="hidden" name="session_code" value={logoutConfirm.code} />
         <Button
           type="submit"
-          size="lg"
+          size="xl"
           className="w-full"
           name="confirmLogout"
           id="kc-logout"

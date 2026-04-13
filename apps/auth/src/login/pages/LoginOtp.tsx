@@ -55,7 +55,7 @@ export default function LoginOtp(
         )}
         <div className="space-y-1.5">
           <Label htmlFor="otp">{msg("loginOtpOneTime")}</Label>
-          <Input
+          <Input size="xl"
             id="otp"
             name="otp"
             type="text"
@@ -67,7 +67,7 @@ export default function LoginOtp(
         </div>
         <Button
           type="submit"
-          size="lg"
+          size="xl"
           className="w-full"
           name="login"
           id="kc-login"

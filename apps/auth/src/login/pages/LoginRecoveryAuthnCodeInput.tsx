@@ -38,7 +38,7 @@ export default function LoginRecoveryAuthnCodeInput(
               `${recoveryAuthnCodesInputBean.codeNumber}`,
             )}
           </Label>
-          <Input
+          <Input size="xl"
             id="recoveryCodeInput"
             name="recoveryCodeInput"
             autoComplete="off"
@@ -50,7 +50,7 @@ export default function LoginRecoveryAuthnCodeInput(
             fieldName="recoveryCodeInput"
           />
         </div>
-        <Button type="submit" size="lg" className="w-full">
+        <Button type="submit" size="xl" className="w-full">
           {msgStr("doLogIn")}
         </Button>
       </form>

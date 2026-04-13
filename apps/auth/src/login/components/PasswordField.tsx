@@ -6,7 +6,7 @@ import { useIsPasswordRevealed } from "keycloakify/tools/useIsPasswordRevealed"
 import type * as React from "react"
 import type { I18n } from "../i18n"
 
-type Props = React.ComponentProps<"input"> & {
+type Props = Omit<React.ComponentProps<"input">, "size"> & {
   i18n: I18n
   inputId: string
 }
@@ -20,7 +20,7 @@ export function PasswordField({ i18n, inputId, className, ...props }: Props) {
 
   return (
     <div className="relative">
-      <Input
+      <Input size="xl"
         id={inputId}
         type="password"
         className={cn("pe-8", className)}

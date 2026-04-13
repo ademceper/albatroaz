@@ -45,7 +45,7 @@ export default function LoginResetPassword(
                 ? msg("usernameOrEmail")
                 : msg("email")}
           </Label>
-          <Input
+          <Input size="xl"
             id="username"
             name="username"
             type="text"
@@ -58,7 +58,7 @@ export default function LoginResetPassword(
             fieldName="username"
           />
         </div>
-        <Button type="submit" size="lg" className="w-full">
+        <Button type="submit" size="xl" className="w-full">
           {msgStr("doSubmit")}
         </Button>
       </form>

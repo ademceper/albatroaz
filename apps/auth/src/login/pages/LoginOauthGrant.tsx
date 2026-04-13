@@ -95,13 +95,13 @@ export default function LoginOauthGrant(
         <Button
           type="submit"
           variant="outline"
-          size="lg"
+          size="xl"
           name="cancel"
           className="flex-1"
         >
           {msgStr("doDecline")}
         </Button>
-        <Button type="submit" size="lg" name="accept" className="flex-1">
+        <Button type="submit" size="xl" name="accept" className="flex-1">
           {msgStr("doYes")}
         </Button>
       </form>

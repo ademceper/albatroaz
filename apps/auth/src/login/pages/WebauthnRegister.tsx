@@ -52,7 +52,7 @@ export default function WebauthnRegister(
           <Button
             id={registerButtonId}
             type="button"
-            size="lg"
+            size="xl"
             className="flex-1"
           >
             {msgStr("doRegisterSecurityKey")}
@@ -61,7 +61,7 @@ export default function WebauthnRegister(
             <Button
               type="submit"
               variant="outline"
-              size="lg"
+              size="xl"
               name="cancel-aia"
               value="true"
             >

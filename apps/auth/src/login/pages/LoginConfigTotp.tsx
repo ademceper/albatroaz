@@ -105,7 +105,7 @@ export default function LoginConfigTotp(
       >
         <div className="space-y-1.5">
           <Label htmlFor="totp">{msg("authenticatorCode")}</Label>
-          <Input
+          <Input size="xl"
             id="totp"
             name="totp"
             type="text"
@@ -126,7 +126,7 @@ export default function LoginConfigTotp(
             <Label htmlFor="userLabel">
               {advancedMsg("loginOtpDeviceName")}
             </Label>
-            <Input
+            <Input size="xl"
               id="userLabel"
               name="userLabel"
               type="text"
@@ -140,14 +140,14 @@ export default function LoginConfigTotp(
           </div>
         )}
         <div className="flex gap-2">
-          <Button type="submit" size="lg" className="flex-1" id="saveTOTPBtn">
+          <Button type="submit" size="xl" className="flex-1" id="saveTOTPBtn">
             {msgStr("doSubmit")}
           </Button>
           {isAppInitiatedAction && (
             <Button
               type="submit"
               variant="outline"
-              size="lg"
+              size="xl"
               id="cancelTOTPBtn"
               name="cancel-aia"
               value="true"

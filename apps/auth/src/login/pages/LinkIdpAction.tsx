@@ -22,7 +22,7 @@ export default function LinkIdpAction(
       <form action={url.loginAction} method="post" className="flex gap-2">
         <Button
           type="submit"
-          size="lg"
+          size="xl"
           className="flex-1"
           name="submitAction"
           value="confirm"
@@ -32,7 +32,7 @@ export default function LinkIdpAction(
         <Button
           type="submit"
           variant="outline"
-          size="lg"
+          size="xl"
           name="submitAction"
           value="cancel"
         >

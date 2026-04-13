@@ -79,14 +79,14 @@ export default function LoginUpdatePassword(
           </div>
         )}
         <div className="flex gap-2">
-          <Button type="submit" size="lg" className="flex-1">
+          <Button type="submit" size="xl" className="flex-1">
             {msgStr("doSubmit")}
           </Button>
           {isAppInitiatedAction && (
             <Button
               type="submit"
               variant="outline"
-              size="lg"
+              size="xl"
               name="cancel-aia"
               value="true"
             >

@@ -48,7 +48,7 @@ export default function LoginRecoveryAuthnCodeConfig(
           type="button"
           id="printRecoveryCodes"
           variant="outline"
-          size="lg"
+          size="xl"
         >
           {msg("recovery-codes-print")}
         </Button>
@@ -56,7 +56,7 @@ export default function LoginRecoveryAuthnCodeConfig(
           type="button"
           id="downloadRecoveryCodes"
           variant="outline"
-          size="lg"
+          size="xl"
         >
           {msg("recovery-codes-download")}
         </Button>
@@ -64,7 +64,7 @@ export default function LoginRecoveryAuthnCodeConfig(
           type="button"
           id="copyRecoveryCodes"
           variant="outline"
-          size="lg"
+          size="xl"
         >
           {msg("recovery-codes-copy")}
         </Button>
@@ -105,7 +105,7 @@ export default function LoginRecoveryAuthnCodeConfig(
         <div className="flex gap-2">
           <Button
             type="submit"
-            size="lg"
+            size="xl"
             className="flex-1"
             id="saveRecoveryAuthnCodesBtn"
           >
@@ -115,7 +115,7 @@ export default function LoginRecoveryAuthnCodeConfig(
             <Button
               type="submit"
               variant="outline"
-              size="lg"
+              size="xl"
               id="cancelRecoveryAuthnCodesBtn"
               name="cancel-aia"
               value="true"

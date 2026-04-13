@@ -108,7 +108,7 @@ export default function Register(props: Props) {
           recaptchaAction !== undefined ? (
             <Button
               type="submit"
-              size="lg"
+              size="xl"
               className={`g-recaptcha w-full`}
               data-sitekey={recaptchaSiteKey}
               data-callback="onSubmitRegistration"
@@ -123,7 +123,7 @@ export default function Register(props: Props) {
           ) : (
             <Button
               type="submit"
-              size="lg"
+              size="xl"
               className="w-full"
               disabled={
                 !isFormSubmittable ||

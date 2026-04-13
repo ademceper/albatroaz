@@ -71,7 +71,7 @@ export default function LoginUsername(
         {!usernameHidden && (
           <div className="space-y-1.5">
             <Label htmlFor="username">{usernameLabel}</Label>
-            <Input
+            <Input size="xl"
               id="username"
               name="username"
               type="text"
@@ -101,7 +101,7 @@ export default function LoginUsername(
         )}
         <Button
           type="submit"
-          size="lg"
+          size="xl"
           className="w-full"
           disabled={isLoginButtonDisabled}
           name="login"

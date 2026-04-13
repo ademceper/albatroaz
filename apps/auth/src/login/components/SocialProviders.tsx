@@ -39,7 +39,7 @@ export function SocialProviders({ social, realm, i18n }: Props) {
                     <Button
                         key={p.alias}
                         variant="outline"
-                        size="lg"
+                        size="xl"
                         asChild
                         className="w-full justify-center"
                     >

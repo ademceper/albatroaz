@@ -60,7 +60,7 @@ export default function LoginPasskeysConditionalAuthenticate(
         {!usernameHidden && (
           <div className="space-y-1.5">
             <Label htmlFor="username">{msg("username")}</Label>
-            <Input
+            <Input size="xl"
               id="username"
               name="username"
               type="text"
@@ -95,7 +95,7 @@ export default function LoginPasskeysConditionalAuthenticate(
               ))}
             </div>
           )}
-        <Button id={authButtonId} type="submit" size="lg" className="w-full">
+        <Button id={authButtonId} type="submit" size="xl" className="w-full">
           {msgStr("passkey-doAuthenticate")}
         </Button>
       </form>

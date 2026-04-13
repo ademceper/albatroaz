@@ -30,7 +30,7 @@ export default function Terms(
       >
         <Button
           type="submit"
-          size="lg"
+          size="xl"
           className="flex-1"
           name="accept"
           id="kc-accept"
@@ -40,7 +40,7 @@ export default function Terms(
         <Button
           type="submit"
           variant="outline"
-          size="lg"
+          size="xl"
           name="cancel"
           id="kc-decline"
         >

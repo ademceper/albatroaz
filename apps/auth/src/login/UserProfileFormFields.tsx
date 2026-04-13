@@ -340,7 +340,7 @@ function InputTag(
       {isPasswordField ? (
         <PasswordField i18n={i18n} inputId={attribute.name} {...commonProps} />
       ) : (
-        <Input type={inputType} {...commonProps} />
+        <Input size="xl" type={inputType} {...commonProps} />
       )}
       {fieldIndex !== undefined && Array.isArray(valueOrValues) && (
         <>

@@ -32,7 +32,7 @@ export default function DeleteAccountConfirm(
         <Button
           type="submit"
           variant="destructive"
-          size="lg"
+          size="xl"
           className="flex-1"
           name="confirm"
           value="confirm"
@@ -43,7 +43,7 @@ export default function DeleteAccountConfirm(
           <Button
             type="submit"
             variant="outline"
-            size="lg"
+            size="xl"
             name="cancel-aia"
             value="true"
           >

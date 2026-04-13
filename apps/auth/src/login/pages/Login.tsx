@@ -80,7 +80,7 @@ export default function Login(
           {!usernameHidden && (
             <div className="space-y-1.5">
               <Label htmlFor="username">{usernameLabel}</Label>
-              <Input
+              <Input size="xl"
                 id="username"
                 name="username"
                 type="text"
@@ -158,7 +158,7 @@ export default function Login(
           />
           <Button
             type="submit"
-            size="lg"
+            size="xl"
             className="w-full"
             disabled={isLoginButtonDisabled}
             name="login"
@@ -201,7 +201,7 @@ export default function Login(
             id={webAuthnButtonId}
             type="button"
             variant="outline"
-            size="lg"
+            size="xl"
             className="w-full"
           >
             {msgStr("passkey-doAuthenticate")}

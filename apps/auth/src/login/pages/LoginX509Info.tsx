@@ -35,11 +35,11 @@ export default function LoginX509Info(
           )}
         </div>
         <div className="flex gap-2">
-          <Button type="submit" size="lg" className="flex-1" name="login">
+          <Button type="submit" size="xl" className="flex-1" name="login">
             {msgStr("doContinue")}
           </Button>
           {x509.formData.isUserEnabled && (
-            <Button type="submit" variant="outline" size="lg" name="cancel">
+            <Button type="submit" variant="outline" size="xl" name="cancel">
               {msgStr("doIgnore")}
             </Button>
           )}

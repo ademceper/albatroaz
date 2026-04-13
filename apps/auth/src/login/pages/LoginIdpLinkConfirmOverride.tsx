@@ -30,7 +30,7 @@ export default function LoginIdpLinkConfirmOverride(
       >
         <Button
           type="submit"
-          size="lg"
+          size="xl"
           className="w-full"
           name="submitAction"
           value="confirmOverride"

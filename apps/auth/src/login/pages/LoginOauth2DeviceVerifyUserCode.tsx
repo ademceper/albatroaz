@@ -33,7 +33,7 @@ export default function LoginOauth2DeviceVerifyUserCode(
           <Label htmlFor="device_user_code">
             {msg("verifyOAuth2DeviceUserCode")}
           </Label>
-          <Input
+          <Input size="xl"
             id="device_user_code"
             name="device_user_code"
             type="text"
@@ -41,7 +41,7 @@ export default function LoginOauth2DeviceVerifyUserCode(
             autoComplete="off"
           />
         </div>
-        <Button type="submit" size="lg" className="w-full">
+        <Button type="submit" size="xl" className="w-full">
           {msgStr("doSubmit")}
         </Button>
       </form>

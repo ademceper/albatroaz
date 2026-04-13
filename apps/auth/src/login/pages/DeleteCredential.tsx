@@ -27,7 +27,7 @@ export default function DeleteCredential(
       <form action={url.loginAction} method="post" className="flex gap-2">
         <Button
           type="submit"
-          size="lg"
+          size="xl"
           className="flex-1"
           name="accept"
           id="kc-accept"
@@ -37,7 +37,7 @@ export default function DeleteCredential(
         <Button
           type="submit"
           variant="outline"
-          size="lg"
+          size="xl"
           name="cancel-aia"
           value="true"
         >

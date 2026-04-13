@@ -54,7 +54,7 @@ export default function WebauthnAuthenticate(
             </div>
           )}
 
-        <Button id={authButtonId} type="button" size="lg" className="w-full">
+        <Button id={authButtonId} type="button" size="xl" className="w-full">
           {msgStr("webauthn-doAuthenticate")}
         </Button>
       </div>

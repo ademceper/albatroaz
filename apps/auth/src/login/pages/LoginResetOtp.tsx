@@ -44,7 +44,7 @@ export default function LoginResetOtp(
             </div>
           ))}
         </RadioGroup>
-        <Button type="submit" size="lg" className="w-full">
+        <Button type="submit" size="xl" className="w-full">
           {msgStr("doSubmit")}
         </Button>
       </form>

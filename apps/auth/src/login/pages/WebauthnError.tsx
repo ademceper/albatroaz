@@ -30,7 +30,7 @@ export default function WebauthnError(
             id="kc-try-again"
             name="try-again"
             value="on"
-            size="lg"
+            size="xl"
             className="flex-1"
           >
             {msgStr("doTryAgain")}
@@ -39,7 +39,7 @@ export default function WebauthnError(
             <Button
               type="submit"
               variant="outline"
-              size="lg"
+              size="xl"
               name="cancel-aia"
               value="true"
             >

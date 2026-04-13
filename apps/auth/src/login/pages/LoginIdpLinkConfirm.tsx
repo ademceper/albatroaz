@@ -29,7 +29,7 @@ export default function LoginIdpLinkConfirm(
       >
         <Button
           type="submit"
-          size="lg"
+          size="xl"
           className="w-full"
           name="submitAction"
           value="updateProfile"
@@ -40,7 +40,7 @@ export default function LoginIdpLinkConfirm(
         <Button
           type="submit"
           variant="outline"
-          size="lg"
+          size="xl"
           className="w-full"
           name="submitAction"
           value="linkAccount"

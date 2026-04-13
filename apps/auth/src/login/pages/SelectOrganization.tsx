@@ -33,7 +33,7 @@ export default function SelectOrganization(
           <Label htmlFor="organization">
             {advancedMsg("organization.name")}
           </Label>
-          <Input
+          <Input size="xl"
             id="organization"
             name="organization"
             list="organizations-list"
@@ -48,7 +48,7 @@ export default function SelectOrganization(
             ))}
           </datalist>
         </div>
-        <Button type="submit" size="lg" className="w-full">
+        <Button type="submit" size="xl" className="w-full">
           {msgStr("doContinue")}
         </Button>
         {/* avoid unused warning */}

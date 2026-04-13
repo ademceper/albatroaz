@@ -58,7 +58,7 @@ export default function IdpReviewUserProfile(props: Props) {
         />
         <Button
           type="submit"
-          size="lg"
+          size="xl"
           className="w-full"
           disabled={!isFormSubmittable}
         >

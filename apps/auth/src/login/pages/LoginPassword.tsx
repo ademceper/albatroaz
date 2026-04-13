@@ -62,7 +62,7 @@ export default function LoginPassword(
         )}
         <Button
           type="submit"
-          size="lg"
+          size="xl"
           className="w-full"
           disabled={isLoginButtonDisabled}
           name="login"

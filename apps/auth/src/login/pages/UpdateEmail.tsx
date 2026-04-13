@@ -59,7 +59,7 @@ export default function UpdateEmail(props: Props) {
         <div className="flex gap-2">
           <Button
             type="submit"
-            size="lg"
+            size="xl"
             className="flex-1"
             disabled={!isFormSubmittable}
           >
@@ -69,7 +69,7 @@ export default function UpdateEmail(props: Props) {
             <Button
               type="submit"
               variant="outline"
-              size="lg"
+              size="xl"
               name="cancel-aia"
               value="true"
             >
