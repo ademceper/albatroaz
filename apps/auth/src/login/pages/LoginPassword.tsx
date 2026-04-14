@@ -38,7 +38,17 @@ export default function LoginPassword(
         className="space-y-4"
       >
         <div className="space-y-1.5">
-          <Label htmlFor="password">{msg("password")}</Label>
+          <div className="flex items-center justify-between">
+            <Label htmlFor="password">{msg("password")}</Label>
+            {realm.resetPasswordAllowed && (
+              <a
+                href={url.loginResetCredentialsUrl}
+                className="text-primary text-xs hover:underline"
+              >
+                {msg("doForgotPassword")}
+              </a>
+            )}
+          </div>
           <PasswordField
             i18n={i18n}
             inputId="password"
@@ -52,14 +62,6 @@ export default function LoginPassword(
             fieldName="password"
           />
         </div>
-        {realm.resetPasswordAllowed && (
-          <a
-            href={url.loginResetCredentialsUrl}
-            className="text-primary text-xs hover:underline"
-          >
-            {msg("doForgotPassword")}
-          </a>
-        )}
         <Button
           type="submit"
           size="xl"

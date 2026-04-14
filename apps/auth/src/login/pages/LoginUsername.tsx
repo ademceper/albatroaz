@@ -1,5 +1,4 @@
 import { Button } from "@albatroaz/ui/components/button"
-import { Checkbox } from "@albatroaz/ui/components/checkbox"
 import { Input } from "@albatroaz/ui/components/input"
 import { Label } from "@albatroaz/ui/components/label"
 import { useScript } from "keycloakify/login/pages/LoginUsername.useScript"
@@ -84,19 +83,6 @@ export default function LoginUsername(
               messagesPerField={messagesPerField}
               fieldName="username"
             />
-          </div>
-        )}
-        {realm.rememberMe && !usernameHidden && (
-          <div className="flex items-center gap-2 text-xs">
-            <Checkbox
-              id="rememberMe"
-              name="rememberMe"
-              defaultChecked={!!login.rememberMe}
-              tabIndex={0}
-            />
-            <Label htmlFor="rememberMe" className="text-xs">
-              {msg("rememberMe")}
-            </Label>
           </div>
         )}
         <Button

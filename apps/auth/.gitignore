@@ -58,3 +58,7 @@ jspm_packages
 
 # build output of `jsx-email`
 /.rendered
+
+# keycloakify build artifacts
+.keycloakify/
+dist_keycloak/

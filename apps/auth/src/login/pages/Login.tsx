@@ -1,5 +1,4 @@
 import { Button } from "@albatroaz/ui/components/button"
-import { Checkbox } from "@albatroaz/ui/components/checkbox"
 import { Input } from "@albatroaz/ui/components/input"
 import { Label } from "@albatroaz/ui/components/label"
 import { useScript } from "keycloakify/login/pages/Login.useScript"
@@ -80,7 +79,8 @@ export default function Login(
           {!usernameHidden && (
             <div className="space-y-1.5">
               <Label htmlFor="username">{usernameLabel}</Label>
-              <Input size="xl"
+              <Input
+                size="xl"
                 id="username"
                 name="username"
                 type="text"
@@ -94,16 +94,21 @@ export default function Login(
                   "password",
                 )}
               />
-              <FieldError
-                messagesPerField={messagesPerField}
-                fieldName="username"
-                extraFieldNames={["password"]}
-              />
             </div>
           )}
 
           <div className="space-y-1.5">
-            <Label htmlFor="password">{msg("password")}</Label>
+            <div className="flex items-center justify-between">
+              <Label htmlFor="password">{msg("password")}</Label>
+              {realm.resetPasswordAllowed && (
+                <a
+                  href={url.loginResetCredentialsUrl}
+                  className="text-primary text-xs hover:underline"
+                >
+                  {msg("doForgotPassword")}
+                </a>
+              )}
+            </div>
             <PasswordField
               i18n={i18n}
               inputId="password"
@@ -114,41 +119,12 @@ export default function Login(
                 "password",
               )}
             />
-            {usernameHidden && (
-              <FieldError
-                messagesPerField={messagesPerField}
-                fieldName="username"
-                extraFieldNames={["password"]}
-              />
-            )}
+            <FieldError
+              messagesPerField={messagesPerField}
+              fieldName="username"
+              extraFieldNames={["password"]}
+            />
           </div>
-
-          {(realm.rememberMe || realm.resetPasswordAllowed) && (
-            <div className="flex items-center justify-between">
-              {realm.rememberMe && !usernameHidden ? (
-                <div className="flex items-center gap-2 text-xs">
-                  <Checkbox
-                    id="rememberMe"
-                    name="rememberMe"
-                    defaultChecked={!!login.rememberMe}
-                  />
-                  <Label htmlFor="rememberMe" className="text-xs">
-                    {msg("rememberMe")}
-                  </Label>
-                </div>
-              ) : (
-                <span />
-              )}
-              {realm.resetPasswordAllowed && (
-                <a
-                  href={url.loginResetCredentialsUrl}
-                  className="text-primary text-xs hover:underline"
-                >
-                  {msg("doForgotPassword")}
-                </a>
-              )}
-            </div>
-          )}
 
           <input
             type="hidden"

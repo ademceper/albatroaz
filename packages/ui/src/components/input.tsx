@@ -12,7 +12,7 @@ const inputVariants = cva(
           "h-7 py-0.5 text-sm file:h-6 file:text-xs/relaxed md:text-xs/relaxed",
         sm: "h-6 py-0.5 text-xs file:h-5 file:text-xs",
         lg: "h-8 py-1 text-sm file:h-7 file:text-sm",
-        xl: "h-12 rounded-lg px-4 py-2 text-sm file:h-10 file:text-sm",
+        xl: "h-12 rounded-lg border-0 bg-muted px-4 py-2 text-sm focus-visible:border-0 dark:bg-muted/70 file:h-10 file:text-sm",
       },
     },
     defaultVariants: {

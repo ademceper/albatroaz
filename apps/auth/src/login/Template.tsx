@@ -1,12 +1,5 @@
 import { Alert, AlertDescription } from "@albatroaz/ui/components/alert"
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@albatroaz/ui/components/select"
-import {
   CheckCircleIcon,
   InfoIcon,
   WarningIcon,
@@ -34,7 +27,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
     children,
   } = props
 
-  const { msg, msgStr, currentLanguage, enabledLanguages } = i18n
+  const { msg, msgStr } = i18n
   const { realm, auth, url, message, isAppInitiatedAction } = kcContext
 
   useEffect(() => {
@@ -63,34 +56,7 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
 
   return (
     <div className="bg-background flex min-h-svh w-full items-center justify-center p-4 sm:p-6">
-      <div className="w-full max-w-md space-y-6">
-        {realm.internationalizationEnabled &&
-          enabledLanguages !== undefined &&
-          enabledLanguages.length > 1 && (
-            <div className="flex justify-end">
-              <Select
-                value={currentLanguage.languageTag}
-                onValueChange={(tag) => {
-                  const lang = enabledLanguages.find(
-                    (l) => l.languageTag === tag,
-                  )
-                  if (lang) window.location.href = lang.href
-                }}
-              >
-                <SelectTrigger size="sm" className="w-auto">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent align="end">
-                  {enabledLanguages.map(({ languageTag, label }) => (
-                    <SelectItem key={languageTag} value={languageTag}>
-                      {label}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
-          )}
-
+      <div className="w-full max-w-[22rem] space-y-6">
         <header className="space-y-1">
           {auth?.showUsername && !auth.showResetCredentials ? (
             <>
@@ -135,6 +101,8 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
             </Alert>
           )}
 
+          {socialProvidersNode}
+
           {children}
 
           {auth?.showTryAnotherWayLink && (
@@ -152,8 +120,6 @@ export default function Template(props: TemplateProps<KcContext, I18n>) {
               </button>
             </form>
           )}
-
-          {socialProvidersNode}
 
           {displayInfo && (
             <div className="text-muted-foreground text-center text-xs">
