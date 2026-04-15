@@ -5,7 +5,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "keycloakify start-keycloak --keycloak-version 26",
     "build": "tsc && vite build",
     "build-keycloak-theme": "pnpm build && keycloakify build",
     "lint": "biome lint .",

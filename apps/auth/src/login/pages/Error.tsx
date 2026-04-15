@@ -1,3 +1,4 @@
+import { ArrowLeftIcon } from "@phosphor-icons/react"
 import { kcSanitize } from "keycloakify/lib/kcSanitize"
 import type { PageProps } from "keycloakify/login/pages/PageProps"
 import type { I18n } from "../i18n"
@@ -8,7 +9,7 @@ export default function ErrorPage(
 ) {
   const { kcContext, i18n, doUseDefaultCss, Template, classes } = props
   const { message, client, skipLink } = kcContext
-  const { msg } = i18n
+  const { msg, msgStr } = i18n
 
   return (
     <Template
@@ -30,9 +31,10 @@ export default function ErrorPage(
           <a
             id="backToApplication"
             href={client.baseUrl}
-            className="text-primary hover:underline"
+            className="text-primary inline-flex items-center gap-1 hover:underline"
           >
-            {msg("backToApplication")}
+            <ArrowLeftIcon className="size-3.5" />
+            {msgStr("backToApplication").replace(/^(?:&laquo;|«)\s*/, "")}
           </a>
         </p>
       )}

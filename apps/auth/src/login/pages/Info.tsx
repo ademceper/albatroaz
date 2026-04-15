@@ -1,3 +1,4 @@
+import { ArrowLeftIcon } from "@phosphor-icons/react"
 import { kcSanitize } from "keycloakify/lib/kcSanitize"
 import type { PageProps } from "keycloakify/login/pages/PageProps"
 import type { I18n } from "../i18n"
@@ -16,7 +17,7 @@ export default function Info(
     actionUri,
     client,
   } = kcContext
-  const { msg, advancedMsg, advancedMsgStr } = i18n
+  const { msg, msgStr, advancedMsg, advancedMsgStr } = i18n
 
   return (
     <Template
@@ -48,8 +49,12 @@ export default function Info(
       </p>
       {!skipLink && pageRedirectUri !== undefined ? (
         <p className="text-xs">
-          <a href={pageRedirectUri} className="text-primary hover:underline">
-            {msg("backToApplication")}
+          <a
+            href={pageRedirectUri}
+            className="text-primary inline-flex items-center gap-1 hover:underline"
+          >
+            <ArrowLeftIcon className="size-3.5" />
+            {msgStr("backToApplication").replace(/^(?:&laquo;|«)\s*/, "")}
           </a>
         </p>
       ) : actionUri !== undefined ? (
@@ -60,8 +65,12 @@ export default function Info(
         </p>
       ) : client.baseUrl !== undefined ? (
         <p className="text-xs">
-          <a href={client.baseUrl} className="text-primary hover:underline">
-            {msg("backToApplication")}
+          <a
+            href={client.baseUrl}
+            className="text-primary inline-flex items-center gap-1 hover:underline"
+          >
+            <ArrowLeftIcon className="size-3.5" />
+            {msgStr("backToApplication").replace(/^(?:&laquo;|«)\s*/, "")}
           </a>
         </p>
       ) : null}

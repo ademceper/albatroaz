@@ -1,4 +1,5 @@
 import { Button } from "@albatroaz/ui/components/button"
+import { ArrowLeftIcon } from "@phosphor-icons/react"
 import type { PageProps } from "keycloakify/login/pages/PageProps"
 import type { I18n } from "../i18n"
 import type { KcContext } from "../KcContext"
@@ -38,8 +39,12 @@ export default function LogoutConfirm(
       </form>
       {!logoutConfirm.skipLink && client.baseUrl !== undefined && (
         <p className="text-xs">
-          <a href={client.baseUrl} className="text-primary hover:underline">
-            {msg("backToApplication")}
+          <a
+            href={client.baseUrl}
+            className="text-primary inline-flex items-center gap-1 hover:underline"
+          >
+            <ArrowLeftIcon className="size-3.5" />
+            {msgStr("backToApplication").replace(/^(?:&laquo;|«)\s*/, "")}
           </a>
         </p>
       )}

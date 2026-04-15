@@ -1,6 +1,7 @@
 import { Button } from "@albatroaz/ui/components/button"
 import { Input } from "@albatroaz/ui/components/input"
 import { Label } from "@albatroaz/ui/components/label"
+import { ArrowLeftIcon } from "@phosphor-icons/react"
 import type { PageProps } from "keycloakify/login/pages/PageProps"
 import { FieldError } from "../components/FieldError"
 import type { I18n } from "../i18n"
@@ -26,8 +27,12 @@ export default function LoginResetPassword(
       displayInfo
       headerNode={msg("emailForgotTitle")}
       infoNode={
-        <a href={url.loginUrl} className="text-primary hover:underline">
-          &laquo; {msg("backToLogin")}
+        <a
+          href={url.loginUrl}
+          className="text-primary inline-flex items-center gap-1 hover:underline"
+        >
+          <ArrowLeftIcon className="size-3.5" />
+          {msgStr("backToLogin").replace(/^(?:&laquo;|«)\s*/, "")}
         </a>
       }
     >
