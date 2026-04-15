@@ -15,12 +15,12 @@ import {
   FormGroup,
   Spinner,
   Switch,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import debouncePromise from "p-debounce";
 import { ReactNode, useMemo, useState } from "react";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { HelpItem, TextControl } from "../../../shared/keycloak-ui-shared";
+import { HelpItem, TextControl } from "../../lib/shared";
 import { useAdminClient } from "../../admin-client";
 
 type DiscoveryEndpointFieldProps = {

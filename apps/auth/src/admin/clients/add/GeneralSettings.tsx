@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import { SelectControl } from "../../../shared/keycloak-ui-shared";
+import { SelectControl } from "../../lib/shared";
 import { FormAccess } from "../../components/form/FormAccess";
 import { useLoginProviders } from "../../context/server-info/ServerInfoProvider";
 import { ClientDescription } from "../ClientDescription";

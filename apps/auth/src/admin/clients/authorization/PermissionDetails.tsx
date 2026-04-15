@@ -21,7 +21,7 @@ import {
   TextControl,
   useAlerts,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ActionGroup,
   AlertVariant,
@@ -32,7 +32,7 @@ import {
   PageSection,
   Radio,
   Switch,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useState } from "react";
 import { Controller, FormProvider, useForm, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";
@@ -40,7 +40,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAdminClient } from "../../admin-client";
 import { useConfirmDialog } from "../../components/confirm-dialog/ConfirmDialog";
 import { FormAccess } from "../../components/form/FormAccess";
-import { KeycloakSpinner } from "../../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../../lib/shared";
 import { ViewHeader } from "../../components/view-header/ViewHeader";
 import { useAccess } from "../../context/access/Access";
 import { toUpperCase } from "../../util";

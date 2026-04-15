@@ -11,10 +11,10 @@
 
 // @ts-nocheck
 
-import { FormGroup, Switch } from "../../../shared/@patternfly/react-core";
+import { FormGroup, Switch } from "../../lib/pf-core";
 import { Controller, FormProvider, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { HelpItem, TextControl } from "../../../shared/keycloak-ui-shared";
+import { HelpItem, TextControl } from "../../lib/shared";
 
 export const SyncSettings = () => {
   const { t } = useTranslation();

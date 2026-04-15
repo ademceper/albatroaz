@@ -22,15 +22,15 @@ import {
   FlexItem,
   FormGroup,
   TextInput,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   MinusCircleIcon,
   PlusCircleIcon,
-} from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-icons";
 import { useEffect, useState, useRef } from "react";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { HelpItem } from "../../../shared/keycloak-ui-shared";
+import { HelpItem } from "../../lib/shared";
 import type { ComponentProps } from "./components";
 
 type ClaimDisplayEntry = {

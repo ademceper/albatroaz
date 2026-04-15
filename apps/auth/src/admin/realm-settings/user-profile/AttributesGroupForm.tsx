@@ -16,7 +16,7 @@ import {
   HelpItem,
   TextControl,
   useAlerts,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ActionGroup,
   Button,
@@ -24,7 +24,7 @@ import {
   PageSection,
   Text,
   TextContent,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useEffect, useMemo } from "react";
 import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

@@ -22,8 +22,8 @@ import {
   SelectList,
   SelectOption,
   ToolbarItem,
-} from "../../../shared/@patternfly/react-core";
-import { FilterIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { FilterIcon } from "../../lib/pf-icons";
 
 import {
   AllClientScopes,

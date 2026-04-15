@@ -17,11 +17,11 @@ import {
   Tab,
   Tabs,
   TabTitleText,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 import { RoleMapping } from "../components/role-mapping/RoleMapping";
 import { useRealm } from "../context/realm-context/RealmContext";
 import { DefaultsGroupsTab } from "./DefaultGroupsTab";

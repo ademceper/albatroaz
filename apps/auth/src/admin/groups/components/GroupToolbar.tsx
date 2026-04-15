@@ -18,8 +18,8 @@ import {
   DropdownList,
   MenuToggle,
   ToolbarItem,
-} from "../../../shared/@patternfly/react-core";
-import { EllipsisVIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { EllipsisVIcon } from "../../lib/pf-icons";
 import { useTranslation } from "react-i18next";
 import { useAccess } from "../../context/access/Access";
 import useToggle from "../../utils/useToggle";

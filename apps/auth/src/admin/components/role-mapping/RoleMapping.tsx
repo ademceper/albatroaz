@@ -14,7 +14,7 @@
 import type KeycloakAdminClient from "@keycloak/keycloak-admin-client";
 import type ClientRepresentation from "@keycloak/keycloak-admin-client/lib/defs/clientRepresentation";
 import type RoleRepresentation from "@keycloak/keycloak-admin-client/lib/defs/roleRepresentation";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 import {
   AlertVariant,
   Badge,
@@ -22,16 +22,16 @@ import {
   ButtonVariant,
   Checkbox,
   ToolbarItem,
-} from "../../../shared/@patternfly/react-core";
-import { cellWidth } from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-core";
+import { cellWidth } from "../../lib/pf-table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
 import { emptyFormatter, upperCaseFormatter } from "../../util";
 import { translationFormatter } from "../../utils/translationFormatter";
 import { useConfirmDialog } from "../confirm-dialog/ConfirmDialog";
-import { ListEmptyState } from "../../../shared/keycloak-ui-shared";
-import { Action, KeycloakDataTable } from "../../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../../lib/shared";
+import { Action, KeycloakDataTable } from "../../lib/shared";
 import {
   AddRoleButton,
   AddRoleMappingModal,

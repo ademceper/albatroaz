@@ -12,12 +12,12 @@
 // @ts-nocheck
 
 import type RoleRepresentation from "@keycloak/keycloak-admin-client/lib/defs/roleRepresentation";
-import { AlertVariant } from "../../../shared/@patternfly/react-core";
+import { AlertVariant } from "../../lib/pf-core";
 import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useParams } from "react-router-dom";
 import { useAdminClient } from "../../admin-client";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 import { AttributeForm } from "../../components/key-value-form/AttributeForm";
 import { RoleForm } from "../../components/role-form/RoleForm";
 import { useRealm } from "../../context/realm-context/RealmContext";

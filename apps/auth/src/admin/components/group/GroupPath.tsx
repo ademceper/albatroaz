@@ -12,8 +12,8 @@
 // @ts-nocheck
 
 import { useState } from "react";
-import { Tooltip } from "../../../shared/@patternfly/react-core";
-import type { TableTextProps } from "../../../shared/@patternfly/react-table";
+import { Tooltip } from "../../lib/pf-core";
+import type { TableTextProps } from "../../lib/pf-table";
 
 import type GroupRepresentation from "@keycloak/keycloak-admin-client/lib/defs/groupRepresentation";
 

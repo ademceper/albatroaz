@@ -16,12 +16,12 @@ import {
   FormGroup,
   Grid,
   GridItem,
-} from "../../../../shared/@patternfly/react-core";
+} from "../../../lib/pf-core";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 
 import { FormAccess } from "../../../components/form/FormAccess";
-import { HelpItem } from "../../../../shared/keycloak-ui-shared";
+import { HelpItem } from "../../../lib/shared";
 
 import "../../realm-settings-section.css";
 

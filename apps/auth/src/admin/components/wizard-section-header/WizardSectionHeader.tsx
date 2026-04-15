@@ -15,7 +15,7 @@ import {
   Text,
   TextContent,
   Title,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 
 import "./wizard-section-header.css";
 

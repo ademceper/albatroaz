@@ -11,11 +11,11 @@
 
 // @ts-nocheck
 
-import { AlertVariant, PageSection } from "../../shared/@patternfly/react-core";
+import { AlertVariant, PageSection } from "../lib/pf-core";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useAdminClient } from "../admin-client";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 import {
   ClientScopeDefaultOptionalType,
   changeScope,

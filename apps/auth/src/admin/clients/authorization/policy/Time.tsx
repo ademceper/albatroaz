@@ -21,9 +21,9 @@ import {
   Split,
   SplitItem,
   TimePicker,
-} from "../../../../shared/@patternfly/react-core";
+} from "../../../lib/pf-core";
 import { useState } from "react";
-import { FormErrorText, HelpItem } from "../../../../shared/keycloak-ui-shared";
+import { FormErrorText, HelpItem } from "../../../lib/shared";
 import { useTranslation } from "react-i18next";
 import { Controller, useFormContext } from "react-hook-form";
 

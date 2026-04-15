@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { Modal, ModalVariant } from "../../../../shared/@patternfly/react-core";
+import { Modal, ModalVariant } from "../../../lib/pf-core";
 import { useTranslation } from "react-i18next";
 import { KeyProviderForm } from "./KeyProviderForm";
 import type { ProviderType } from "../../routes/KeyProvider";

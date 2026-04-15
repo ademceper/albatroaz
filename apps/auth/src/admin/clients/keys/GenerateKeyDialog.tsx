@@ -17,7 +17,7 @@ import {
   NumberControl,
   SelectControl,
   FileUploadControl,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   Button,
   ButtonVariant,
@@ -26,7 +26,7 @@ import {
   ModalVariant,
   Text,
   TextContent,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { FormProvider, useForm, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";

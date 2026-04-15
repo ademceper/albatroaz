@@ -16,7 +16,7 @@ import { useEffect, useState } from "react";
 import {
   TreeView,
   TreeViewDataItem,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 
 type CheckableTreeViewProps = {
   data: TreeViewDataItem[];

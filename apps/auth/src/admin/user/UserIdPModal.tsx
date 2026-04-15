@@ -21,13 +21,13 @@ import {
   Modal,
   ModalVariant,
   TextInput,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { capitalize } from "lodash-es";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { TextControl } from "../../shared/keycloak-ui-shared";
+import { TextControl } from "../lib/shared";
 import { useAdminClient } from "../admin-client";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 
 type UserIdpModalProps = {
   userId: string;

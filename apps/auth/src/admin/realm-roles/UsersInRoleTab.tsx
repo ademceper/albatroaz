@@ -15,15 +15,15 @@ import {
   Button,
   PageSection,
   Popover,
-} from "../../shared/@patternfly/react-core";
-import { QuestionCircleIcon } from "../../shared/@patternfly/react-icons";
+} from "../lib/pf-core";
+import { QuestionCircleIcon } from "../lib/pf-icons";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import { useHelp } from "../../shared/keycloak-ui-shared";
+import { useHelp } from "../lib/shared";
 import { useAdminClient } from "../admin-client";
 import type { ClientRoleParams } from "../clients/routes/ClientRole";
-import { ListEmptyState } from "../../shared/keycloak-ui-shared";
-import { KeycloakDataTable } from "../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../lib/shared";
+import { KeycloakDataTable } from "../lib/shared";
 import { useRealm } from "../context/realm-context/RealmContext";
 import { emptyFormatter, upperCaseFormatter } from "../util";
 import { useParams } from "../utils/useParams";

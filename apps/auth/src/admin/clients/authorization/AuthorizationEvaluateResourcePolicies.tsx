@@ -20,13 +20,13 @@ import {
   TextContent,
   TextList,
   TextListItem,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   ExpandableRowContent,
   Tbody,
   Td,
   Tr,
-} from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";

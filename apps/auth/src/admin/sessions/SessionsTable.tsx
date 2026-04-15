@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import type UserSessionRepresentation from "@keycloak/keycloak-admin-client/lib/defs/userSessionRepresentation";
-import { useEnvironment } from "../../shared/keycloak-ui-shared";
+import { useEnvironment } from "../lib/shared";
 import {
   Button,
   Label,
@@ -21,26 +21,26 @@ import {
   ListVariant,
   ToolbarItem,
   Tooltip,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import {
   CubesIcon,
   InfoCircleIcon,
-} from "../../shared/@patternfly/react-icons";
-import { IRowData } from "../../shared/@patternfly/react-table";
+} from "../lib/pf-icons";
+import { IRowData } from "../lib/pf-table";
 import { ReactNode, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useMatch, useNavigate } from "react-router-dom";
 import { useAdminClient } from "../admin-client";
 import { toClient } from "../clients/routes/Client";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 import { useConfirmDialog } from "../components/confirm-dialog/ConfirmDialog";
-import { ListEmptyState } from "../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../lib/shared";
 import {
   Action,
   Field,
   KeycloakDataTable,
   LoaderFunction,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import { useRealm } from "../context/realm-context/RealmContext";
 import { useWhoAmI } from "../context/whoami/WhoAmI";
 import { UserRoute, toUser } from "../user/routes/User";

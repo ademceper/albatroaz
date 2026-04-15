@@ -16,9 +16,9 @@ import {
   KeycloakMasthead,
   useEnvironment,
   useHelp,
-} from "../shared/keycloak-ui-shared";
-import { DropdownItem, ToolbarItem } from "../shared/@patternfly/react-core";
-import { HelpIcon } from "../shared/@patternfly/react-icons";
+} from "./lib/shared";
+import { DropdownItem, ToolbarItem } from "./lib/pf-core";
+import { HelpIcon } from "./lib/pf-icons";
 import { useTranslation } from "react-i18next";
 import { Link, useHref } from "react-router-dom";
 import { PageHeaderClearCachesModal } from "./PageHeaderClearCachesModal";

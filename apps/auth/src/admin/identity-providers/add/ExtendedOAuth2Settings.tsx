@@ -14,11 +14,11 @@
 import {
   NumberControl,
   SelectControl,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ExpandableSection,
   Form,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { SwitchField } from "../component/SwitchField";

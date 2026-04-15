@@ -18,7 +18,7 @@ import {
   PaginatingTableToolbar,
   SelectVariant,
   useAlerts,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   AlertVariant,
   Button,
@@ -37,14 +37,14 @@ import {
   TextInput,
   TextVariants,
   ToolbarItem,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   CheckIcon,
   EllipsisVIcon,
   PencilAltIcon,
   SearchIcon,
   TimesIcon,
-} from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-icons";
 import {
   ActionsColumn,
   IRow,
@@ -55,7 +55,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-table";
 import { cloneDeep, isEqual, uniqWith } from "lodash-es";
 import { ChangeEvent, useEffect, useState, type FormEvent } from "react";
 import { useForm } from "react-hook-form";

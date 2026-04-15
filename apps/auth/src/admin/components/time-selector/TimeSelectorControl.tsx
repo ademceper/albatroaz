@@ -14,7 +14,7 @@
 import {
   FormGroup,
   ValidatedOptions,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   Controller,
   ControllerProps,
@@ -23,7 +23,7 @@ import {
   UseControllerProps,
   useFormContext,
 } from "react-hook-form";
-import { FormErrorText, HelpItem } from "../../../shared/keycloak-ui-shared";
+import { FormErrorText, HelpItem } from "../../lib/shared";
 import { TimeSelector, TimeSelectorProps } from "./TimeSelector";
 
 export type NumberControlOption = {

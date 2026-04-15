@@ -16,7 +16,7 @@ import {
   KeycloakSpinner,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   AlertVariant,
   ButtonVariant,
@@ -24,7 +24,7 @@ import {
   PageSection,
   Tab,
   TabTitleText,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useState } from "react";
 import {
   FormProvider,

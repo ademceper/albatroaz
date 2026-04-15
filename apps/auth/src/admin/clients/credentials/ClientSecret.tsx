@@ -20,13 +20,13 @@ import {
   InputGroupItem,
   Split,
   SplitItem,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useEffect, useState } from "react";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { PasswordInput } from "../../../shared/keycloak-ui-shared";
+import { PasswordInput } from "../../lib/shared";
 import { useAdminClient } from "../../admin-client";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 import { useConfirmDialog } from "../../components/confirm-dialog/ConfirmDialog";
 import { useAccess } from "../../context/access/Access";
 import useFormatDate from "../../utils/useFormatDate";

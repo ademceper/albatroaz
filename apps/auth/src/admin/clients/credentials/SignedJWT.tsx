@@ -13,13 +13,13 @@
 
 import { useTranslation } from "react-i18next";
 import { Controller, useFormContext } from "react-hook-form";
-import { SelectControl } from "../../../shared/keycloak-ui-shared";
+import { SelectControl } from "../../lib/shared";
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";
 import { convertAttributeNameToForm } from "../../util";
 import { FormFields } from "../ClientDetails";
 import { TimeSelector } from "../../components/time-selector/TimeSelector";
-import { FormGroup } from "../../../shared/@patternfly/react-core";
-import { HelpItem } from "../../../shared/keycloak-ui-shared";
+import { FormGroup } from "../../lib/pf-core";
+import { HelpItem } from "../../lib/shared";
 
 type SignedJWTProps = {
   clientAuthenticatorType: string;

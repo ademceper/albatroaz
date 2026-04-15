@@ -17,7 +17,7 @@ import {
   label,
   SelectVariant,
   useAlerts,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ActionGroup,
   Alert,
@@ -32,8 +32,8 @@ import {
   TextContent,
   TextInput,
   TextVariants,
-} from "../../../shared/@patternfly/react-core";
-import { CheckIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { CheckIcon } from "../../lib/pf-icons";
 import { ReactNode, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

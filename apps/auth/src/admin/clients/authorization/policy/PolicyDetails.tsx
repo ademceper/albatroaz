@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import type PolicyRepresentation from "@keycloak/keycloak-admin-client/lib/defs/policyRepresentation";
-import { useAlerts, useFetch } from "../../../../shared/keycloak-ui-shared";
+import { useAlerts, useFetch } from "../../../lib/shared";
 import {
   ActionGroup,
   AlertVariant,
@@ -20,7 +20,7 @@ import {
   ButtonVariant,
   DropdownItem,
   PageSection,
-} from "../../../../shared/@patternfly/react-core";
+} from "../../../lib/pf-core";
 import { useState, type JSX } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
@@ -28,7 +28,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAdminClient } from "../../../admin-client";
 import { useConfirmDialog } from "../../../components/confirm-dialog/ConfirmDialog";
 import { FormAccess } from "../../../components/form/FormAccess";
-import { KeycloakSpinner } from "../../../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../../../lib/shared";
 import { ViewHeader } from "../../../components/view-header/ViewHeader";
 import { useParams } from "../../../utils/useParams";
 import { toAuthorizationTab } from "../../routes/AuthenticationTab";

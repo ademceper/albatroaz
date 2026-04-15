@@ -28,12 +28,12 @@ import {
   Form,
   ButtonVariant,
   AlertVariant,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   SelectControl,
   TextControl,
   useAlerts,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import { FormProvider, useForm, useWatch } from "react-hook-form";
 import { useAdminClient } from "../../admin-client";
 import { useRealm } from "../../context/realm-context/RealmContext";

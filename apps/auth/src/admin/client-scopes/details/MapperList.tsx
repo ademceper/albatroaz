@@ -22,15 +22,15 @@ import type ProtocolMapperRepresentation from "@keycloak/keycloak-admin-client/l
 import type { ProtocolMapperTypeRepresentation } from "@keycloak/keycloak-admin-client/lib/defs/serverInfoRepesentation";
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";
 
-import { ListEmptyState } from "../../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../../lib/shared";
 import { AddMapperDialog } from "../add/MapperDialog";
-import { Action, KeycloakDataTable } from "../../../shared/keycloak-ui-shared";
+import { Action, KeycloakDataTable } from "../../lib/shared";
 import {
   Dropdown,
   DropdownItem,
   DropdownList,
   MenuToggle,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 
 type MapperListProps = {
   model: ClientScopeRepresentation | ClientRepresentation;

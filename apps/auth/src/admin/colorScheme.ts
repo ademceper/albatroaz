@@ -17,7 +17,7 @@
 
 import { getKcContext } from "./KcContext";
 
-const DARK_THEME_CLASS = "pf-v5-theme-dark";
+const DARK_THEME_CLASS = "dark";
 
 function setIsDarkModeEnabled(isDarkModeEnabled: boolean) {
   {

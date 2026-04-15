@@ -27,21 +27,21 @@ import {
   MenuToggle,
   SelectList,
   SelectOption,
-} from "../../../../shared/@patternfly/react-core";
-import { SearchIcon } from "../../../../shared/@patternfly/react-icons";
+} from "../../../lib/pf-core";
+import { SearchIcon } from "../../../lib/pf-icons";
 import {
   Table,
   Th,
   Thead,
   Tr,
-} from "../../../../shared/@patternfly/react-table";
+} from "../../../lib/pf-table";
 import { KeyboardEvent, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import type EvaluationResultRepresentation from "@keycloak/keycloak-admin-client/lib/defs/evaluationResultRepresentation";
 import type PolicyEvaluationResponse from "@keycloak/keycloak-admin-client/lib/defs/policyEvaluationResponse";
 import { FixedButtonsGroup } from "../../../components/form/FixedButtonGroup";
-import { ListEmptyState } from "../../../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../../../lib/shared";
 import useToggle from "../../../utils/useToggle";
 import { AuthorizationDataModal } from "../AuthorizationDataModal";
 import { AuthorizationEvaluateResource } from "../AuthorizationEvaluateResource";

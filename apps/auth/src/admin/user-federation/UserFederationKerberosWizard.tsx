@@ -16,7 +16,7 @@ import {
   Wizard,
   WizardFooter,
   WizardStep,
-} from "@patternfly/react-core/";
+} from "../../lib/pf-core";
 import { useTranslation } from "react-i18next";
 
 import { KerberosSettingsRequired } from "./kerberos/KerberosSettingsRequired";

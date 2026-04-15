@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { SelectControl } from "../../../shared/keycloak-ui-shared";
+import { SelectControl } from "../../lib/shared";
 import { useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";

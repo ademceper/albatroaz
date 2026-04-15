@@ -17,7 +17,7 @@ import {
   Tabs,
   TabsComponent,
   TabsProps,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   Children,
   JSXElementConstructor,

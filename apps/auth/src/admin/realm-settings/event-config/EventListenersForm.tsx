@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { ActionGroup, Button } from "../../../shared/@patternfly/react-core";
+import { ActionGroup, Button } from "../../lib/pf-core";
 import { FormProvider, UseFormReturn } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import {
@@ -19,7 +19,7 @@ import {
   useFetch,
   SelectControl,
   SelectVariant,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import { useState } from "react";
 import { fetchAdminUI } from "../../context/auth/admin-ui-endpoint";
 import { useAdminClient } from "../../admin-client";

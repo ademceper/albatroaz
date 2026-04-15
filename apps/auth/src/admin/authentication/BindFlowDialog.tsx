@@ -12,14 +12,14 @@
 // @ts-nocheck
 
 import type RealmRepresentation from "@keycloak/keycloak-admin-client/lib/defs/realmRepresentation";
-import { SelectControl, useAlerts } from "../../shared/keycloak-ui-shared";
+import { SelectControl, useAlerts } from "../lib/shared";
 import {
   AlertVariant,
   Button,
   ButtonVariant,
   Form,
   Modal,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";

@@ -11,11 +11,11 @@
 
 // @ts-nocheck
 
-import { ActionGroup, Button } from "../../../shared/@patternfly/react-core";
+import { ActionGroup, Button } from "../../lib/pf-core";
 import { useTranslation } from "react-i18next";
 
 import { FormAccess } from "../../components/form/FormAccess";
-import { TextControl } from "../../../shared/keycloak-ui-shared";
+import { TextControl } from "../../lib/shared";
 import { ApplicationUrls } from "./ApplicationUrls";
 
 type FineGrainSamlEndpointConfigProps = {

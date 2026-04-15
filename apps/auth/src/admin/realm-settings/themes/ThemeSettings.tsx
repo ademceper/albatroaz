@@ -12,12 +12,12 @@
 // @ts-nocheck
 
 import type RealmRepresentation from "@keycloak/keycloak-admin-client/lib/defs/realmRepresentation";
-import { SelectControl } from "../../../shared/keycloak-ui-shared";
+import { SelectControl } from "../../lib/shared";
 import {
   ActionGroup,
   Button,
   PageSection,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useEffect } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

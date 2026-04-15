@@ -11,12 +11,12 @@
 
 // @ts-nocheck
 
-import { HelpItem, TextControl } from "../../../shared/keycloak-ui-shared";
+import { HelpItem, TextControl } from "../../lib/shared";
 import {
   ActionGroup,
   Button,
   FormGroup,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { DefaultSwitchControl } from "../../components/SwitchControl";

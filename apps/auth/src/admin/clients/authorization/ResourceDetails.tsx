@@ -19,7 +19,7 @@ import {
   TextControl,
   useAlerts,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ActionGroup,
   Alert,
@@ -29,7 +29,7 @@ import {
   DropdownItem,
   FormGroup,
   PageSection,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
@@ -40,7 +40,7 @@ import { useConfirmDialog } from "../../components/confirm-dialog/ConfirmDialog"
 import { FormAccess } from "../../components/form/FormAccess";
 import { KeyValueInput } from "../../components/key-value-form/KeyValueInput";
 import type { KeyValueType } from "../../components/key-value-form/key-value-convert";
-import { KeycloakSpinner } from "../../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../../lib/shared";
 import { MultiLineInput } from "../../components/multi-line-input/MultiLineInput";
 import { ViewHeader } from "../../components/view-header/ViewHeader";
 import { useAccess } from "../../context/access/Access";

@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { TextControl } from "../../../shared/keycloak-ui-shared";
+import { TextControl } from "../../lib/shared";
 import { useTranslation } from "react-i18next";
 
 export const SpiffeSettings = () => {

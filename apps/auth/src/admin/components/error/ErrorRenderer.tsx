@@ -15,13 +15,13 @@ import { NetworkError } from "@keycloak/keycloak-admin-client";
 import {
   useEnvironment,
   type FallbackProps,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   Alert,
   AlertActionLink,
   AlertVariant,
   PageSection,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useTranslation } from "react-i18next";
 
 export const ErrorRenderer = ({ error }: FallbackProps) => {

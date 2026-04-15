@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import type ClientRepresentation from "@keycloak/keycloak-admin-client/lib/defs/clientRepresentation";
-import { useAlerts, useFetch } from "../../shared/keycloak-ui-shared";
+import { useAlerts, useFetch } from "../lib/shared";
 import {
   AlertVariant,
   ButtonVariant,
@@ -24,8 +24,8 @@ import {
   Tabs,
   TabTitleText,
   Tooltip,
-} from "../../shared/@patternfly/react-core";
-import { InfoCircleIcon } from "../../shared/@patternfly/react-icons";
+} from "../lib/pf-core";
+import { InfoCircleIcon } from "../lib/pf-icons";
 import { cloneDeep, sortBy } from "lodash-es";
 import { useMemo, useState } from "react";
 import { Controller, FormProvider, useForm, useWatch } from "react-hook-form";
@@ -38,7 +38,7 @@ import {
 } from "../components/confirm-dialog/ConfirmDialog";
 import { DownloadDialog } from "../components/download-dialog/DownloadDialog";
 import type { KeyValueType } from "../components/key-value-form/key-value-convert";
-import { KeycloakSpinner } from "../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../lib/shared";
 import { PermissionsTab } from "../components/permission-tab/PermissionTab";
 import { RolesList } from "../components/roles-list/RolesList";
 import {

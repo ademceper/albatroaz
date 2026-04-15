@@ -22,7 +22,7 @@ import {
   SelectVariant,
   useFetch,
   useHelp,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ClipboardCopy,
   Form,
@@ -39,8 +39,8 @@ import {
   TabTitleText,
   Text,
   TextContent,
-} from "../../../shared/@patternfly/react-core";
-import { QuestionCircleIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { QuestionCircleIcon } from "../../lib/pf-icons";
 import { useEffect, useRef, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

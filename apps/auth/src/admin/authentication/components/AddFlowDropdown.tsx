@@ -12,15 +12,15 @@
 // @ts-nocheck
 
 import type { AuthenticationProviderRepresentation } from "@keycloak/keycloak-admin-client/lib/defs/authenticatorConfigRepresentation";
-import { useFetch } from "../../../shared/keycloak-ui-shared";
+import { useFetch } from "../../lib/shared";
 import {
   Dropdown,
   DropdownItem,
   DropdownList,
   MenuToggle,
   Tooltip,
-} from "../../../shared/@patternfly/react-core";
-import { PlusIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { PlusIcon } from "../../lib/pf-icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";

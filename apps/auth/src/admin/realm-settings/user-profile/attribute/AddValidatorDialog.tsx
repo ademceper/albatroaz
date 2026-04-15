@@ -18,7 +18,7 @@ import {
   Form,
   Modal,
   ModalVariant,
-} from "../../../../shared/@patternfly/react-core";
+} from "../../../lib/pf-core";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

@@ -22,8 +22,8 @@ import {
   Popover,
   Text,
   TextContent,
-} from "../../../shared/@patternfly/react-core";
-import { QuestionCircleIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { QuestionCircleIcon } from "../../lib/pf-icons";
 import { useEffect } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
@@ -33,8 +33,8 @@ import {
   SwitchControl,
   TextControl,
   useHelp,
-} from "../../../shared/keycloak-ui-shared";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
+import { useAlerts } from "../../lib/shared";
 import { FormAccess } from "../../components/form/FormAccess";
 import { MultiLineInput } from "../../components/multi-line-input/MultiLineInput";
 import { TimeSelectorControl } from "../../components/time-selector/TimeSelectorControl";

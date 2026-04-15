@@ -19,7 +19,7 @@ import {
   ListEmptyState,
   SelectControl,
   useAlerts,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ActionGroup,
   Alert,
@@ -32,8 +32,8 @@ import {
   Split,
   SplitItem,
   Title,
-} from "../../../shared/@patternfly/react-core";
-import { BellIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { BellIcon } from "../../lib/pf-icons";
 import { useMemo, useState } from "react";
 import { FormProvider, useForm, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

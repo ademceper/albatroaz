@@ -11,11 +11,11 @@
 
 // @ts-nocheck
 
-import { useSetTimeout } from "../../../shared/keycloak-ui-shared";
+import { useSetTimeout } from "../../lib/shared";
 import {
   ClipboardCopyButton,
   ClipboardCopyButtonProps,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 

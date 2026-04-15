@@ -11,7 +11,6 @@
 
 // @ts-nocheck
 
-import styles from "@patternfly/react-styles/css/components/DataList/data-list";
 import {
   ActionsColumn,
   IAction,
@@ -23,8 +22,7 @@ import {
   Tr,
   type TableProps,
   ThProps,
-} from "../../../shared/@patternfly/react-table";
-import type { ThInfoType } from "@patternfly/react-table/dist/esm/components/Table/base/types";
+} from "../../lib/pf-table";
 import { get } from "lodash-es";
 import {
   DragEvent as ReactDragEvent,

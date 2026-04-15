@@ -11,8 +11,8 @@
 
 // @ts-nocheck
 
-import { HelpItem } from "../../../shared/keycloak-ui-shared";
-import { FileUpload, FormGroup } from "../../../shared/@patternfly/react-core";
+import { HelpItem } from "../../lib/shared";
+import { FileUpload, FormGroup } from "../../lib/pf-core";
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

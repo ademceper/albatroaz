@@ -13,7 +13,7 @@
 
 import { ReactElement } from "react";
 import { Link } from "react-router-dom";
-import { Tooltip } from "../../shared/@patternfly/react-core";
+import { Tooltip } from "../lib/pf-core";
 
 import type AdminEventRepresentation from "@keycloak/keycloak-admin-client/lib/defs/adminEventRepresentation";
 import { useRealm } from "../context/realm-context/RealmContext";

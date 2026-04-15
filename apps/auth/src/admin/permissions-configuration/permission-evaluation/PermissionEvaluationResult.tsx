@@ -18,7 +18,7 @@ import {
   List,
   ListItem,
   Text,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useTranslation } from "react-i18next";
 import { sortBy } from "lodash-es";
 

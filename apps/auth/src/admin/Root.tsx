@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { KeycloakProvider } from "../shared/keycloak-ui-shared";
+import { KeycloakProvider } from "./lib/shared";
 
 import { App } from "./App";
 import { environment } from "./environment";

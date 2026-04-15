@@ -33,13 +33,13 @@ import {
   MenuToggle,
   SelectList,
   SelectOption,
-} from "../../../shared/@patternfly/react-core";
-import { PlusCircleIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { PlusCircleIcon } from "../../lib/pf-icons";
 import { useEffect, useMemo, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 import { FormAccess } from "../../components/form/FormAccess";
 import { useRealm } from "../../context/realm-context/RealmContext";
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";

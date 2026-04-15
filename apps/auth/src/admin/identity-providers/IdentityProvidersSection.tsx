@@ -20,7 +20,7 @@ import {
   ListEmptyState,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   AlertVariant,
   Badge,
@@ -41,7 +41,7 @@ import {
   TextContent,
   TextVariants,
   ToolbarItem,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { groupBy, sortBy } from "lodash-es";
 import { Fragment, useState } from "react";
 import { useTranslation } from "react-i18next";

@@ -18,7 +18,7 @@ import {
   Tab,
   Tabs,
   TabTitleText,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 
 import type RealmRepresentation from "@keycloak/keycloak-admin-client/lib/defs/realmRepresentation";
 import { HeadersForm } from "./HeadersForm";

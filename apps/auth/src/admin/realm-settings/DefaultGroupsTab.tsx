@@ -18,7 +18,7 @@ import {
   useAlerts,
   useFetch,
   useHelp,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   AlertVariant,
   Button,
@@ -31,19 +31,19 @@ import {
   Text,
   TextContent,
   ToolbarItem,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import {
   EllipsisVIcon,
   QuestionCircleIcon,
-} from "../../shared/@patternfly/react-icons";
+} from "../lib/pf-icons";
 import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useAdminClient } from "../admin-client";
 import { useConfirmDialog } from "../components/confirm-dialog/ConfirmDialog";
 import { GroupPickerDialog } from "../components/group/GroupPickerDialog";
-import { KeycloakSpinner } from "../../shared/keycloak-ui-shared";
-import { ListEmptyState } from "../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../lib/shared";
+import { ListEmptyState } from "../lib/shared";
 import { useRealm } from "../context/realm-context/RealmContext";
 import { toUserFederation } from "../user-federation/routes/UserFederation";
 import useToggle from "../utils/useToggle";

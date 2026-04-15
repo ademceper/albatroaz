@@ -14,13 +14,13 @@
 import {
   ButtonVariant,
   DropdownItem,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { ViewHeader } from "../components/view-header/ViewHeader";
 import { useTranslation } from "react-i18next";
 import { useConfirmDialog } from "../components/confirm-dialog/ConfirmDialog";
 import { useAdminClient } from "../admin-client";
 import { useNavigate } from "react-router-dom";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 import { Controller, useFormContext, useWatch } from "react-hook-form";
 import { toOrganizations } from "./routes/Organizations";
 import { useRealm } from "../context/realm-context/RealmContext";

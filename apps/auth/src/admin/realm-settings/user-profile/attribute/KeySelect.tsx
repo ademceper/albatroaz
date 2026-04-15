@@ -14,13 +14,13 @@
 import {
   KeycloakSelect,
   SelectControlOption,
-} from "../../../../shared/keycloak-ui-shared";
+} from "../../../lib/shared";
 import {
   Grid,
   GridItem,
   SelectOption,
   TextInput,
-} from "../../../../shared/@patternfly/react-core";
+} from "../../../lib/pf-core";
 import { useState } from "react";
 import { UseControllerProps, useController } from "react-hook-form";
 import { useTranslation } from "react-i18next";

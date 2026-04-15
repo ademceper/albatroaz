@@ -14,7 +14,7 @@
 import {
   KeycloakSelect,
   SelectVariant,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ActionGroup,
   Button,
@@ -30,15 +30,15 @@ import {
   TextContent,
   TextInput,
   TextVariants,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { pickBy } from "lodash-es";
 import { useMemo, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
 import DropdownPanel from "../../components/dropdown-panel/DropdownPanel";
-import { ListEmptyState } from "../../../shared/keycloak-ui-shared";
-import { KeycloakDataTable } from "../../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../../lib/shared";
+import { KeycloakDataTable } from "../../lib/shared";
 import { useRealm } from "../../context/realm-context/RealmContext";
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";
 import { useWhoAmI } from "../../context/whoami/WhoAmI";

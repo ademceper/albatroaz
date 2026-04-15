@@ -16,12 +16,12 @@ import {
   MenuToggle,
   Select,
   SelectList,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
 import type { Row } from "../clients/scopes/ClientScopes";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 import {
   ClientScope,
   allClientScopeTypes,

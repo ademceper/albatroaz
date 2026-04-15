@@ -18,7 +18,7 @@ import {
   TextContent,
   Text,
   TextVariants,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   Table,
   Tbody,
@@ -26,7 +26,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-table";
 
 import type PolicyProviderRepresentation from "@keycloak/keycloak-admin-client/lib/defs/policyProviderRepresentation";
 import { isValidComponentType } from "./policy/PolicyDetails";

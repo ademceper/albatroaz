@@ -30,12 +30,12 @@ import {
   ModalVariant,
   Text,
   TextContent,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { sortBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 
 type ManagePriorityDialogProps = {
   components: ComponentRepresentation[];

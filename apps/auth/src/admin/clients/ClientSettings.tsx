@@ -12,10 +12,10 @@
 // @ts-nocheck
 
 import type ClientRepresentation from "@keycloak/keycloak-admin-client/lib/defs/clientRepresentation";
-import { Form } from "../../shared/@patternfly/react-core";
+import { Form } from "../lib/pf-core";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { ScrollForm } from "../../shared/keycloak-ui-shared";
+import { ScrollForm } from "../lib/shared";
 import { ClientDescription } from "./ClientDescription";
 import { FormFields } from "./ClientDetails";
 import { AccessSettings } from "./add/AccessSettings";

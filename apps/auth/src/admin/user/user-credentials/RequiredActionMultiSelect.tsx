@@ -16,7 +16,7 @@ import {
   SelectControl,
   SelectVariant,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import { useState } from "react";
 import { FieldPathByValue, FieldValues } from "react-hook-form";
 import { useTranslation } from "react-i18next";

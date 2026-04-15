@@ -13,13 +13,13 @@
 
 import OrganizationRepresentation from "@keycloak/keycloak-admin-client/lib/defs/organizationRepresentation";
 import UserRepresentation from "@keycloak/keycloak-admin-client/lib/defs/userRepresentation";
-import { KeycloakDataTable } from "../../shared/keycloak-ui-shared";
+import { KeycloakDataTable } from "../lib/shared";
 import {
   Button,
   Modal,
   ModalVariant,
-} from "../../shared/@patternfly/react-core";
-import { TableText } from "../../shared/@patternfly/react-table";
+} from "../lib/pf-core";
+import { TableText } from "../lib/pf-table";
 import { differenceBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

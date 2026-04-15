@@ -12,11 +12,11 @@
 // @ts-nocheck
 
 import ComponentTypeRepresentation from "@keycloak/keycloak-admin-client/lib/defs/componentTypeRepresentation";
-import { KeycloakSelect } from "../../../../shared/keycloak-ui-shared";
+import { KeycloakSelect } from "../../../lib/shared";
 import {
   FormGroup,
   SelectOption,
-} from "../../../../shared/@patternfly/react-core";
+} from "../../../lib/pf-core";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useServerInfo } from "../../../context/server-info/ServerInfoProvider";

@@ -14,7 +14,7 @@
 import type IdentityProviderRepresentation from "@keycloak/keycloak-admin-client/lib/defs/identityProviderRepresentation";
 import { IdentityProviderType } from "@keycloak/keycloak-admin-client/lib/defs/identityProviderRepresentation";
 import type { IdentityProvidersQuery } from "@keycloak/keycloak-admin-client/lib/resources/identityProviders";
-import { SelectVariant, useFetch } from "../../../shared/keycloak-ui-shared";
+import { SelectVariant, useFetch } from "../../lib/shared";
 import { useState } from "react";
 import { useAdminClient } from "../../admin-client";
 import type { ComponentProps } from "../dynamic/components";

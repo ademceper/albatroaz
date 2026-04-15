@@ -16,7 +16,7 @@ import {
   Select,
   SelectList,
   SelectOption,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 

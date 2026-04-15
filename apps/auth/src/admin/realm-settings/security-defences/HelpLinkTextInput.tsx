@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { Trans, useTranslation } from "react-i18next";
-import { TextControl } from "../../../shared/keycloak-ui-shared";
+import { TextControl } from "../../lib/shared";
 import { FormattedLink } from "../../components/external-link/FormattedLink";
 
 type HelpLinkTextInputProps = {

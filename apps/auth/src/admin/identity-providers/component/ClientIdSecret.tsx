@@ -15,7 +15,7 @@ import { useTranslation } from "react-i18next";
 import {
   PasswordControl,
   TextControl,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 
 export const ClientIdSecret = ({
   secretRequired = true,

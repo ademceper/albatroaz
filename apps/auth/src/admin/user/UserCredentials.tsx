@@ -13,7 +13,7 @@
 
 import type CredentialRepresentation from "@keycloak/keycloak-admin-client/lib/defs/credentialRepresentation";
 import type UserRepresentation from "@keycloak/keycloak-admin-client/lib/defs/userRepresentation";
-import { HelpItem, useAlerts, useFetch } from "../../shared/keycloak-ui-shared";
+import { HelpItem, useAlerts, useFetch } from "../lib/shared";
 import {
   AlertVariant,
   Button,
@@ -21,8 +21,7 @@ import {
   Divider,
   PageSection,
   PageSectionVariants,
-} from "../../shared/@patternfly/react-core";
-import styles from "@patternfly/react-styles/css/components/Table/table";
+} from "../lib/pf-core";
 import {
   Table,
   Tbody,
@@ -30,7 +29,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../shared/@patternfly/react-table";
+} from "../lib/pf-table";
 import {
   Fragment,
   DragEvent as ReactDragEvent,
@@ -41,8 +40,8 @@ import {
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
 import { useConfirmDialog } from "../components/confirm-dialog/ConfirmDialog";
-import { KeycloakSpinner } from "../../shared/keycloak-ui-shared";
-import { ListEmptyState } from "../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../lib/shared";
+import { ListEmptyState } from "../lib/shared";
 import { toUpperCase } from "../util";
 import { FederatedUserLink } from "./FederatedUserLink";
 import { CredentialRow } from "./user-credentials/CredentialRow";

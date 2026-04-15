@@ -13,9 +13,9 @@
 
 import { useTranslation } from "react-i18next";
 import { Controller, useFormContext } from "react-hook-form";
-import { FormGroup, Radio } from "../../../../shared/@patternfly/react-core";
+import { FormGroup, Radio } from "../../../lib/pf-core";
 
-import { HelpItem } from "../../../../shared/keycloak-ui-shared";
+import { HelpItem } from "../../../lib/shared";
 
 const LOGIC_TYPES = ["POSITIVE", "NEGATIVE"] as const;
 

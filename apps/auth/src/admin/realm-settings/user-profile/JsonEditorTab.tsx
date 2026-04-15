@@ -11,13 +11,13 @@
 
 // @ts-nocheck
 
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 import {
   ActionGroup,
   Button,
   Form,
   PageSection,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import CodeEditor from "../../components/form/CodeEditor";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

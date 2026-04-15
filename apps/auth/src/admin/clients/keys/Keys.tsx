@@ -17,7 +17,7 @@ import {
   TextControl,
   useAlerts,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ActionGroup,
   AlertVariant,
@@ -29,7 +29,7 @@ import {
   PageSection,
   Text,
   TextContent,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { saveAs } from "file-saver";
 import { useState } from "react";
 import { useFormContext, useWatch } from "react-hook-form";

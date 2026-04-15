@@ -11,18 +11,18 @@
 
 // @ts-nocheck
 
-import { FormSubmitButton, TextControl } from "../../shared/keycloak-ui-shared";
+import { FormSubmitButton, TextControl } from "../lib/shared";
 import {
   Button,
   ButtonVariant,
   Form,
   Modal,
   ModalVariant,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 
 type InviteMemberModalProps = {
   orgId: string;

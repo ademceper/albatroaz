@@ -11,9 +11,9 @@
 
 // @ts-nocheck
 
-import { FormGroup } from "../../../../shared/@patternfly/react-core";
+import { FormGroup } from "../../../lib/pf-core";
 import { useTranslation } from "react-i18next";
-import { HelpItem } from "../../../../shared/keycloak-ui-shared";
+import { HelpItem } from "../../../lib/shared";
 import { useParams } from "../../../utils/useParams";
 import type { PolicyDetailsParams } from "../../routes/PolicyDetails";
 import { DecisionStrategySelect } from "../DecisionStrategySelect";

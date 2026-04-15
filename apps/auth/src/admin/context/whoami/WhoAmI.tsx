@@ -18,7 +18,7 @@ import {
   useEnvironment,
   useFetch,
   useRequiredContext,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import { PropsWithChildren, useEffect, useState } from "react";
 import { useAdminClient } from "../../admin-client";
 import { DEFAULT_LOCALE, i18n } from "../../i18n/i18n";

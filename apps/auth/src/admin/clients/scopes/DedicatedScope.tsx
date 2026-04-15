@@ -19,12 +19,12 @@ import {
   FormGroup,
   PageSection,
   Switch,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { HelpItem } from "../../../shared/keycloak-ui-shared";
+import { HelpItem } from "../../lib/shared";
 import { useAdminClient } from "../../admin-client";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 import { FormAccess } from "../../components/form/FormAccess";
 import { RoleMapping, Row } from "../../components/role-mapping/RoleMapping";
 import { useAccess } from "../../context/access/Access";

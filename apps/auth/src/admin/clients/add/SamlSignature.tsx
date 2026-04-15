@@ -13,7 +13,7 @@
 
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { SelectControl, TextControl } from "../../../shared/keycloak-ui-shared";
+import { SelectControl, TextControl } from "../../lib/shared";
 import { FormAccess } from "../../components/form/FormAccess";
 import { convertAttributeNameToForm } from "../../util";
 import { FormFields } from "../ClientDetails";

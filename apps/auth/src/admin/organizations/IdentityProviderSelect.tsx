@@ -17,7 +17,7 @@ import {
   FormErrorText,
   HelpItem,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   Button,
   Chip,
@@ -30,15 +30,15 @@ import {
   TextInputGroup,
   TextInputGroupMain,
   TextInputGroupUtilities,
-} from "../../shared/@patternfly/react-core";
-import { TimesIcon } from "../../shared/@patternfly/react-icons";
+} from "../lib/pf-core";
+import { TimesIcon } from "../lib/pf-icons";
 import { debounce } from "lodash-es";
 import { useCallback, useRef, useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
 import { ComponentProps } from "../components/dynamic/components";
-import { KeycloakSpinner } from "../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../lib/shared";
 import useToggle from "../utils/useToggle";
 
 type IdentityProviderSelectProps = Omit<ComponentProps, "convertToName"> & {

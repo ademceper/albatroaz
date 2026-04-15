@@ -17,10 +17,10 @@ import {
   Divider,
   FormGroup,
   Switch,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { Controller, FormProvider, UseFormReturn } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { HelpItem } from "../../../shared/keycloak-ui-shared";
+import { HelpItem } from "../../lib/shared";
 import { DefaultSwitchControl } from "../../components/SwitchControl";
 import { useConfirmDialog } from "../../components/confirm-dialog/ConfirmDialog";
 import { TimeSelectorControl } from "../../components/time-selector/TimeSelectorControl";

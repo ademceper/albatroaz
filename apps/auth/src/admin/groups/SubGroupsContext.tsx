@@ -16,7 +16,7 @@ import { PropsWithChildren, useState } from "react";
 import {
   createNamedContext,
   useRequiredContext,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 
 type SubGroupsProps = {
   subGroups: GroupRepresentation[];

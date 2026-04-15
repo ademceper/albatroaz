@@ -18,7 +18,7 @@ import type {
   PartialImportResult,
 } from "@keycloak/keycloak-admin-client/lib/defs/realmRepresentation";
 import type RoleRepresentation from "@keycloak/keycloak-admin-client/lib/defs/roleRepresentation";
-import { KeycloakSelect } from "../../shared/keycloak-ui-shared";
+import { KeycloakSelect } from "../lib/shared";
 import {
   Alert,
   Button,
@@ -38,13 +38,13 @@ import {
   StackItem,
   Text,
   TextContent,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { FormEvent, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 import { JsonFileUpload } from "../components/json-file-upload/JsonFileUpload";
-import { KeycloakDataTable } from "../../shared/keycloak-ui-shared";
+import { KeycloakDataTable } from "../lib/shared";
 import { useRealm } from "../context/realm-context/RealmContext";
 
 export type PartialImportProps = {

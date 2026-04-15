@@ -24,12 +24,12 @@ import {
   Label,
   MenuToggle,
   MenuToggleElement,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { ReactElement, useState } from "react";
 import { Link, To } from "react-router-dom";
 
 import "./keycloak-card.css";
-import { EllipsisVIcon } from "../../../shared/@patternfly/react-icons";
+import { EllipsisVIcon } from "../../lib/pf-icons";
 
 export type KeycloakCardProps = {
   title: string;

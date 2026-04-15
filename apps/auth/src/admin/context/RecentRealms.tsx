@@ -17,7 +17,7 @@ import {
   useFetch,
   useRequiredContext,
   useStoredState,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import { PropsWithChildren, useEffect } from "react";
 import { useAdminClient } from "../admin-client";
 import { useRealm } from "./realm-context/RealmContext";

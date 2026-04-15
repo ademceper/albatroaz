@@ -18,7 +18,7 @@ import {
   SelectControl,
   SwitchControl,
   useAlerts,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ActionGroup,
   AlertVariant,
@@ -29,7 +29,7 @@ import {
   FormGroup,
   PageSection,
   Radio,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useMemo } from "react";
 import { Controller, FormProvider, useForm, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

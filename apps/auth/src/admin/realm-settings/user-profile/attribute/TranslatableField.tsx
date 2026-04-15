@@ -13,7 +13,7 @@
 
 import KeycloakAdminClient from "@keycloak/keycloak-admin-client";
 import RealmRepresentation from "@keycloak/keycloak-admin-client/lib/defs/realmRepresentation";
-import { FormErrorText } from "../../../../shared/keycloak-ui-shared";
+import { FormErrorText } from "../../../lib/shared";
 import {
   Alert,
   Button,
@@ -21,8 +21,8 @@ import {
   InputGroup,
   InputGroupItem,
   TextInput,
-} from "../../../../shared/@patternfly/react-core";
-import { GlobeRouteIcon } from "../../../../shared/@patternfly/react-icons";
+} from "../../../lib/pf-core";
+import { GlobeRouteIcon } from "../../../lib/pf-icons";
 import { TFunction } from "i18next";
 import { useEffect } from "react";
 import { useFormContext, useWatch } from "react-hook-form";

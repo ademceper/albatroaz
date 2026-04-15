@@ -16,7 +16,7 @@ import {
   Card,
   CardHeader,
   CardProps,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 
 type ClickableCardProps = Omit<CardProps, "onClick"> & {
   onClick: () => void;

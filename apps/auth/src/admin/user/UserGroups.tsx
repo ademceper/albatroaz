@@ -13,26 +13,26 @@
 
 import type GroupRepresentation from "@keycloak/keycloak-admin-client/lib/defs/groupRepresentation";
 import type UserRepresentation from "@keycloak/keycloak-admin-client/lib/defs/userRepresentation";
-import { useHelp } from "../../shared/keycloak-ui-shared";
+import { useHelp } from "../lib/shared";
 import {
   AlertVariant,
   Button,
   ButtonVariant,
   Checkbox,
   Popover,
-} from "../../shared/@patternfly/react-core";
-import { QuestionCircleIcon } from "../../shared/@patternfly/react-icons";
-import { cellWidth } from "../../shared/@patternfly/react-table";
+} from "../lib/pf-core";
+import { QuestionCircleIcon } from "../lib/pf-icons";
+import { cellWidth } from "../lib/pf-table";
 import { intersectionBy, sortBy, uniqBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 import { useConfirmDialog } from "../components/confirm-dialog/ConfirmDialog";
 import { GroupPath } from "../components/group/GroupPath";
 import { GroupPickerDialog } from "../components/group/GroupPickerDialog";
-import { ListEmptyState } from "../../shared/keycloak-ui-shared";
-import { KeycloakDataTable } from "../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../lib/shared";
+import { KeycloakDataTable } from "../lib/shared";
 import { useAccess } from "../context/access/Access";
 
 type UserGroupsProps = {

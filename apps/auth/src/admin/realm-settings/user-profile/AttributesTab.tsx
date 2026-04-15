@@ -15,7 +15,7 @@ import type { UserProfileAttribute } from "@keycloak/keycloak-admin-client/lib/d
 import {
   KeycloakSelect,
   SelectVariant,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   Button,
   ButtonVariant,
@@ -24,8 +24,8 @@ import {
   Toolbar,
   ToolbarContent,
   ToolbarItem,
-} from "../../../shared/@patternfly/react-core";
-import { FilterIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { FilterIcon } from "../../lib/pf-icons";
 import { uniqBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -33,7 +33,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAdminClient } from "../../admin-client";
 import { DraggableTable } from "../../authentication/components/DraggableTable";
 import { useConfirmDialog } from "../../components/confirm-dialog/ConfirmDialog";
-import { KeycloakSpinner } from "../../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../../lib/shared";
 import { useRealm } from "../../context/realm-context/RealmContext";
 import useLocale from "../../utils/useLocale";
 import useToggle from "../../utils/useToggle";

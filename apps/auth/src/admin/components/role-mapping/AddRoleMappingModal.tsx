@@ -15,7 +15,7 @@ import RoleRepresentation from "@keycloak/keycloak-admin-client/lib/defs/roleRep
 import {
   KeycloakDataTable,
   ListEmptyState,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   Button,
   Dropdown,
@@ -25,8 +25,8 @@ import {
   MenuToggle,
   Modal,
   ModalVariant,
-} from "../../../shared/@patternfly/react-core";
-import { cellWidth, TableText } from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-core";
+import { cellWidth, TableText } from "../../lib/pf-table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";

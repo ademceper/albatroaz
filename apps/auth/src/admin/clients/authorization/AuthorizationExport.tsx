@@ -16,13 +16,13 @@ import {
   KeycloakSpinner,
   useAlerts,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ActionGroup,
   AlertVariant,
   Button,
   PageSection,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import CodeEditor from "@uiw/react-textarea-code-editor";
 import { saveAs } from "file-saver";
 import { useState } from "react";

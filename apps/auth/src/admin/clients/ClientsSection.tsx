@@ -13,7 +13,7 @@
 
 import type ClientRepresentation from "@keycloak/keycloak-admin-client/lib/defs/clientRepresentation";
 import type { ClientQuery } from "@keycloak/keycloak-admin-client/lib/resources/clients";
-import { useAlerts, useEnvironment } from "../../shared/keycloak-ui-shared";
+import { useAlerts, useEnvironment } from "../lib/shared";
 import {
   AlertVariant,
   Badge,
@@ -24,13 +24,13 @@ import {
   TabTitleText,
   ToolbarItem,
   Tooltip,
-} from "../../shared/@patternfly/react-core";
-import { WarningTriangleIcon } from "../../shared/@patternfly/react-icons";
+} from "../lib/pf-core";
+import { WarningTriangleIcon } from "../lib/pf-icons";
 import {
   IRowData,
   TableText,
   cellWidth,
-} from "../../shared/@patternfly/react-table";
+} from "../lib/pf-table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -41,7 +41,7 @@ import {
   RoutableTabs,
   useRoutableTab,
 } from "../components/routable-tabs/RoutableTabs";
-import { Action, KeycloakDataTable } from "../../shared/keycloak-ui-shared";
+import { Action, KeycloakDataTable } from "../lib/shared";
 import { ViewHeader } from "../components/view-header/ViewHeader";
 import { useAccess } from "../context/access/Access";
 import { useRealm } from "../context/realm-context/RealmContext";

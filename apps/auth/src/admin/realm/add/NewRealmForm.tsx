@@ -16,8 +16,8 @@ import {
   FormSubmitButton,
   TextControl,
   useAlerts,
-} from "../../../shared/keycloak-ui-shared";
-import { Button, Modal } from "../../../shared/@patternfly/react-core";
+} from "../../lib/shared";
+import { Button, Modal } from "../../lib/pf-core";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

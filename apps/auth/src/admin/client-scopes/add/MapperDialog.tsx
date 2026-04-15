@@ -26,14 +26,14 @@ import {
   Text,
   TextContent,
   TextVariants,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 
 import type ProtocolMapperRepresentation from "@keycloak/keycloak-admin-client/lib/defs/protocolMapperRepresentation";
 import type { ProtocolMapperTypeRepresentation } from "@keycloak/keycloak-admin-client/lib/defs/serverInfoRepesentation";
 
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";
-import { ListEmptyState } from "../../../shared/keycloak-ui-shared";
-import { KeycloakDataTable } from "../../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../../lib/shared";
+import { KeycloakDataTable } from "../../lib/shared";
 import useLocaleSort, { mapByKey } from "../../utils/useLocaleSort";
 
 type Row = {

@@ -17,7 +17,7 @@ import {
   KeycloakDataTable,
   ListEmptyState,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   Button,
   ButtonVariant,
@@ -27,11 +27,11 @@ import {
   MenuToggle,
   Modal,
   ModalVariant,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   CaretDownIcon,
   FilterIcon,
-} from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-icons";
 import { sortBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

@@ -19,7 +19,7 @@ import {
   SelectControl,
   useAlerts,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ActionGroup,
   Alert,
@@ -34,7 +34,7 @@ import {
   PageSection,
   Split,
   SplitItem,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useMemo, useState } from "react";
 import { useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

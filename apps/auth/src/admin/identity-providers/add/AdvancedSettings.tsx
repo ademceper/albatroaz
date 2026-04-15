@@ -20,14 +20,14 @@ import {
   SelectControl,
   SelectVariant,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   FormGroup,
   SelectOption,
   Switch,
   TextInput,
   ValidatedOptions,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useState } from "react";
 import { Controller, useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

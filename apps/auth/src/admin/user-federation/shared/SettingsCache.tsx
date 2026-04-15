@@ -15,7 +15,7 @@ import {
   NumberControl,
   SelectControl,
   SelectControlOption,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import { isEqual } from "lodash-es";
 import { UseFormReturn, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

@@ -13,14 +13,14 @@
 
 import type { OrganizationInvitationRepresentation } from "@keycloak/keycloak-admin-client";
 import { OrganizationInvitationStatus } from "@keycloak/keycloak-admin-client";
-import { Button, Chip, ToolbarItem } from "../../shared/@patternfly/react-core";
+import { Button, Chip, ToolbarItem } from "../lib/pf-core";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
 import { CheckboxFilterComponent } from "../components/dynamic/CheckboxFilterComponent";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
-import { ListEmptyState } from "../../shared/keycloak-ui-shared";
-import { KeycloakDataTable } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
+import { ListEmptyState } from "../lib/shared";
+import { KeycloakDataTable } from "../lib/shared";
 import { useParams } from "../utils/useParams";
 import useToggle from "../utils/useToggle";
 import { InviteMemberModal } from "./InviteMemberModal";

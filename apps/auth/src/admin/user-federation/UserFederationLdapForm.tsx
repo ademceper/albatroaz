@@ -12,11 +12,11 @@
 // @ts-nocheck
 
 import type ComponentRepresentation from "@keycloak/keycloak-admin-client/lib/defs/componentRepresentation";
-import { Button, Form } from "../../shared/@patternfly/react-core";
+import { Button, Form } from "../lib/pf-core";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import { ScrollForm } from "../../shared/keycloak-ui-shared";
+import { ScrollForm } from "../lib/shared";
 
 import { FixedButtonsGroup } from "../components/form/FixedButtonGroup";
 import { useRealm } from "../context/realm-context/RealmContext";

@@ -18,16 +18,16 @@ import {
   Form,
   FormGroup,
   TextInput,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   CheckIcon,
   PencilAltIcon,
   TimesIcon,
-} from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-icons";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 
 type UserLabelForm = {
   userLabel: string;

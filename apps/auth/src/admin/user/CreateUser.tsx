@@ -18,15 +18,15 @@ import {
   setUserProfileServerError,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
-import { AlertVariant, PageSection } from "../../shared/@patternfly/react-core";
+} from "../lib/shared";
+import { AlertVariant, PageSection } from "../lib/pf-core";
 import { TFunction } from "i18next";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useAdminClient } from "../admin-client";
-import { KeycloakSpinner } from "../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../lib/shared";
 import { ViewHeader } from "../components/view-header/ViewHeader";
 import { useRealm } from "../context/realm-context/RealmContext";
 import { UserForm } from "./UserForm";

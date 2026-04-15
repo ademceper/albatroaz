@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import { Modal, ModalVariant } from "../../../shared/@patternfly/react-core";
+import { Modal, ModalVariant } from "../../lib/pf-core";
 import {
   Table,
   TableVariant,
@@ -21,7 +21,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-table";
 
 type CredentialDataDialogProps = {
   title: string;

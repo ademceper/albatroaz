@@ -17,15 +17,15 @@ import {
   Modal,
   ModalVariant,
   Label,
-} from "../../shared/@patternfly/react-core";
-import { InfoCircleIcon } from "../../shared/@patternfly/react-icons";
+} from "../lib/pf-core";
+import { InfoCircleIcon } from "../lib/pf-icons";
 import { differenceBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
-import { ListEmptyState } from "../../shared/keycloak-ui-shared";
-import { KeycloakDataTable } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
+import { ListEmptyState } from "../lib/shared";
+import { KeycloakDataTable } from "../lib/shared";
 import { emptyFormatter } from "../util";
 
 type MemberModalProps = {

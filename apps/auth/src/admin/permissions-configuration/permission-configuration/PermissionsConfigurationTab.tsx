@@ -20,14 +20,14 @@ import {
   PaginatingTableToolbar,
   useAlerts,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   AlertVariant,
   Button,
   ButtonVariant,
   PageSection,
   ToolbarItem,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   ExpandableRowContent,
   Table,
@@ -36,7 +36,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";

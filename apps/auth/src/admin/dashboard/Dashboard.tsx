@@ -19,7 +19,7 @@ import {
   HelpItem,
   label,
   useEnvironment,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   ActionList,
   ActionListItem,
@@ -48,10 +48,10 @@ import {
   TextContent,
   TextVariants,
   Title,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { KeycloakSpinner } from "../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../lib/shared";
 import {
   RoutableTabs,
   useRoutableTab,

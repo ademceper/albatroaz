@@ -20,7 +20,7 @@ import {
   setUserProfileServerError,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   AlertVariant,
   ButtonVariant,
@@ -31,8 +31,8 @@ import {
   Tabs,
   TabTitleText,
   Tooltip,
-} from "../../shared/@patternfly/react-core";
-import { InfoCircleIcon } from "../../shared/@patternfly/react-icons";
+} from "../lib/pf-core";
+import { InfoCircleIcon } from "../lib/pf-icons";
 import { TFunction } from "i18next";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
@@ -41,7 +41,7 @@ import { useNavigate } from "react-router-dom";
 import { useAdminClient } from "../admin-client";
 import { useConfirmDialog } from "../components/confirm-dialog/ConfirmDialog";
 import { KeyValueType } from "../components/key-value-form/key-value-convert";
-import { KeycloakSpinner } from "../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../lib/shared";
 import {
   RoutableTabs,
   useRoutableTab,

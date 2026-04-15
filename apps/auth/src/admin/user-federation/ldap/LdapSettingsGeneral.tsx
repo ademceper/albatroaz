@@ -17,11 +17,11 @@ import {
   KeycloakSelect,
   SelectVariant,
   TextControl,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   FormGroup,
   SelectOption,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useEffect, useState } from "react";
 import { Controller, FormProvider, UseFormReturn } from "react-hook-form";
 import { useTranslation } from "react-i18next";

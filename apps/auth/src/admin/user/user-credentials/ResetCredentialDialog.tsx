@@ -16,12 +16,12 @@ import {
   AlertVariant,
   Form,
   ModalVariant,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { isEmpty } from "lodash-es";
 import { FormProvider, useForm, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 import { ConfirmDialogModal } from "../../components/confirm-dialog/ConfirmDialog";
 import { LifespanField } from "./LifespanField";
 import { RequiredActionMultiSelect } from "./RequiredActionMultiSelect";

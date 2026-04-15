@@ -23,7 +23,7 @@ import {
   Radio,
   FormGroup,
   PageSection,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { Controller, FormProvider, useForm, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -32,9 +32,9 @@ import {
   PasswordControl,
   SwitchControl,
   TextControl,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import { useAdminClient } from "../admin-client";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 import { FormAccess } from "../components/form/FormAccess";
 import { toUser } from "../user/routes/User";
 import { emailRegexPattern } from "../util";

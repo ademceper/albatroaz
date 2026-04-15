@@ -12,12 +12,12 @@
 // @ts-nocheck
 
 import GroupRepresentation from "@keycloak/keycloak-admin-client/lib/defs/groupRepresentation";
-import { useAlerts, useFetch } from "../../shared/keycloak-ui-shared";
+import { useAlerts, useFetch } from "../lib/shared";
 import {
   AlertVariant,
   PageSection,
   PageSectionVariants,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

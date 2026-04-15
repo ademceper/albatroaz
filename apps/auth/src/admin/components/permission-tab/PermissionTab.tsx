@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import type { ManagementPermissionReference } from "@keycloak/keycloak-admin-client/lib/defs/managementPermissionReference";
-import { HelpItem, useFetch } from "../../../shared/keycloak-ui-shared";
+import { HelpItem, useFetch } from "../../lib/shared";
 import {
   Card,
   CardBody,
@@ -21,7 +21,7 @@ import {
   FormGroup,
   PageSection,
   Switch,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   ActionsColumn,
   Table,
@@ -30,13 +30,13 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-table";
 import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { useAdminClient } from "../../admin-client";
 import { toPermissionDetails } from "../../clients/routes/PermissionDetails";
-import { KeycloakSpinner } from "../../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../../lib/shared";
 import { useRealm } from "../../context/realm-context/RealmContext";
 import useLocaleSort from "../../utils/useLocaleSort";
 import { useConfirmDialog } from "../confirm-dialog/ConfirmDialog";

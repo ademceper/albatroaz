@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { HelpItem, generateId } from "../../../shared/keycloak-ui-shared";
+import { HelpItem, generateId } from "../../lib/shared";
 import {
   ActionList,
   ActionListItem,
@@ -23,11 +23,11 @@ import {
   FlexItem,
   FormGroup,
   TextInput,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   MinusCircleIcon,
   PlusCircleIcon,
-} from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-icons";
 import { useEffect, useState } from "react";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

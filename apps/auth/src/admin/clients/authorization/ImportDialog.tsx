@@ -23,11 +23,11 @@ import {
   Modal,
   Radio,
   Switch,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 
 import type ResourceServerRepresentation from "@keycloak/keycloak-admin-client/lib/defs/resourceServerRepresentation";
 import { JsonFileUpload } from "../../components/json-file-upload/JsonFileUpload";
-import { HelpItem } from "../../../shared/keycloak-ui-shared";
+import { HelpItem } from "../../lib/shared";
 
 type ImportDialogProps = {
   onConfirm: (value: ResourceServerRepresentation) => void;

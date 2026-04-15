@@ -15,8 +15,8 @@ import {
   HelpItem,
   SelectControl,
   TextControl,
-} from "../../../shared/keycloak-ui-shared";
-import { FormGroup, Switch } from "../../../shared/@patternfly/react-core";
+} from "../../lib/shared";
+import { FormGroup, Switch } from "../../lib/pf-core";
 import { isEqual } from "lodash-es";
 import { useEffect } from "react";
 import {

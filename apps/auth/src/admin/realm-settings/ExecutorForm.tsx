@@ -20,7 +20,7 @@ import {
   SelectVariant,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   ActionGroup,
   AlertVariant,
@@ -28,7 +28,7 @@ import {
   FormGroup,
   PageSection,
   SelectOption,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useState } from "react";
 import { Controller, FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

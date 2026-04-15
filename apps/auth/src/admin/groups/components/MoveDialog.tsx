@@ -15,7 +15,7 @@ import type KeycloakAdminClient from "@keycloak/keycloak-admin-client";
 import type GroupRepresentation from "@keycloak/keycloak-admin-client/lib/defs/groupRepresentation";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 import { GroupPickerDialog } from "../../components/group/GroupPickerDialog";
 
 type MoveDialogProps = {

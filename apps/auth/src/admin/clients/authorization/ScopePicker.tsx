@@ -18,16 +18,16 @@ import {
   KeycloakSelect,
   SelectVariant,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   FormGroup,
   SelectOption,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
-import { KeycloakSpinner } from "../../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../../lib/shared";
 import { useIsAdminPermissionsClient } from "../../utils/useIsAdminPermissionsClient";
 
 type Scope = {

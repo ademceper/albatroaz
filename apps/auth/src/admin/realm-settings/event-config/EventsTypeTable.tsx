@@ -15,8 +15,8 @@ import {
   Action,
   KeycloakDataTable,
   ListEmptyState,
-} from "../../../shared/keycloak-ui-shared";
-import { Button, ToolbarItem } from "../../../shared/@patternfly/react-core";
+} from "../../lib/shared";
+import { Button, ToolbarItem } from "../../lib/pf-core";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { translationFormatter } from "../../utils/translationFormatter";

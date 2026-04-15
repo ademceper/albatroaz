@@ -25,7 +25,7 @@ import {
   TextControl,
   UserProfileFields,
   ContinueCancelModal,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   Alert,
   AlertVariant,
@@ -37,14 +37,14 @@ import {
   InputGroupItem,
   Switch,
   TextInput,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { TFunction } from "i18next";
 import { useEffect, useState } from "react";
 import { Controller, FormProvider, UseFormReturn } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
 import { DefaultSwitchControl } from "../components/SwitchControl";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 import { FormAccess } from "../components/form/FormAccess";
 import { GroupPickerDialog } from "../components/group/GroupPickerDialog";
 import { useAccess } from "../context/access/Access";

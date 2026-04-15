@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { useHelp } from "../../../shared/keycloak-ui-shared";
+import { useHelp } from "../../lib/shared";
 import {
   Divider,
   Dropdown,
@@ -21,8 +21,8 @@ import {
   Split,
   SplitItem,
   Switch,
-} from "../../../shared/@patternfly/react-core";
-import { HelpIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { HelpIcon } from "../../lib/pf-icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import helpUrls from "../../help-urls";

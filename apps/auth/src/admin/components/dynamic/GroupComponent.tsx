@@ -19,13 +19,13 @@ import {
   FormGroup,
   InputGroup,
   InputGroupItem,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 
 import { GroupPickerDialog } from "../group/GroupPickerDialog";
-import { HelpItem } from "../../../shared/keycloak-ui-shared";
+import { HelpItem } from "../../lib/shared";
 import type { ComponentProps } from "./components";
 
 export const GroupComponent = ({

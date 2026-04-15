@@ -7,10 +7,6 @@
  * It was copied into your repository by the postinstall script: `keycloakify sync-extensions`.
  */
 
-/* eslint-disable */
-
-import "@patternfly/patternfly/patternfly-addons.css";
-import "@patternfly/react-core/dist/styles/base.css";
 import { useEffect, useReducer } from "react";
 import { startColorSchemeManagement } from "./colorScheme";
 import { createHashRouter, RouterProvider } from "react-router-dom";

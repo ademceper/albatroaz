@@ -14,9 +14,9 @@
 import {
   ClipboardCopy,
   FormGroup,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useTranslation } from "react-i18next";
-import { HelpItem, useEnvironment } from "../../../shared/keycloak-ui-shared";
+import { HelpItem, useEnvironment } from "../../lib/shared";
 import { useRealm } from "../../context/realm-context/RealmContext";
 import { addTrailingSlash } from "../../util";
 

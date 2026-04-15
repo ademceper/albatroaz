@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { FormGroup, Switch } from "../../../shared/@patternfly/react-core";
+import { FormGroup, Switch } from "../../lib/pf-core";
 import {
   Controller,
   FormProvider,
@@ -19,7 +19,7 @@ import {
   useWatch,
 } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { HelpItem, TextControl } from "../../../shared/keycloak-ui-shared";
+import { HelpItem, TextControl } from "../../lib/shared";
 import { FormAccess } from "../../components/form/FormAccess";
 import { WizardSectionHeader } from "../../components/wizard-section-header/WizardSectionHeader";
 

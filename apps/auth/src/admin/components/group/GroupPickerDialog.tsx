@@ -20,7 +20,7 @@ import {
   ListEmptyState,
   PaginatingTableToolbar,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -34,8 +34,8 @@ import {
   DataListItemRow,
   Modal,
   ModalVariant,
-} from "../../../shared/@patternfly/react-core";
-import { AngleRightIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { AngleRightIcon } from "../../lib/pf-icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";

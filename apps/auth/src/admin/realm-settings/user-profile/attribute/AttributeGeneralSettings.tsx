@@ -21,14 +21,14 @@ import {
   SelectVariant,
   TextControl,
   useFetch,
-} from "../../../../shared/keycloak-ui-shared";
+} from "../../../lib/shared";
 import {
   Divider,
   FormGroup,
   Radio,
   SelectOption,
   Switch,
-} from "../../../../shared/@patternfly/react-core";
+} from "../../../lib/pf-core";
 import { isEqual } from "lodash-es";
 import { useState } from "react";
 import {

@@ -19,7 +19,7 @@ import {
   ListEmptyState,
   useAlerts,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   AlertVariant,
   Button,
@@ -35,13 +35,13 @@ import {
   ToolbarContent,
   ToolbarItem,
   Tooltip,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   ExclamationCircleIcon,
   InfoCircleIcon,
   WarningTriangleIcon,
-} from "../../../shared/@patternfly/react-icons";
-import type { IRowData } from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-icons";
+import type { IRowData } from "../../lib/pf-table";
 import { JSX, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";

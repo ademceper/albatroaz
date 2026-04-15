@@ -15,7 +15,7 @@ import { useTranslation } from "react-i18next";
 import {
   TextAreaControl,
   TextControl,
-} from "../../../../shared/keycloak-ui-shared";
+} from "../../../lib/shared";
 import { useIsAdminPermissionsClient } from "../../../utils/useIsAdminPermissionsClient";
 
 type NameDescriptionProps = {

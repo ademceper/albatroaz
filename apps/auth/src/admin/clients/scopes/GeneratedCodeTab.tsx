@@ -19,7 +19,7 @@ import {
   EmptyStateBody,
   EmptyStateHeader,
   TextArea,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useTranslation } from "react-i18next";
 import { CopyToClipboardButton } from "../../components/copy-to-clipboard-button/CopyToClipboardButton";
 

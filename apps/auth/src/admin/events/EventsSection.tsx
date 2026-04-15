@@ -15,7 +15,7 @@ import {
   PageSection,
   Tab,
   TabTitleText,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { Trans, useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import {

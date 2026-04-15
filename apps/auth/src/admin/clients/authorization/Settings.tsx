@@ -16,7 +16,7 @@ import {
   HelpItem,
   useAlerts,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   AlertVariant,
   Button,
@@ -24,14 +24,14 @@ import {
   FormGroup,
   PageSection,
   Radio,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useState } from "react";
 import { Controller, FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
 import { FixedButtonsGroup } from "../../components/form/FixedButtonGroup";
 import { FormAccess } from "../../components/form/FormAccess";
-import { KeycloakSpinner } from "../../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../../lib/shared";
 import { DefaultSwitchControl } from "../../components/SwitchControl";
 import { useAccess } from "../../context/access/Access";
 import useToggle from "../../utils/useToggle";

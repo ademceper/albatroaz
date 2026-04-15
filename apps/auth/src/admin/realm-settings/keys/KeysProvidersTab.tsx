@@ -25,14 +25,14 @@ import {
   Toolbar,
   ToolbarGroup,
   ToolbarItem,
-} from "../../../shared/@patternfly/react-core";
-import { SearchIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { SearchIcon } from "../../lib/pf-icons";
 import { KeyboardEvent, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useAdminClient } from "../../admin-client";
 import { DraggableTable } from "../../authentication/components/DraggableTable";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 import { useConfirmDialog } from "../../components/confirm-dialog/ConfirmDialog";
 import { useRealm } from "../../context/realm-context/RealmContext";
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";

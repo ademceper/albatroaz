@@ -12,13 +12,13 @@
 // @ts-nocheck
 
 import type ClientRepresentation from "@keycloak/keycloak-admin-client/lib/defs/clientRepresentation";
-import { useAlerts, useFetch } from "../../shared/keycloak-ui-shared";
+import { useAlerts, useFetch } from "../lib/shared";
 import {
   AlertVariant,
   PageSection,
   Tab,
   TabTitleText,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useState } from "react";
 import { FormProvider, useForm, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

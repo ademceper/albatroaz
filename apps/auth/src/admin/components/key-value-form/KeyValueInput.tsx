@@ -23,11 +23,11 @@ import {
   HelperText,
   HelperTextItem,
   TextInput,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   MinusCircleIcon,
   PlusCircleIcon,
-} from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-icons";
 import { Fragment, FunctionComponent, PropsWithChildren } from "react";
 import {
   FieldValues,

@@ -16,13 +16,13 @@ import {
   HelpItem,
   TextControl,
   useFetch,
-} from "../../../../shared/keycloak-ui-shared";
+} from "../../../lib/shared";
 import {
   Button,
   Checkbox,
   FormGroup,
-} from "../../../../shared/@patternfly/react-core";
-import { MinusCircleIcon } from "../../../../shared/@patternfly/react-icons";
+} from "../../../lib/pf-core";
+import { MinusCircleIcon } from "../../../lib/pf-icons";
 import {
   Table,
   Tbody,
@@ -30,7 +30,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../../shared/@patternfly/react-table";
+} from "../../../lib/pf-table";
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

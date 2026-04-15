@@ -17,12 +17,12 @@ import {
   AlertVariant,
   PageSection,
   Text,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import type { TFunction } from "i18next";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { ScrollForm } from "../../shared/keycloak-ui-shared";
-import type { AddAlertFunction } from "../../shared/keycloak-ui-shared";
+import { ScrollForm } from "../lib/shared";
+import type { AddAlertFunction } from "../lib/shared";
 import { convertAttributeNameToForm, toUpperCase } from "../util";
 import useIsFeatureEnabled, { Feature } from "../utils/useIsFeatureEnabled";
 import type { FormFields, SaveOptions } from "./ClientDetails";

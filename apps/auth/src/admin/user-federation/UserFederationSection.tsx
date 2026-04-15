@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import type ComponentRepresentation from "@keycloak/keycloak-admin-client/lib/defs/componentRepresentation";
-import { useAlerts, useFetch } from "../../shared/keycloak-ui-shared";
+import { useAlerts, useFetch } from "../lib/shared";
 import {
   AlertVariant,
   ButtonVariant,
@@ -27,8 +27,8 @@ import {
   Text,
   TextContent,
   TextVariants,
-} from "../../shared/@patternfly/react-core";
-import { DatabaseIcon } from "../../shared/@patternfly/react-icons";
+} from "../lib/pf-core";
+import { DatabaseIcon } from "../lib/pf-icons";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";

@@ -19,14 +19,14 @@ import {
   SelectControl,
   SelectVariant,
   TextControl,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   AlertVariant,
   Button,
   FormGroup,
   SelectOption,
   Switch,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { get, isEqual } from "lodash-es";
 import { useState } from "react";
 import {
@@ -37,7 +37,7 @@ import {
 } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 import { FormAccess } from "../../components/form/FormAccess";
 import { WizardSectionHeader } from "../../components/wizard-section-header/WizardSectionHeader";
 import { useRealm } from "../../context/realm-context/RealmContext";

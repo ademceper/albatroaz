@@ -12,8 +12,8 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import { FormGroup, Radio } from "../../../shared/@patternfly/react-core";
-import { HelpItem } from "../../../shared/keycloak-ui-shared";
+import { FormGroup, Radio } from "../../lib/pf-core";
+import { HelpItem } from "../../lib/shared";
 import { useFormContext } from "react-hook-form";
 import { useState, type JSX } from "react";
 import { GroupSelect } from "./GroupSelect";

@@ -11,10 +11,10 @@
 
 // @ts-nocheck
 
-import { FormGroup } from "../../../shared/@patternfly/react-core";
+import { FormGroup } from "../../lib/pf-core";
 import { useTranslation } from "react-i18next";
 
-import { HelpItem } from "../../../shared/keycloak-ui-shared";
+import { HelpItem } from "../../lib/shared";
 import { useFormContext, useWatch } from "react-hook-form";
 import type { ComponentProps } from "./components";
 import { FormattedLink } from "../external-link/FormattedLink";

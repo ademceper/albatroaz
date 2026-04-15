@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import type RealmRepresentation from "@keycloak/keycloak-admin-client/lib/defs/realmRepresentation";
-import { ActionGroup, Button } from "../../../shared/@patternfly/react-core";
+import { ActionGroup, Button } from "../../lib/pf-core";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { FormAccess } from "../../components/form/FormAccess";

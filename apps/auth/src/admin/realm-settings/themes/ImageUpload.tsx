@@ -11,8 +11,8 @@
 
 // @ts-nocheck
 
-import { KeycloakSpinner } from "../../../shared/keycloak-ui-shared";
-import { FileUpload } from "../../../shared/@patternfly/react-core";
+import { KeycloakSpinner } from "../../lib/shared";
+import { FileUpload } from "../../lib/pf-core";
 import { useEffect, useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 

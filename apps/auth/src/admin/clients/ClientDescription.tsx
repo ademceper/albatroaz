@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import { TextControl, TextAreaControl } from "../../shared/keycloak-ui-shared";
+import { TextControl, TextAreaControl } from "../lib/shared";
 
 import { FormAccess } from "../components/form/FormAccess";
 import { DefaultSwitchControl } from "../components/SwitchControl";

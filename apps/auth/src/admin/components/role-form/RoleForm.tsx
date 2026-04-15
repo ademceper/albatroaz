@@ -15,7 +15,7 @@ import {
   ActionGroup,
   Button,
   PageSection,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   SubmitHandler,
   UseFormReturn,
@@ -28,7 +28,7 @@ import {
   FormSubmitButton,
   TextAreaControl,
   TextControl,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 
 import { FormAccess } from "../form/FormAccess";
 import { AttributeForm } from "../key-value-form/AttributeForm";

@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { PageSection } from "../../shared/@patternfly/react-core";
+import { PageSection } from "../lib/pf-core";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
 import { useRealm } from "../context/realm-context/RealmContext";

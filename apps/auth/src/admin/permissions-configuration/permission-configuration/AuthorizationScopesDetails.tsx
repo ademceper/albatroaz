@@ -23,7 +23,7 @@ import {
   TextListItem,
   TextListItemVariants,
   TextListVariants,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 
 type AuthorizationScopesDetailsProps = {
   row: {

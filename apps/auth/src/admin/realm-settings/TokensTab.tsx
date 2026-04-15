@@ -20,7 +20,7 @@ import {
   useAlerts,
   SelectControl,
   NumberControl,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   AlertVariant,
   FormGroup,
@@ -34,7 +34,7 @@ import {
   TextInput,
   TextArea,
   TextVariants,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useState } from "react";
 import { Controller, useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

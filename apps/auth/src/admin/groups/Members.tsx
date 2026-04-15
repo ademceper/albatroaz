@@ -20,7 +20,7 @@ import {
   ListEmptyState,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   Button,
   Checkbox,
@@ -30,17 +30,17 @@ import {
   Label,
   MenuToggle,
   ToolbarItem,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import {
   EllipsisVIcon,
   InfoCircleIcon,
-} from "../../shared/@patternfly/react-icons";
+} from "../lib/pf-icons";
 import { uniqBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import { useAdminClient } from "../admin-client";
-import { KeycloakSpinner } from "../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../lib/shared";
 import { useAccess } from "../context/access/Access";
 import { useRealm } from "../context/realm-context/RealmContext";
 import { toUser } from "../user/routes/User";

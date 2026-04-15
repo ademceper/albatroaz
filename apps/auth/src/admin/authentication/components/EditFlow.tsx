@@ -18,15 +18,15 @@ import {
   Modal,
   ModalVariant,
   Tooltip,
-} from "../../../shared/@patternfly/react-core";
-import { PencilAltIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { PencilAltIcon } from "../../lib/pf-icons";
 import { useEffect } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import {
   TextAreaControl,
   TextControl,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import useToggle from "../../utils/useToggle";
 import type { ExpandableExecution } from "../execution-model";
 

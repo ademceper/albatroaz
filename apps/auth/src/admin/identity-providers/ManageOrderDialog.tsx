@@ -16,7 +16,7 @@ import {
   KeycloakSpinner,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   Button,
   ButtonVariant,
@@ -35,7 +35,7 @@ import {
   ModalVariant,
   Text,
   TextContent,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { sortBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

@@ -15,14 +15,14 @@ import {
   KeycloakSelect,
   KeycloakSelectProps,
   SelectVariant,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   SelectOption,
   Split,
   SplitItem,
   TextInput,
   TextInputProps,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 

@@ -18,22 +18,22 @@ import {
   KeycloakSelect,
   SelectVariant,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   Button,
   ButtonVariant,
   PageSection,
   SelectOption,
-} from "../../../shared/@patternfly/react-core";
-import { FilterIcon } from "../../../shared/@patternfly/react-icons";
-import { cellWidth } from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-core";
+import { FilterIcon } from "../../lib/pf-icons";
+import { cellWidth } from "../../lib/pf-table";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useAdminClient } from "../../admin-client";
 import { useConfirmDialog } from "../../components/confirm-dialog/ConfirmDialog";
-import { KeycloakSpinner } from "../../../shared/keycloak-ui-shared";
-import { ListEmptyState } from "../../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../../lib/shared";
+import { ListEmptyState } from "../../lib/shared";
 import { useRealm } from "../../context/realm-context/RealmContext";
 import { emptyFormatter } from "../../util";
 import useFormatDate from "../../utils/useFormatDate";

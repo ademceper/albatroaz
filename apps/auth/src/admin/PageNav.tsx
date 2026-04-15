@@ -11,14 +11,14 @@
 
 // @ts-nocheck
 
-import { label, useEnvironment } from "../shared/keycloak-ui-shared";
+import { label, useEnvironment } from "./lib/shared";
 import {
   Label,
   Nav,
   NavGroup,
   PageSidebar,
   PageSidebarBody,
-} from "../shared/@patternfly/react-core";
+} from "./lib/pf-core";
 import { FormEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink, useNavigate } from "react-router-dom";

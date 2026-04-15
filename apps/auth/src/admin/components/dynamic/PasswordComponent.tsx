@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import { PasswordControl } from "../../../shared/keycloak-ui-shared";
+import { PasswordControl } from "../../lib/shared";
 import type { ComponentProps } from "./components";
 
 export const PasswordComponent = ({

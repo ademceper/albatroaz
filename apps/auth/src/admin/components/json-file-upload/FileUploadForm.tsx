@@ -22,7 +22,7 @@ import {
   HelperTextItem,
   Modal,
   ModalVariant,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   ChangeEvent,
   DragEvent as ReactDragEvent,

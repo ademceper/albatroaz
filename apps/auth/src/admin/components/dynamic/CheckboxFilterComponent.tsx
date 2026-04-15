@@ -17,7 +17,7 @@ import {
   Select,
   SelectList,
   SelectOption,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 
 type CheckboxFilterOptions = {
   value: string;

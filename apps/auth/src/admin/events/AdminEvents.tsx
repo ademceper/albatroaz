@@ -20,7 +20,7 @@ import {
   SelectVariant,
   TextControl,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   ActionGroup,
   Button,
@@ -38,7 +38,7 @@ import {
   Modal,
   ModalVariant,
   SelectOption,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import {
   Table,
   TableVariant,
@@ -48,7 +48,7 @@ import {
   Thead,
   Tr,
   cellWidth,
-} from "../../shared/@patternfly/react-table";
+} from "../lib/pf-table";
 import { pickBy } from "lodash-es";
 import { PropsWithChildren, useMemo, useState } from "react";
 import { Controller, FormProvider, useForm } from "react-hook-form";

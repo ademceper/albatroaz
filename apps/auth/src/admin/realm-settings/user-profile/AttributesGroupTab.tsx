@@ -17,13 +17,13 @@ import {
   ButtonVariant,
   PageSection,
   ToolbarItem,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useEffect, useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { useConfirmDialog } from "../../components/confirm-dialog/ConfirmDialog";
-import { ListEmptyState } from "../../../shared/keycloak-ui-shared";
-import { Action, KeycloakDataTable } from "../../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../../lib/shared";
+import { Action, KeycloakDataTable } from "../../lib/shared";
 import { useRealm } from "../../context/realm-context/RealmContext";
 import { toEditAttributesGroup } from "../routes/EditAttributesGroup";
 import { toNewAttributesGroup } from "../routes/NewAttributesGroup";

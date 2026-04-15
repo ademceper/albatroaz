@@ -13,8 +13,8 @@
 
 import loginCssUrl from "../../assets/theme/login.css?url";
 import type RealmRepresentation from "@keycloak/keycloak-admin-client/lib/defs/realmRepresentation";
-import { useEnvironment } from "../../../shared/keycloak-ui-shared";
-import { Tab, TabTitleText } from "../../../shared/@patternfly/react-core";
+import { useEnvironment } from "../../lib/shared";
+import { Tab, TabTitleText } from "../../lib/pf-core";
 import JSZip from "jszip";
 import { useTranslation } from "react-i18next";
 import {

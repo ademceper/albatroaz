@@ -17,12 +17,12 @@ import {
   ButtonVariant,
   Form,
   Modal,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { TextControl } from "../../../shared/keycloak-ui-shared";
+import { TextControl } from "../../lib/shared";
 import { useAdminClient } from "../../admin-client";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 
 type FormFields = {
   node: string;

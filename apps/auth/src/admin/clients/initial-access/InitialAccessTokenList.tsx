@@ -16,16 +16,16 @@ import {
   AlertVariant,
   Button,
   ButtonVariant,
-} from "../../../shared/@patternfly/react-core";
-import { wrappable } from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-core";
+import { wrappable } from "../../lib/pf-table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { useAdminClient } from "../../admin-client";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 import { useConfirmDialog } from "../../components/confirm-dialog/ConfirmDialog";
-import { ListEmptyState } from "../../../shared/keycloak-ui-shared";
-import { Action, KeycloakDataTable } from "../../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../../lib/shared";
+import { Action, KeycloakDataTable } from "../../lib/shared";
 import { useRealm } from "../../context/realm-context/RealmContext";
 import useFormatDate, { FORMAT_DATE_AND_TIME } from "../../utils/useFormatDate";
 import { toCreateInitialAccessToken } from "../routes/CreateInitialAccessToken";

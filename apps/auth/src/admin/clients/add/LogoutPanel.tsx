@@ -11,10 +11,10 @@
 
 // @ts-nocheck
 
-import { FormGroup, Switch } from "../../../shared/@patternfly/react-core";
+import { FormGroup, Switch } from "../../lib/pf-core";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { HelpItem, TextControl } from "../../../shared/keycloak-ui-shared";
+import { HelpItem, TextControl } from "../../lib/shared";
 
 import { DefaultSwitchControl } from "../../components/SwitchControl";
 import { FixedButtonsGroup } from "../../components/form/FixedButtonGroup";

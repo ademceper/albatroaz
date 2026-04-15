@@ -15,7 +15,7 @@ import {
   ListEmptyState,
   PaginatingTableToolbar,
   useFetch,
-} from "../../../../shared/keycloak-ui-shared";
+} from "../../../lib/shared";
 import {
   Button,
   Flex,
@@ -29,8 +29,8 @@ import {
   TextContent,
   TextInput,
   TextVariants,
-} from "../../../../shared/@patternfly/react-core";
-import { SearchIcon } from "../../../../shared/@patternfly/react-icons";
+} from "../../../lib/pf-core";
+import { SearchIcon } from "../../../lib/pf-icons";
 import {
   Table,
   Tbody,
@@ -38,7 +38,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../../shared/@patternfly/react-table";
+} from "../../../lib/pf-table";
 import { useState } from "react";
 import { useFormContext } from "react-hook-form";
 import { Trans, useTranslation } from "react-i18next";

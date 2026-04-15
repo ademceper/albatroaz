@@ -16,7 +16,7 @@ import {
   AlertVariant,
   FormGroup,
   Button,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useFormContext, useWatch } from "react-hook-form";
 import { DefaultSwitchControl } from "../../components/SwitchControl";
 import { useTranslation } from "react-i18next";
@@ -24,7 +24,7 @@ import {
   TextAreaControl,
   TextControl,
   useAlerts,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ImportFile,
   ImportKeyDialog,

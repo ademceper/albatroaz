@@ -17,7 +17,7 @@ import {
   KeycloakSpinner,
   useFetch,
   useRequiredContext,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import { PropsWithChildren, useState } from "react";
 import { useAdminClient } from "../../admin-client";
 import { sortProviders } from "../../util";

@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { Button, ActionGroup } from "../../../shared/@patternfly/react-core";
+import { Button, ActionGroup } from "../../lib/pf-core";
 import { useTranslation } from "react-i18next";
 import { FormAccess } from "../../components/form/FormAccess";
 import { convertAttributeNameToForm } from "../../util";

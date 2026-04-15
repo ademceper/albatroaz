@@ -18,7 +18,7 @@ import {
   PaginatingTableToolbar,
   useAlerts,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   Alert,
   AlertVariant,
@@ -31,7 +31,7 @@ import {
   MenuToggle,
   PageSection,
   ToolbarItem,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   ExpandableRowContent,
   Table,
@@ -40,13 +40,13 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { useAdminClient } from "../../admin-client";
 import { useConfirmDialog } from "../../components/confirm-dialog/ConfirmDialog";
-import { KeycloakSpinner } from "../../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../../lib/shared";
 import { useRealm } from "../../context/realm-context/RealmContext";
 import useToggle from "../../utils/useToggle";
 import { toNewPermission } from "../routes/NewPermission";

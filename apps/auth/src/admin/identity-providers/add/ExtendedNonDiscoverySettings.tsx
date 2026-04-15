@@ -15,14 +15,14 @@ import {
   HelpItem,
   KeycloakSelect,
   SelectVariant,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ExpandableSection,
   Form,
   FormGroup,
   NumberInput,
   SelectOption,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

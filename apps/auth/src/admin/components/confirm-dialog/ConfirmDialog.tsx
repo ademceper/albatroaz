@@ -17,7 +17,7 @@ import {
   ButtonVariant,
   Modal,
   ModalVariant,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useTranslation } from "react-i18next";
 
 export const useConfirmDialog = (

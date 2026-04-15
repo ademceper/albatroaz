@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { ExternalLinkAltIcon } from "../../../shared/@patternfly/react-icons";
+import { ExternalLinkAltIcon } from "../../lib/pf-icons";
 import { AnchorHTMLAttributes } from "react";
 
 export type FormattedLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {

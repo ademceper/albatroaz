@@ -17,8 +17,8 @@ import {
   Divider,
   Text,
   TextVariants,
-} from "../../../../shared/@patternfly/react-core";
-import { PlusCircleIcon } from "../../../../shared/@patternfly/react-icons";
+} from "../../../lib/pf-core";
+import { PlusCircleIcon } from "../../../lib/pf-icons";
 import {
   Table,
   Tbody,
@@ -26,7 +26,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../../shared/@patternfly/react-table";
+} from "../../../lib/pf-table";
 import { useEffect, useState } from "react";
 import { useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

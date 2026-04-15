@@ -11,8 +11,8 @@
 
 // @ts-nocheck
 
-import { DataListDragButton } from "../../../shared/@patternfly/react-core";
-import { Th, Tr } from "../../../shared/@patternfly/react-table";
+import { DataListDragButton } from "../../lib/pf-core";
+import { Th, Tr } from "../../lib/pf-table";
 import { useTranslation } from "react-i18next";
 
 import "./flow-header.css";

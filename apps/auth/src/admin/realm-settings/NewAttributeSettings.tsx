@@ -19,13 +19,13 @@ import {
   ScrollForm,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   AlertVariant,
   Button,
   Form,
   PageSection,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { flatten } from "flat";
 import { useState } from "react";
 import { FormProvider, useForm, useFormContext } from "react-hook-form";

@@ -16,7 +16,7 @@ import {
   ActionGroup,
   ActionGroupProps,
   Button,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 
 import style from "./fixed-buttons.module.css";
 

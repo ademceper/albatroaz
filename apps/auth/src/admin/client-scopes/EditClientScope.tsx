@@ -20,7 +20,7 @@ import {
   useAlerts,
   useFetch,
   useHelp,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   Alert,
   AlertVariant,
@@ -29,7 +29,7 @@ import {
   PageSection,
   Tab,
   TabTitleText,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";

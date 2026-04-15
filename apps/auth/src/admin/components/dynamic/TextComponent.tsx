@@ -11,10 +11,10 @@
 
 // @ts-nocheck
 
-import { FormGroup } from "../../../shared/@patternfly/react-core";
+import { FormGroup } from "../../lib/pf-core";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { KeycloakTextArea, HelpItem } from "../../../shared/keycloak-ui-shared";
+import { KeycloakTextArea, HelpItem } from "../../lib/shared";
 import type { ComponentProps } from "./components";
 
 export const TextComponent = ({

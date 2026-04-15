@@ -15,16 +15,16 @@ import type ResourceRepresentation from "@keycloak/keycloak-admin-client/lib/def
 import {
   KeycloakSelect,
   SelectVariant,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   Button,
   SelectOption,
   TextInput,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   MinusCircleIcon,
   PlusCircleIcon,
-} from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-icons";
 import {
   Table,
   Tbody,
@@ -32,7 +32,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-table";
 import { camelCase } from "lodash-es";
 import { useEffect, useMemo, useState } from "react";
 import { Controller, useFieldArray, useFormContext } from "react-hook-form";

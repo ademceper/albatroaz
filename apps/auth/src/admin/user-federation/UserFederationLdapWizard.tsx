@@ -19,7 +19,7 @@ import {
   WizardFooter,
   WizardFooterWrapper,
   WizardStep,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 

@@ -12,14 +12,14 @@
 // @ts-nocheck
 
 import type ComponentRepresentation from "@keycloak/keycloak-admin-client/lib/defs/componentRepresentation";
-import { useAlerts, useFetch } from "../../shared/keycloak-ui-shared";
+import { useAlerts, useFetch } from "../lib/shared";
 import {
   ActionGroup,
   AlertVariant,
   Button,
   Form,
   PageSection,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";

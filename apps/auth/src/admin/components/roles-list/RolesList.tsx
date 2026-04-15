@@ -12,12 +12,12 @@
 // @ts-nocheck
 
 import type RoleRepresentation from "@keycloak/keycloak-admin-client/lib/defs/roleRepresentation";
-import { HelpItem, useAlerts } from "../../../shared/keycloak-ui-shared";
+import { HelpItem, useAlerts } from "../../lib/shared";
 import {
   AlertVariant,
   Button,
   ButtonVariant,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, To, useNavigate } from "react-router-dom";
@@ -28,8 +28,8 @@ import { toRealmSettings } from "../../realm-settings/routes/RealmSettings";
 import { emptyFormatter, upperCaseFormatter } from "../../util";
 import { translationFormatter } from "../../utils/translationFormatter";
 import { useConfirmDialog } from "../confirm-dialog/ConfirmDialog";
-import { ListEmptyState } from "../../../shared/keycloak-ui-shared";
-import { Action, KeycloakDataTable } from "../../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../../lib/shared";
+import { Action, KeycloakDataTable } from "../../lib/shared";
 
 import "./RolesList.css";
 

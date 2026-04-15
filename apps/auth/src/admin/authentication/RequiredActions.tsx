@@ -14,17 +14,17 @@
 import { fetchWithError } from "@keycloak/keycloak-admin-client";
 import type RequiredActionProviderRepresentation from "@keycloak/keycloak-admin-client/lib/defs/requiredActionProviderRepresentation";
 import type RequiredActionProviderSimpleRepresentation from "@keycloak/keycloak-admin-client/lib/defs/requiredActionProviderSimpleRepresentation";
-import { useAlerts, useFetch } from "../../shared/keycloak-ui-shared";
+import { useAlerts, useFetch } from "../lib/shared";
 import {
   AlertVariant,
   Button,
   Switch,
-} from "../../shared/@patternfly/react-core";
-import { CogIcon } from "../../shared/@patternfly/react-icons";
+} from "../lib/pf-core";
+import { CogIcon } from "../lib/pf-icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
-import { KeycloakSpinner } from "../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../lib/shared";
 import { useRealm } from "../context/realm-context/RealmContext";
 import { addTrailingSlash, toKey } from "../util";
 import { getAuthorizationHeaders } from "../utils/getAuthorizationHeaders";

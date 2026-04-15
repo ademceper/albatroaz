@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { PlusIcon } from "../../../../shared/@patternfly/react-icons";
+import { PlusIcon } from "../../../lib/pf-icons";
 import { ComponentType, MouseEvent as ReactMouseEvent } from "react";
 import { EdgeProps, getBezierPath, getMarkerEnd, MarkerType } from "reactflow";
 

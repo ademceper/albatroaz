@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { NetworkError } from "@keycloak/keycloak-admin-client";
-import { KeycloakDataTable, useAlerts } from "../../shared/keycloak-ui-shared";
+import { KeycloakDataTable, useAlerts } from "../lib/shared";
 import {
   AlertVariant,
   Badge,
@@ -24,9 +24,9 @@ import {
   PageSection,
   Popover,
   ToolbarItem,
-} from "../../shared/@patternfly/react-core";
-import { EllipsisVIcon } from "../../shared/@patternfly/react-icons";
-import { cellWidth } from "../../shared/@patternfly/react-table";
+} from "../lib/pf-core";
+import { EllipsisVIcon } from "../lib/pf-icons";
+import { cellWidth } from "../lib/pf-table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";

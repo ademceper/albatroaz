@@ -15,7 +15,7 @@ import type { AuthenticationProviderRepresentation } from "@keycloak/keycloak-ad
 import {
   PaginatingTableToolbar,
   useFetch,
-} from "../../../../shared/keycloak-ui-shared";
+} from "../../../lib/shared";
 import {
   Button,
   ButtonVariant,
@@ -24,7 +24,7 @@ import {
   ModalVariant,
   PageSection,
   Radio,
-} from "../../../../shared/@patternfly/react-core";
+} from "../../../lib/pf-core";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../../admin-client";

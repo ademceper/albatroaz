@@ -13,20 +13,20 @@
 
 import { ReactNode, useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { Td } from "../../../shared/@patternfly/react-table";
+import { Td } from "../../lib/pf-table";
 import {
   Button,
   Dropdown,
   DropdownItem,
   DropdownList,
   MenuToggle,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import type CredentialRepresentation from "@keycloak/keycloak-admin-client/lib/defs/credentialRepresentation";
 import useToggle from "../../utils/useToggle";
 import useLocaleSort from "../../utils/useLocaleSort";
 import { CredentialDataDialog } from "./CredentialDataDialog";
 import useFormatDate from "../../utils/useFormatDate";
-import { EllipsisVIcon } from "../../../shared/@patternfly/react-icons";
+import { EllipsisVIcon } from "../../lib/pf-icons";
 
 type CredentialRowProps = {
   credential: CredentialRepresentation;

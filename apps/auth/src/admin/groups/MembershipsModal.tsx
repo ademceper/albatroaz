@@ -13,18 +13,18 @@
 
 import type GroupRepresentation from "@keycloak/keycloak-admin-client/lib/defs/groupRepresentation";
 import UserRepresentation from "@keycloak/keycloak-admin-client/lib/defs/userRepresentation";
-import { Modal, ModalVariant } from "../../shared/@patternfly/react-core";
+import { Modal, ModalVariant } from "../lib/pf-core";
 import {
   Button,
   ButtonVariant,
   Checkbox,
   Popover,
-} from "../../shared/@patternfly/react-core";
-import { QuestionCircleIcon } from "../../shared/@patternfly/react-icons";
-import { cellWidth } from "../../shared/@patternfly/react-table";
-import { useHelp } from "../../shared/keycloak-ui-shared";
-import { ListEmptyState } from "../../shared/keycloak-ui-shared";
-import { KeycloakDataTable } from "../../shared/keycloak-ui-shared";
+} from "../lib/pf-core";
+import { QuestionCircleIcon } from "../lib/pf-icons";
+import { cellWidth } from "../lib/pf-table";
+import { useHelp } from "../lib/shared";
+import { ListEmptyState } from "../lib/shared";
+import { KeycloakDataTable } from "../lib/shared";
 import { sortBy, uniqBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

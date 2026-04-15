@@ -11,8 +11,8 @@
 
 // @ts-nocheck
 
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
-import { AlertVariant } from "../../../shared/@patternfly/react-core";
+import { useAlerts } from "../../lib/shared";
+import { AlertVariant } from "../../lib/pf-core";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";

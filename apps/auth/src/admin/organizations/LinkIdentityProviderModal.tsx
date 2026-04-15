@@ -15,20 +15,20 @@ import IdentityProviderRepresentation from "@keycloak/keycloak-admin-client/lib/
 import {
   FormSubmitButton,
   SelectControl,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   Button,
   ButtonVariant,
   Form,
   Modal,
   ModalVariant,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useEffect } from "react";
 import { FormProvider, useForm, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
 import { DefaultSwitchControl } from "../components/SwitchControl";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 import {
   convertAttributeNameToForm,
   convertFormValuesToObject,

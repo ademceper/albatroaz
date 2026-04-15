@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { KeycloakDataTable } from "../../../shared/keycloak-ui-shared";
+import { KeycloakDataTable } from "../../lib/shared";
 import {
   Button,
   Modal,
@@ -20,8 +20,8 @@ import {
   Text,
   TextContent,
   TextVariants,
-} from "../../../shared/@patternfly/react-core";
-import { CheckCircleIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { CheckCircleIcon } from "../../lib/pf-icons";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
 import { fetchUsedBy } from "../../components/role-mapping/resource";

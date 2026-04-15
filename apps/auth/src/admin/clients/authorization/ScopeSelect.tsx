@@ -16,8 +16,8 @@ import {
   KeycloakSelect,
   SelectVariant,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
-import { SelectOption } from "../../../shared/@patternfly/react-core";
+} from "../../lib/shared";
+import { SelectOption } from "../../lib/pf-core";
 import { useRef, useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

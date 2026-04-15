@@ -19,7 +19,7 @@ import {
   setUserProfileServerError,
   useAlerts,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ActionGroup,
   AlertVariant,
@@ -28,8 +28,8 @@ import {
   Form,
   Modal,
   ModalVariant,
-} from "../../../shared/@patternfly/react-core";
-import { TrashIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { TrashIcon } from "../../lib/pf-icons";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

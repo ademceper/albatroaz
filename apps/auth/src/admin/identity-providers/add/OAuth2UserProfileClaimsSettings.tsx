@@ -12,8 +12,8 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import { TextControl } from "../../../shared/keycloak-ui-shared";
-import { Form, Title } from "../../../shared/@patternfly/react-core";
+import { TextControl } from "../../lib/shared";
+import { Form, Title } from "../../lib/pf-core";
 
 export const UserProfileClaimsSettings = () => {
   const { t } = useTranslation();

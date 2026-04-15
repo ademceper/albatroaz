@@ -12,17 +12,17 @@
 // @ts-nocheck
 
 import UserSessionRepresentation from "@keycloak/keycloak-admin-client/lib/defs/userSessionRepresentation";
-import { KeycloakSelect } from "../../shared/keycloak-ui-shared";
+import { KeycloakSelect } from "../lib/shared";
 import {
   DropdownItem,
   PageSection,
   SelectOption,
-} from "../../shared/@patternfly/react-core";
-import { FilterIcon } from "../../shared/@patternfly/react-icons";
+} from "../lib/pf-core";
+import { FilterIcon } from "../lib/pf-icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 import { useConfirmDialog } from "../components/confirm-dialog/ConfirmDialog";
 import { ViewHeader } from "../components/view-header/ViewHeader";
 import { fetchAdminUI } from "../context/auth/admin-ui-endpoint";

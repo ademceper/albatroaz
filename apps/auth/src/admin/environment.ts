@@ -14,7 +14,7 @@
 import {
   getInjectedEnvironment,
   type BaseEnvironment,
-} from "../shared/keycloak-ui-shared";
+} from "./lib/shared";
 
 export type Environment = BaseEnvironment & {
   /**

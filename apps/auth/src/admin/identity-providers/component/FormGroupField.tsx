@@ -11,11 +11,11 @@
 
 // @ts-nocheck
 
-import { FormGroup } from "../../../shared/@patternfly/react-core";
+import { FormGroup } from "../../lib/pf-core";
 import { PropsWithChildren } from "react";
 import { useTranslation } from "react-i18next";
 
-import { HelpItem } from "../../../shared/keycloak-ui-shared";
+import { HelpItem } from "../../lib/shared";
 
 export type FieldProps = { label: string; field: string; isReadOnly?: boolean };
 export type FormGroupFieldProps = { label: string };

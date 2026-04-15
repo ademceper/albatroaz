@@ -16,13 +16,13 @@ import {
   GroupQuery,
   SubGroupQuery,
 } from "@keycloak/keycloak-admin-client/lib/resources/groups";
-import { SearchInput, ToolbarItem } from "../../shared/@patternfly/react-core";
+import { SearchInput, ToolbarItem } from "../lib/pf-core";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import { useAdminClient } from "../admin-client";
-import { ListEmptyState } from "../../shared/keycloak-ui-shared";
-import { KeycloakDataTable } from "../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../lib/shared";
+import { KeycloakDataTable } from "../lib/shared";
 import { useAccess } from "../context/access/Access";
 import useToggle from "../utils/useToggle";
 import { GroupsModal } from "./GroupsModal";

@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import RealmRepresentation from "@keycloak/keycloak-admin-client/lib/defs/realmRepresentation";
-import { TextControl } from "../../../shared/keycloak-ui-shared";
+import { TextControl } from "../../lib/shared";
 import {
   Alert,
   Flex,
@@ -24,7 +24,7 @@ import {
   Text,
   TextContent,
   TextInputProps,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useEffect, useMemo } from "react";
 import {
   FormProvider,

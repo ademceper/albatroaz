@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import type AuthenticationFlowRepresentation from "@keycloak/keycloak-admin-client/lib/defs/authenticationFlowRepresentation";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 import {
   AlertVariant,
   Button,
@@ -20,7 +20,7 @@ import {
   Form,
   Modal,
   ModalVariant,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useEffect } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

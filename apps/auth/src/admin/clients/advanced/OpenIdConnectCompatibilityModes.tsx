@@ -16,12 +16,12 @@ import {
   Button,
   FormGroup,
   Switch,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 
 import { FormAccess } from "../../components/form/FormAccess";
-import { HelpItem, SelectControl } from "../../../shared/keycloak-ui-shared";
+import { HelpItem, SelectControl } from "../../lib/shared";
 import { convertAttributeNameToForm } from "../../util";
 import { FormFields } from "../ClientDetails";
 import useIsFeatureEnabled, { Feature } from "../../utils/useIsFeatureEnabled";

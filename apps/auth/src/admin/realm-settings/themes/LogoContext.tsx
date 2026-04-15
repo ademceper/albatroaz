@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { createNamedContext } from "../../../shared/keycloak-ui-shared";
+import { createNamedContext } from "../../lib/shared";
 import { PropsWithChildren, useContext, useState } from "react";
 
 type LogoContextProps = {

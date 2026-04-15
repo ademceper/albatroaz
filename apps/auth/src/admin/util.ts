@@ -16,7 +16,7 @@ import type { ProviderRepresentation } from "@keycloak/keycloak-admin-client/lib
 import type {
   IFormatter,
   IFormatterValueType,
-} from "../shared/@patternfly/react-table";
+} from "./lib/pf-table";
 import { saveAs } from "file-saver";
 import { flatten } from "flat";
 import { cloneDeep } from "lodash-es";

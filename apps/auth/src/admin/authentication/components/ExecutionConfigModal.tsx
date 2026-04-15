@@ -17,7 +17,7 @@ import {
   TextControl,
   useAlerts,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ActionGroup,
   AlertVariant,
@@ -27,8 +27,8 @@ import {
   Modal,
   ModalVariant,
   Tooltip,
-} from "../../../shared/@patternfly/react-core";
-import { CogIcon, TrashIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { CogIcon, TrashIcon } from "../../lib/pf-icons";
 import { useEffect, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

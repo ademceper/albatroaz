@@ -14,7 +14,7 @@
 import {
   Breadcrumb,
   BreadcrumbItem,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { uniqBy } from "lodash-es";
 import { isValidElement } from "react";
 import { useTranslation } from "react-i18next";

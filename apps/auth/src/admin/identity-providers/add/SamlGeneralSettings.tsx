@@ -15,8 +15,8 @@ import {
   HelpItem,
   TextControl,
   useEnvironment,
-} from "../../../shared/keycloak-ui-shared";
-import { FormGroup } from "../../../shared/@patternfly/react-core";
+} from "../../lib/shared";
+import { FormGroup } from "../../lib/pf-core";
 import { useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 

@@ -11,10 +11,10 @@
 
 // @ts-nocheck
 
-import { FormGroup, Title } from "../../../shared/@patternfly/react-core";
+import { FormGroup, Title } from "../../lib/pf-core";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { FormErrorText, HelpItem } from "../../../shared/keycloak-ui-shared";
+import { FormErrorText, HelpItem } from "../../lib/shared";
 import { useAdminClient } from "../../admin-client";
 import { JsonFileUpload } from "../../components/json-file-upload/JsonFileUpload";
 import { DiscoveryEndpointField } from "../component/DiscoveryEndpointField";

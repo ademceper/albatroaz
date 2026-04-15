@@ -11,11 +11,11 @@
 
 // @ts-nocheck
 
-import { TableToolbar } from "../../shared/keycloak-ui-shared";
+import { TableToolbar } from "../lib/shared";
 import {
   ExpandableSection,
   PageSection,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import {
   Table,
   Tbody,
@@ -23,7 +23,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../shared/@patternfly/react-table";
+} from "../lib/pf-table";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useServerInfo } from "../context/server-info/ServerInfoProvider";

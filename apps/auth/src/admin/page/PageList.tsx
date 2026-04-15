@@ -17,14 +17,14 @@ import {
   KeycloakDataTable,
   ListEmptyState,
   useAlerts,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   Button,
   ButtonVariant,
   PageSection,
   ToolbarItem,
-} from "../../shared/@patternfly/react-core";
-import { IRowData } from "../../shared/@patternfly/react-table";
+} from "../lib/pf-core";
+import { IRowData } from "../lib/pf-table";
 import { get } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

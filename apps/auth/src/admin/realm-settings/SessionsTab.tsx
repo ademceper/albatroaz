@@ -18,10 +18,10 @@ import {
   FormGroup,
   PageSection,
   Switch,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { Controller, useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { FormPanel, HelpItem } from "../../shared/keycloak-ui-shared";
+import { FormPanel, HelpItem } from "../lib/shared";
 import { FormAccess } from "../components/form/FormAccess";
 import { TimeSelector } from "../components/time-selector/TimeSelector";
 

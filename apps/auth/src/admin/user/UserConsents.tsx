@@ -17,17 +17,17 @@ import {
   ButtonVariant,
   Chip,
   ChipGroup,
-} from "../../shared/@patternfly/react-core";
-import { CubesIcon } from "../../shared/@patternfly/react-icons";
-import { cellWidth } from "../../shared/@patternfly/react-table";
+} from "../lib/pf-core";
+import { CubesIcon } from "../lib/pf-icons";
+import { cellWidth } from "../lib/pf-table";
 import { sortBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 import { useConfirmDialog } from "../components/confirm-dialog/ConfirmDialog";
-import { ListEmptyState } from "../../shared/keycloak-ui-shared";
-import { Action, KeycloakDataTable } from "../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../lib/shared";
+import { Action, KeycloakDataTable } from "../lib/shared";
 import { emptyFormatter } from "../util";
 import useFormatDate from "../utils/useFormatDate";
 import { useParams } from "../utils/useParams";

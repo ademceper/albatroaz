@@ -18,13 +18,13 @@ import {
   ListEmptyState,
   useAlerts,
   useFetch,
-} from "../../../../shared/keycloak-ui-shared";
+} from "../../../lib/shared";
 import {
   AlertVariant,
   Button,
   ButtonVariant,
   ToolbarItem,
-} from "../../../../shared/@patternfly/react-core";
+} from "../../../lib/pf-core";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, To, useNavigate, useParams } from "react-router-dom";

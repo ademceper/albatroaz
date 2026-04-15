@@ -17,7 +17,7 @@ import {
   HelpItem,
   useAlerts,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ActionGroup,
   AlertVariant,
@@ -30,7 +30,7 @@ import {
   Switch,
   Text,
   TextContent,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { saveAs } from "file-saver";
 import { Fragment, useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";

@@ -16,7 +16,7 @@ import { useTranslation } from "react-i18next";
 import {
   SelectControl,
   TextAreaControl,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import { DefaultSwitchControl } from "../../components/SwitchControl";
 import { FormAccess } from "../../components/form/FormAccess";
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";

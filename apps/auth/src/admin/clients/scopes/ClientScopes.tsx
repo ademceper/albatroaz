@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import type ClientScopeRepresentation from "@keycloak/keycloak-admin-client/lib/defs/clientScopeRepresentation";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 import {
   AlertVariant,
   Button,
@@ -22,8 +22,8 @@ import {
   DropdownList,
   MenuToggle,
   ToolbarItem,
-} from "../../../shared/@patternfly/react-core";
-import { EllipsisVIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { EllipsisVIcon } from "../../lib/pf-icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -46,8 +46,8 @@ import {
   removeClientScope,
 } from "../../components/client-scope/ClientScopeTypes";
 import { useConfirmDialog } from "../../components/confirm-dialog/ConfirmDialog";
-import { ListEmptyState } from "../../../shared/keycloak-ui-shared";
-import { Action, KeycloakDataTable } from "../../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../../lib/shared";
+import { Action, KeycloakDataTable } from "../../lib/shared";
 import { useAccess } from "../../context/access/Access";
 import { useRealm } from "../../context/realm-context/RealmContext";
 import { translationFormatter } from "../../utils/translationFormatter";

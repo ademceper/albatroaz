@@ -24,14 +24,14 @@ import {
   TextControl,
   useEnvironment,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   ClipboardCopy,
   FormGroup,
   PageSection,
   Stack,
   StackItem,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useEffect, useState } from "react";
 import { Controller, FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

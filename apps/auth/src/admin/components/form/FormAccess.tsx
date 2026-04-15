@@ -23,7 +23,7 @@ import {
   Stack,
   StackItem,
   TextArea,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   Children,
   cloneElement,

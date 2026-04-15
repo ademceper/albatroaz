@@ -16,7 +16,7 @@ import {
   HelpItem,
   useFetch,
   useHelp,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   Form,
   FormGroup,
@@ -28,7 +28,7 @@ import {
   Stack,
   StackItem,
   TextArea,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { saveAs } from "file-saver";
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";

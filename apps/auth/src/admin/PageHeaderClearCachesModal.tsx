@@ -20,11 +20,11 @@ import {
   ListItem,
   Modal,
   ModalVariant,
-} from "../shared/@patternfly/react-core";
+} from "./lib/pf-core";
 import { useRealm } from "./context/realm-context/RealmContext";
 import { useAdminClient } from "./admin-client";
 import { useTranslation } from "react-i18next";
-import { HelpItem, useAlerts } from "../shared/keycloak-ui-shared";
+import { HelpItem, useAlerts } from "./lib/shared";
 
 export type ClearCachesModalProps = {
   onClose: () => void;

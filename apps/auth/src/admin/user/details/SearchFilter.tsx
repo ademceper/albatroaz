@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { KeycloakSelect } from "../../../shared/keycloak-ui-shared";
+import { KeycloakSelect } from "../../lib/shared";
 import {
   Dropdown,
   DropdownItem,
@@ -19,8 +19,8 @@ import {
   MenuToggle,
   SelectOption,
   ToolbarItem,
-} from "../../../shared/@patternfly/react-core";
-import { FilterIcon } from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-core";
+import { FilterIcon } from "../../lib/pf-icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 

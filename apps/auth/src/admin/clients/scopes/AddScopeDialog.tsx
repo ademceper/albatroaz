@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import type ClientScopeRepresentation from "@keycloak/keycloak-admin-client/lib/defs/clientScopeRepresentation";
-import { KeycloakSelect } from "../../../shared/keycloak-ui-shared";
+import { KeycloakSelect } from "../../lib/shared";
 import {
   Button,
   ButtonVariant,
@@ -23,20 +23,20 @@ import {
   Modal,
   ModalVariant,
   SelectOption,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   CaretDownIcon,
   CaretUpIcon,
   FilterIcon,
-} from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-icons";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
   ClientScopeType,
   clientScopeTypesDropdown,
 } from "../../components/client-scope/ClientScopeTypes";
-import { ListEmptyState } from "../../../shared/keycloak-ui-shared";
-import { KeycloakDataTable } from "../../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../../lib/shared";
+import { KeycloakDataTable } from "../../lib/shared";
 import useToggle from "../../utils/useToggle";
 import { getProtocolName } from "../utils";
 import useIsFeatureEnabled, { Feature } from "../../utils/useIsFeatureEnabled";

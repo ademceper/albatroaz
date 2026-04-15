@@ -11,13 +11,13 @@
 
 // @ts-nocheck
 
-import { SessionExpirationWarningOverlay } from "../shared/SessionExpirationWarningOverlay";
+import { SessionExpirationWarningOverlay } from "./lib/SessionExpirationWarningOverlay";
 import KeycloakAdminClient from "@keycloak/keycloak-admin-client";
 import {
   mainPageContentId,
   useEnvironment,
-} from "../shared/keycloak-ui-shared";
-import { Flex, FlexItem, Page } from "../shared/@patternfly/react-core";
+} from "./lib/shared";
+import { Flex, FlexItem, Page } from "./lib/pf-core";
 import { PropsWithChildren, Suspense, useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 
@@ -25,7 +25,7 @@ import {
   ErrorBoundaryFallback,
   ErrorBoundaryProvider,
   KeycloakSpinner,
-} from "../shared/keycloak-ui-shared";
+} from "./lib/shared";
 import { Header } from "./PageHeader";
 import { PageNav } from "./PageNav";
 import { AdminClientContext, initAdminClient } from "./admin-client";

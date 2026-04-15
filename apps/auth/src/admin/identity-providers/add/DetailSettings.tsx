@@ -23,7 +23,7 @@ import {
   ScrollForm,
   useAlerts,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   AlertVariant,
   Button,
@@ -36,7 +36,7 @@ import {
   TabTitleText,
   Text,
   ToolbarItem,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useMemo, useState } from "react";
 import {
   Controller,

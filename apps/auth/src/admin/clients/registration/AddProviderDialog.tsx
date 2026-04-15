@@ -19,7 +19,7 @@ import {
   DataListItemRow,
   Modal,
   ModalVariant,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";

@@ -15,7 +15,7 @@ import KeycloakAdminClient from "@keycloak/keycloak-admin-client";
 import {
   createNamedContext,
   useRequiredContext,
-} from "../shared/keycloak-ui-shared";
+} from "./lib/shared";
 import type { Keycloak } from "oidc-spa/keycloak-js";
 import type { Environment } from "./environment";
 

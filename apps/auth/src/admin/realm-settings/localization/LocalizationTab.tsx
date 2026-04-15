@@ -15,14 +15,14 @@ import type RealmRepresentation from "@keycloak/keycloak-admin-client/lib/defs/r
 import {
   SelectControl,
   SwitchControl,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   ActionGroup,
   Button,
   Tab,
   TabTitleText,
   Tabs,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useMemo, useState } from "react";
 import { FormProvider, useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

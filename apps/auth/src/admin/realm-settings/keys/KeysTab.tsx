@@ -12,13 +12,13 @@
 // @ts-nocheck
 
 import type ComponentRepresentation from "@keycloak/keycloak-admin-client/lib/defs/componentRepresentation";
-import { Tab, TabTitleText } from "../../../shared/@patternfly/react-core";
+import { Tab, TabTitleText } from "../../lib/pf-core";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import { useFetch } from "../../../shared/keycloak-ui-shared";
+import { useFetch } from "../../lib/shared";
 import { useAdminClient } from "../../admin-client";
-import { KeycloakSpinner } from "../../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../../lib/shared";
 import {
   RoutableTabs,
   useRoutableTab,

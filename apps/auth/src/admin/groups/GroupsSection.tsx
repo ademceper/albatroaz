@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import type GroupRepresentation from "@keycloak/keycloak-admin-client/lib/defs/groupRepresentation";
-import { useFetch } from "../../shared/keycloak-ui-shared";
+import { useFetch } from "../lib/shared";
 import {
   Button,
   Drawer,
@@ -27,8 +27,8 @@ import {
   TabTitleText,
   Tabs,
   Tooltip,
-} from "../../shared/@patternfly/react-core";
-import { AngleLeftIcon, TreeIcon } from "../../shared/@patternfly/react-icons";
+} from "../lib/pf-core";
+import { AngleLeftIcon, TreeIcon } from "../lib/pf-icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";

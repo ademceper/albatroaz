@@ -17,8 +17,8 @@ import {
   useAlerts,
   useFetch,
   useRequiredContext,
-} from "../../../shared/keycloak-ui-shared";
-import { AlertVariant } from "../../../shared/@patternfly/react-core";
+} from "../../lib/shared";
+import { AlertVariant } from "../../lib/pf-core";
 import { PropsWithChildren, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";

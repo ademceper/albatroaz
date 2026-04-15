@@ -20,7 +20,7 @@ import {
   Text,
   TextVariants,
   Alert,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   Table,
   Tbody,
@@ -28,7 +28,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-table";
 
 type NewPermissionConfigurationDialogProps = {
   resourceTypes?: ResourceTypesRepresentation[];

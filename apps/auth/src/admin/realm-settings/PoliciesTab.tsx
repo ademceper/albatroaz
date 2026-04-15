@@ -19,7 +19,7 @@ import {
   ListEmptyState,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   AlertVariant,
   Button,
@@ -32,7 +32,7 @@ import {
   Switch,
   Title,
   ToolbarItem,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { omit } from "lodash-es";
 import { useState } from "react";
 import { Controller, useForm, type UseFormReturn } from "react-hook-form";

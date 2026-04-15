@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { TextInput } from "../../../shared/@patternfly/react-core";
+import { TextInput } from "../../lib/pf-core";
 import { useFormContext } from "react-hook-form";
 
 import { FieldProps, FormGroupField } from "./FormGroupField";

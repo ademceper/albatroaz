@@ -24,11 +24,11 @@ import {
   MenuToggle,
   SearchInput,
   ToolbarItem,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   ArrowRightIcon,
   EllipsisVIcon,
-} from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-icons";
 import { ReactNode, useState } from "react";
 import { useTranslation } from "react-i18next";
 

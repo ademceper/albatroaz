@@ -15,7 +15,7 @@ import {
   FormSubmitButton,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   ActionGroup,
   Button,
@@ -23,7 +23,7 @@ import {
   Tab,
   Tabs,
   TabTitleText,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";

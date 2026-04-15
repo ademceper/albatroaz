@@ -16,8 +16,8 @@ import {
   Button,
   FormGroup,
   PageSection,
-} from "../../shared/@patternfly/react-core";
-import { AlertVariant } from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
+import { AlertVariant } from "../lib/pf-core";
 import {
   Controller,
   FormProvider,
@@ -33,7 +33,7 @@ import {
   FormSubmitButton,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import { useRealm } from "../context/realm-context/RealmContext";
 import { FormAccess } from "../components/form/FormAccess";
 import { toWorkflows } from "./routes/Workflows";

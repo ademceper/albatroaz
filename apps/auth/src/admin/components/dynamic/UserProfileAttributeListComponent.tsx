@@ -16,8 +16,8 @@ import {
   FormErrorText,
   HelpItem,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
-import { FormGroup } from "../../../shared/@patternfly/react-core";
+} from "../../lib/shared";
+import { FormGroup } from "../../lib/pf-core";
 import { useState } from "react";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

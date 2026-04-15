@@ -15,12 +15,12 @@ import {
   AlertVariant,
   Divider,
   DropdownItem,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 import { useAdminClient } from "../../admin-client";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 import { useConfirmDialog } from "../../components/confirm-dialog/ConfirmDialog";
 import { Header } from "./Header";
 

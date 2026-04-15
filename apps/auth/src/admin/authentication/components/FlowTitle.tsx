@@ -11,14 +11,14 @@
 
 // @ts-nocheck
 
-import { HelpItem } from "../../../shared/keycloak-ui-shared";
-import { Label } from "../../../shared/@patternfly/react-core";
+import { HelpItem } from "../../lib/shared";
+import { Label } from "../../lib/pf-core";
 import {
   CodeBranchIcon,
   MapMarkerIcon,
   ProcessAutomationIcon,
   TaskIcon,
-} from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-icons";
 import { useTranslation } from "react-i18next";
 import { useAuthenticationProvider } from "./AuthenticationProviderContext";
 import { FlowType } from "./FlowRow";

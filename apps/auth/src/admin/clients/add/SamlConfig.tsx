@@ -13,7 +13,7 @@
 
 import { Path, PathValue } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { SelectControl } from "../../../shared/keycloak-ui-shared";
+import { SelectControl } from "../../lib/shared";
 import { DefaultSwitchControl } from "../../components/SwitchControl";
 import { FormAccess } from "../../components/form/FormAccess";
 import { convertAttributeNameToForm } from "../../util";

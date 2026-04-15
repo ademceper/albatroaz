@@ -17,9 +17,9 @@ import {
   Button,
   FormGroup,
   Switch,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useTranslation } from "react-i18next";
-import { HelpItem, SelectControl } from "../../../shared/keycloak-ui-shared";
+import { HelpItem, SelectControl } from "../../lib/shared";
 import { FormAccess } from "../../components/form/FormAccess";
 import { MultiLineInput } from "../../components/multi-line-input/MultiLineInput";
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";

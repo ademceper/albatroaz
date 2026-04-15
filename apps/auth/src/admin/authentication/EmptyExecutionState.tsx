@@ -19,11 +19,11 @@ import {
   FlexItem,
   Title,
   TitleSizes,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 
 import type AuthenticationFlowRepresentation from "@keycloak/keycloak-admin-client/lib/defs/authenticationFlowRepresentation";
 import type { AuthenticationProviderRepresentation } from "@keycloak/keycloak-admin-client/lib/defs/authenticatorConfigRepresentation";
-import { ListEmptyState } from "../../shared/keycloak-ui-shared";
+import { ListEmptyState } from "../lib/shared";
 import { AddStepModal } from "./components/modals/AddStepModal";
 import { AddSubFlowModal, Flow } from "./components/modals/AddSubFlowModal";
 

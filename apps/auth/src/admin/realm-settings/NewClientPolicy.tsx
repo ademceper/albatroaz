@@ -19,7 +19,7 @@ import {
   TextControl,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   ActionGroup,
   AlertVariant,
@@ -39,11 +39,11 @@ import {
   PageSection,
   Text,
   TextVariants,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import {
   PlusCircleIcon,
   TrashIcon,
-} from "../../shared/@patternfly/react-icons";
+} from "../lib/pf-icons";
 import { useState } from "react";
 import { Controller, FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
@@ -51,7 +51,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAdminClient } from "../admin-client";
 import { useConfirmDialog } from "../components/confirm-dialog/ConfirmDialog";
 import { FormAccess } from "../components/form/FormAccess";
-import { KeycloakSpinner } from "../../shared/keycloak-ui-shared";
+import { KeycloakSpinner } from "../lib/shared";
 import { ViewHeader } from "../components/view-header/ViewHeader";
 import { useRealm } from "../context/realm-context/RealmContext";
 import { useServerInfo } from "../context/server-info/ServerInfoProvider";

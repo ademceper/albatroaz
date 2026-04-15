@@ -18,7 +18,7 @@ import {
   DataListItemCells,
   DataListItemRow,
   Modal,
-} from "../../../../shared/@patternfly/react-core";
+} from "../../../lib/pf-core";
 import { useTranslation } from "react-i18next";
 import { useServerInfo } from "../../../context/server-info/ServerInfoProvider";
 import { KEY_PROVIDER_TYPE } from "../../../util";

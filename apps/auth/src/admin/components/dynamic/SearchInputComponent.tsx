@@ -16,12 +16,12 @@ import {
   TextInputGroup,
   TextInputGroupMain,
   TextInputGroupUtilities,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   ArrowRightIcon,
   SearchIcon,
   TimesIcon,
-} from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-icons";
 import { useTranslation } from "react-i18next";
 
 type SearchInputComponentProps = {

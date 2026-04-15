@@ -13,10 +13,10 @@
 
 import { useTranslation } from "react-i18next";
 import { DefaultSwitchControl } from "../../components/SwitchControl";
-import { FormGroup } from "../../../shared/@patternfly/react-core";
+import { FormGroup } from "../../lib/pf-core";
 import { useFormContext, Controller } from "react-hook-form";
 import { TimeSelector } from "../../components/time-selector/TimeSelector";
-import { SelectControl, HelpItem } from "../../../shared/keycloak-ui-shared";
+import { SelectControl, HelpItem } from "../../lib/shared";
 import { sortProviders } from "../../util";
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";
 

@@ -14,7 +14,7 @@
 import { fetchWithError } from "@keycloak/keycloak-admin-client";
 import type RealmRepresentation from "@keycloak/keycloak-admin-client/lib/defs/realmRepresentation";
 import { UserProfileConfig } from "@keycloak/keycloak-admin-client/lib/defs/userProfileMetadata";
-import { useAlerts, useEnvironment } from "../../shared/keycloak-ui-shared";
+import { useAlerts, useEnvironment } from "../lib/shared";
 import {
   AlertVariant,
   ButtonVariant,
@@ -24,7 +24,7 @@ import {
   Tab,
   TabTitleText,
   Tooltip,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useEffect, useState } from "react";
 import { Controller, FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

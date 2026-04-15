@@ -17,7 +17,7 @@ import {
   KeycloakSpinner,
   ListEmptyState,
   useAlerts,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   AlertVariant,
   Button,
@@ -27,7 +27,7 @@ import {
   Tab,
   TabTitleText,
   ToolbarItem,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { sortBy } from "lodash-es";
 import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";

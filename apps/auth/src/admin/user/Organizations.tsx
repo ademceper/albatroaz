@@ -18,7 +18,7 @@ import {
   OrganizationTable,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   Button,
   ButtonVariant,
@@ -27,7 +27,7 @@ import {
   DropdownList,
   MenuToggle,
   ToolbarItem,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate, useParams } from "react-router-dom";

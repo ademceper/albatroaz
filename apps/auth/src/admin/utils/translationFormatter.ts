@@ -11,11 +11,11 @@
 
 // @ts-nocheck
 
-import { label } from "../../shared/keycloak-ui-shared";
+import { label } from "../lib/shared";
 import {
   IFormatter,
   IFormatterValueType,
-} from "../../shared/@patternfly/react-table";
+} from "../lib/pf-table";
 import { TFunction } from "i18next";
 
 export const translationFormatter =

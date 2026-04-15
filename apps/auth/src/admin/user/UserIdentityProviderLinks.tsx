@@ -23,17 +23,17 @@ import {
   Text,
   TextContent,
   Spinner,
-} from "../../shared/@patternfly/react-core";
-import { cellWidth } from "../../shared/@patternfly/react-table";
+} from "../lib/pf-core";
+import { cellWidth } from "../lib/pf-table";
 import { capitalize } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { FormPanel } from "../../shared/keycloak-ui-shared";
+import { FormPanel } from "../lib/shared";
 import { useAdminClient } from "../admin-client";
-import { useAlerts, useFetch } from "../../shared/keycloak-ui-shared";
+import { useAlerts, useFetch } from "../lib/shared";
 import { useConfirmDialog } from "../components/confirm-dialog/ConfirmDialog";
-import { KeycloakDataTable } from "../../shared/keycloak-ui-shared";
+import { KeycloakDataTable } from "../lib/shared";
 import { useRealm } from "../context/realm-context/RealmContext";
 import { useServerInfo } from "../context/server-info/ServerInfoProvider";
 import { toIdentityProvider } from "../identity-providers/routes/IdentityProvider";

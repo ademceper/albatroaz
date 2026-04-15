@@ -19,7 +19,7 @@ import {
   KeycloakDataTable,
   ListEmptyState,
   useFetch,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   Button,
   Dropdown,
@@ -27,7 +27,7 @@ import {
   DropdownList,
   FormGroup,
   MenuToggle,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
@@ -38,10 +38,10 @@ import { ExistingPoliciesDialog } from "./ExistingPoliciesDialog";
 import {
   CaretDownIcon,
   FilterIcon,
-} from "../../../shared/@patternfly/react-icons";
+} from "../../lib/pf-icons";
 import { capitalize, sortBy } from "lodash-es";
 import useToggle from "../../utils/useToggle";
-import { IRowData } from "../../../shared/@patternfly/react-table";
+import { IRowData } from "../../lib/pf-table";
 
 type AssignedPoliciesProps = {
   permissionClientId: string;

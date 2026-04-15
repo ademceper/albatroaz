@@ -20,7 +20,7 @@ import {
   SelectVariant,
   TextControl,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   ActionGroup,
   Button,
@@ -38,12 +38,12 @@ import {
   Icon,
   SelectOption,
   Tooltip,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import {
   CheckCircleIcon,
   WarningTriangleIcon,
-} from "../../shared/@patternfly/react-icons";
-import { cellWidth } from "../../shared/@patternfly/react-table";
+} from "../lib/pf-icons";
+import { cellWidth } from "../lib/pf-table";
 import { pickBy } from "lodash-es";
 import { useState } from "react";
 import { Controller, FormProvider, useForm } from "react-hook-form";

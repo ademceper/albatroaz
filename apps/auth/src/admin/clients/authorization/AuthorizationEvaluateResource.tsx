@@ -20,8 +20,8 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../shared/@patternfly/react-table";
-import { DescriptionList } from "@patternfly/react-core/dist/esm/components";
+} from "../../lib/pf-table";
+import { DescriptionList } from "../../lib/pf-core";
 import { useTranslation } from "react-i18next";
 import { AuthorizationEvaluateResourcePolicies } from "./AuthorizationEvaluateResourcePolicies";
 import type EvaluationResultRepresentation from "@keycloak/keycloak-admin-client/lib/defs/evaluationResultRepresentation";

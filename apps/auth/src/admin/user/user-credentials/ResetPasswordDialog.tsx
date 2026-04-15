@@ -18,16 +18,16 @@ import {
   ButtonVariant,
   Form,
   FormGroup,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import {
   FormErrorText,
   PasswordInput,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import { useAdminClient } from "../../admin-client";
 import { DefaultSwitchControl } from "../../components/SwitchControl";
-import { useAlerts } from "../../../shared/keycloak-ui-shared";
+import { useAlerts } from "../../lib/shared";
 import {
   ConfirmDialogModal,
   useConfirmDialog,

@@ -16,9 +16,9 @@ import {
   Button,
   Draggable,
   Tooltip,
-} from "../../../shared/@patternfly/react-core";
-import { TrashIcon } from "../../../shared/@patternfly/react-icons";
-import { Td, TreeRowWrapper } from "../../../shared/@patternfly/react-table";
+} from "../../lib/pf-core";
+import { TrashIcon } from "../../lib/pf-icons";
+import { Td, TreeRowWrapper } from "../../lib/pf-table";
 import { useTranslation } from "react-i18next";
 import type { ExpandableExecution } from "../execution-model";
 import { AddFlowDropdown } from "./AddFlowDropdown";

@@ -14,7 +14,7 @@
 import AuthenticationFlowRepresentation from "@keycloak/keycloak-admin-client/lib/defs/authenticationFlowRepresentation";
 import type { AuthenticationProviderRepresentation } from "@keycloak/keycloak-admin-client/lib/defs/authenticatorConfigRepresentation";
 import AuthenticatorConfigRepresentation from "@keycloak/keycloak-admin-client/lib/defs/authenticatorConfigRepresentation";
-import { useAlerts, useFetch } from "../../shared/keycloak-ui-shared";
+import { useAlerts, useFetch } from "../lib/shared";
 import {
   AlertVariant,
   Button,
@@ -29,9 +29,9 @@ import {
   Toolbar,
   ToolbarContent,
   ToolbarItem,
-} from "../../shared/@patternfly/react-core";
-import { DomainIcon, TableIcon } from "../../shared/@patternfly/react-icons";
-import { Table, Tbody } from "../../shared/@patternfly/react-table";
+} from "../lib/pf-core";
+import { DomainIcon, TableIcon } from "../lib/pf-icons";
+import { Table, Tbody } from "../lib/pf-table";
 import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { useNavigate, useParams } from "react-router-dom";

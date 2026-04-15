@@ -11,8 +11,8 @@
 
 // @ts-nocheck
 
-import { Label } from "../../shared/@patternfly/react-core";
-import { CheckCircleIcon } from "../../shared/@patternfly/react-icons";
+import { Label } from "../lib/pf-core";
+import { CheckCircleIcon } from "../lib/pf-icons";
 import { useTranslation } from "react-i18next";
 
 import style from "./build-in-label.module.css";

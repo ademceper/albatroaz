@@ -12,9 +12,9 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import { TextControl, NumberControl } from "../../../shared/keycloak-ui-shared";
+import { TextControl, NumberControl } from "../../lib/shared";
 import { JWTAuthorizationGrantAssertionSettings } from "./JWTAuthorizationGrantAssertionSettings";
-import { Divider } from "../../../shared/@patternfly/react-core";
+import { Divider } from "../../lib/pf-core";
 import { JwksSettings } from "./JwksSettings";
 import { useParams } from "react-router-dom";
 import type { IdentityProviderParams } from "../routes/IdentityProvider";

@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { Button } from "../../../shared/@patternfly/react-core";
+import { Button } from "../../lib/pf-core";
 import JSZip from "jszip";
 import { ChangeEvent } from "react";
 import { useTranslation } from "react-i18next";

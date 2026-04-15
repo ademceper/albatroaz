@@ -21,7 +21,7 @@ import {
   Tabs,
   TabTitleText,
   TextInput,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { Header } from "../../PageHeader";
 
 type PreviewWindowProps = {

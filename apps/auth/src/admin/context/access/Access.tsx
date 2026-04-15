@@ -15,7 +15,7 @@ import type { AccessType } from "@keycloak/keycloak-admin-client/lib/defs/whoAmI
 import {
   createNamedContext,
   useRequiredContext,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import { PropsWithChildren } from "react";
 import { useRealm } from "../../context/realm-context/RealmContext";
 import { useWhoAmI } from "../../context/whoami/WhoAmI";

@@ -17,13 +17,13 @@ import {
   ButtonVariant,
   PageSection,
   Switch,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import {
   Action,
   KeycloakDataTable,
   ListEmptyState,
   useAlerts,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import WorkflowRepresentation from "@keycloak/keycloak-admin-client/lib/defs/workflowRepresentation";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

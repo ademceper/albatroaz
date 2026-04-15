@@ -23,14 +23,14 @@ import {
   SelectVariant,
   useFetch,
   Variant,
-} from "../../../shared/keycloak-ui-shared";
+} from "../../lib/shared";
 import {
   Button,
   ButtonVariant,
   Chip,
   ChipGroup,
   SelectOption,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import { useState } from "react";
 import {
   Controller,

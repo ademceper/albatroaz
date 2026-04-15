@@ -19,7 +19,7 @@ import {
   ListEmptyState,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   ActionGroup,
   AlertVariant,
@@ -34,7 +34,7 @@ import {
   Radio,
   Title,
   ToolbarItem,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { omit } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

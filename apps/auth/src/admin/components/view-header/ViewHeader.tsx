@@ -27,7 +27,7 @@ import {
   Toolbar,
   ToolbarContent,
   ToolbarItem,
-} from "../../../shared/@patternfly/react-core";
+} from "../../lib/pf-core";
 import {
   ReactElement,
   ReactNode,
@@ -37,7 +37,7 @@ import {
 } from "react";
 import { useTranslation } from "react-i18next";
 import { FormattedLink } from "../external-link/FormattedLink";
-import { useHelp, HelpItem } from "../../../shared/keycloak-ui-shared";
+import { useHelp, HelpItem } from "../../lib/shared";
 import "../../help-urls";
 
 export type ViewHeaderProps = {

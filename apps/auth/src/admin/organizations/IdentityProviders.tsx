@@ -17,16 +17,16 @@ import {
   ListEmptyState,
   useAlerts,
   useFetch,
-} from "../../shared/keycloak-ui-shared";
+} from "../lib/shared";
 import {
   Button,
   ButtonVariant,
   PageSection,
   Switch,
   ToolbarItem,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { sortBy } from "lodash-es";
-import { BellIcon } from "../../shared/@patternfly/react-icons";
+import { BellIcon } from "../lib/pf-icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";

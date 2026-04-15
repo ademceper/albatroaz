@@ -15,7 +15,7 @@ import type UserRepresentation from "@keycloak/keycloak-admin-client/lib/defs/us
 import {
   PageSection,
   PageSectionVariants,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { UseFormReturn, useFormContext } from "react-hook-form";
 
 import {

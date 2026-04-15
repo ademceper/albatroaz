@@ -22,11 +22,11 @@ import {
   ModalVariant,
   TextContent,
   TextInput,
-} from "../../shared/@patternfly/react-core";
+} from "../lib/pf-core";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
-import { useAlerts } from "../../shared/keycloak-ui-shared";
+import { useAlerts } from "../lib/shared";
 import { useRealm } from "../context/realm-context/RealmContext";
 
 type RevocationModalProps = {
