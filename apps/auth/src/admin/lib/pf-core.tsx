@@ -770,16 +770,19 @@ export const Flex = ({
   justifyContent: _justifyContent,
   alignItems: _alignItems,
   spaceItems: _spaceItems,
-  ...rest
+  flexWrap: _flexWrap,
+  style,
 }: {
   direction?: Record<string, string>;
   justifyContent?: Record<string, string>;
   alignItems?: Record<string, string>;
   spaceItems?: Record<string, string>;
+  flexWrap?: Record<string, string>;
   className?: string;
   children?: ReactNode;
+  style?: React.CSSProperties;
 }) => (
-  <div className={cn("flex gap-2", className)} {...rest}>
+  <div className={cn("flex flex-col gap-2", className)} style={style}>
     {children}
   </div>
 );
@@ -787,12 +790,17 @@ export const Flex = ({
 export const FlexItem = ({
   children,
   className,
-  ...rest
+  grow: _grow,
+  style,
+  isFilled: _isFilled,
 }: {
   className?: string;
   children?: ReactNode;
+  grow?: Record<string, string>;
+  style?: React.CSSProperties;
+  isFilled?: boolean;
 }) => (
-  <div className={cn("flex-initial", className)} {...rest}>
+  <div className={cn("flex-initial", className)} style={style}>
     {children}
   </div>
 );

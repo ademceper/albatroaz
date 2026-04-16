@@ -16,8 +16,11 @@ import { KeycloakProvider } from "./lib/shared";
 import { App } from "./App";
 import { environment } from "./environment";
 
-export const Root = () => (
-  <KeycloakProvider environment={environment}>
-    <App />
-  </KeycloakProvider>
-);
+export const Root = () => {
+  console.log("[Root] rendering with environment:", environment);
+  return (
+    <KeycloakProvider environment={environment}>
+      <App />
+    </KeycloakProvider>
+  );
+};
