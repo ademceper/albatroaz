@@ -678,18 +678,25 @@ export const Page = ({
   children,
   className,
   isManagedSidebar: _isManagedSidebar,
+  breadcrumb,
+  mainContainerId: _mainContainerId,
 }: {
   header?: ReactNode;
   sidebar?: ReactNode;
   children?: ReactNode;
   className?: string;
   isManagedSidebar?: boolean;
+  breadcrumb?: ReactNode;
+  mainContainerId?: string;
 }) => (
   <div className={cn("flex h-screen flex-col bg-background", className)}>
     {header}
     <div className="flex flex-1 overflow-hidden">
       {sidebar}
-      <main className="flex-1 overflow-y-auto">{children}</main>
+      <main className="flex-1 overflow-y-auto">
+        {breadcrumb ? <div className="px-4 py-2">{breadcrumb}</div> : null}
+        {children}
+      </main>
     </div>
   </div>
 );

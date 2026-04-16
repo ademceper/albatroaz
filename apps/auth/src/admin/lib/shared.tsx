@@ -44,7 +44,7 @@ import {
 import { Spinner } from "@albatroaz/ui/components/spinner";
 import { Switch } from "@albatroaz/ui/components/switch";
 import { Textarea } from "@albatroaz/ui/components/textarea";
-import { Toaster } from "@albatroaz/ui/components/sonner";
+import { Toaster } from "sonner";
 import { cn } from "@albatroaz/ui/lib/utils";
 
 /* ----------------------------- environment ------------------------------ */
@@ -136,8 +136,10 @@ export const KeycloakProvider = <T extends BaseEnvironment>({
     <KeycloakEnvContext.Provider
       value={{ environment, keycloak } as KeycloakContext}
     >
-      {children}
-      <Toaster position="top-right" richColors closeButton />
+      <Help>
+        {children}
+      </Help>
+      <Toaster position="top-right" richColors />
     </KeycloakEnvContext.Provider>
   );
 };
