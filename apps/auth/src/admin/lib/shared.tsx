@@ -875,6 +875,10 @@ export type KeycloakDataTableProps<T = unknown> = {
   "data-testid"?: string;
 };
 
+function CellRendererWrapper<T>({ renderer, row }: { renderer: (row: T) => ReactNode; row: T }) {
+  return <>{renderer(row)}</>;
+}
+
 export function KeycloakDataTable<T>({
   loader,
   columns,
@@ -954,7 +958,7 @@ export function KeycloakDataTable<T>({
                 {columns.map((c) => (
                   <td key={c.name} className="px-3 py-2">
                     {c.cellRenderer
-                      ? c.cellRenderer(row)
+                      ? <CellRendererWrapper renderer={c.cellRenderer} row={row} />
                       : ((row as Record<string, unknown>)[c.name] as ReactNode)}
                   </td>
                 ))}
