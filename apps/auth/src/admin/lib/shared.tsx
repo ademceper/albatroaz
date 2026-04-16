@@ -576,11 +576,13 @@ export const SelectControl = ({
                 <SelectValue placeholder={placeholderText as string} />
               </SelectTrigger>
               <SelectContent>
-                {normalizedOptions.map(({ key, value }) => (
-                  <SelectItem key={key} value={key}>
-                    {value as string}
-                  </SelectItem>
-                ))}
+                {normalizedOptions
+                  .filter(({ key }) => key !== "")
+                  .map(({ key, value }) => (
+                    <SelectItem key={key} value={key}>
+                      {value as string}
+                    </SelectItem>
+                  ))}
               </SelectContent>
             </Select>
           );

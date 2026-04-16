@@ -1022,11 +1022,15 @@ export const TabTitleText = ({
   className?: string;
 }) => <span className={className}>{children}</span>;
 
+import {
+  SelectItem as _RadixSelectItem,
+} from "@albatroaz/ui/components/select";
+
 export const SelectOption = ({
-  value: _value,
+  value,
   children,
   isSelected: _isSelected,
-  isDisabled: _isDisabled,
+  isDisabled,
   ...rest
 }: {
   value?: unknown;
@@ -1034,7 +1038,15 @@ export const SelectOption = ({
   isSelected?: boolean;
   isDisabled?: boolean;
   [k: string]: unknown;
-}) => <Fragment {...(rest as object)}>{children}</Fragment>;
+}) => {
+  const strValue = String(value ?? "");
+  if (!strValue) return null;
+  return (
+    <_RadixSelectItem value={strValue} disabled={isDisabled} {...(rest as object)}>
+      {children ?? strValue}
+    </_RadixSelectItem>
+  );
+};
 
 export const DropdownItem = ({
   children,
