@@ -1,6 +1,6 @@
 import type { Keycloak } from "oidc-spa/keycloak-js";
 import { Keycloak as KeycloakClient } from "oidc-spa/keycloak-js";
-import {
+import React, {
   type ComponentType,
   type Context,
   createContext,
@@ -1137,24 +1137,56 @@ export const KeycloakSelect = ({
 
 export type FallbackProps = { error?: Error | unknown; resetErrorBoundary?: () => void };
 
-export const ErrorBoundaryFallback = ({
-  error,
-  resetErrorBoundary,
-}: FallbackProps) => (
-  <div className="flex h-full flex-col items-center justify-center gap-3 p-6 text-center">
-    <h1 className="text-lg font-semibold">Something went wrong</h1>
-    <p className="text-sm text-muted-foreground">
-      {error instanceof Error ? error.message : String(error ?? "Unknown error")}
-    </p>
-    {resetErrorBoundary ? (
-      <Button onClick={resetErrorBoundary}>Try again</Button>
-    ) : (
-      <Button onClick={() => { location.href = location.origin + location.pathname; }}>
-        Try again
-      </Button>
-    )}
-  </div>
-);
+type ErrorBoundaryState = { error: Error | null };
+type ErrorBoundaryProps = PropsWithChildren<{
+  fallback?: ComponentType<FallbackProps>;
+  error?: Error | unknown;
+  resetErrorBoundary?: () => void;
+}>;
+
+export class ErrorBoundaryFallback extends React.Component<
+  ErrorBoundaryProps,
+  ErrorBoundaryState
+> {
+  constructor(props: ErrorBoundaryProps) {
+    super(props);
+    this.state = { error: null };
+  }
+
+  static getDerivedStateFromError(error: Error) {
+    return { error };
+  }
+
+  componentDidCatch(error: Error) {
+    console.error("ErrorBoundary caught:", error);
+  }
+
+  render() {
+    if (this.state.error) {
+      const Fallback = this.props.fallback;
+      if (Fallback) {
+        return (
+          <Fallback
+            error={this.state.error}
+            resetErrorBoundary={() => this.setState({ error: null })}
+          />
+        );
+      }
+      return (
+        <div className="flex h-full flex-col items-center justify-center gap-3 p-6 text-center">
+          <h1 className="text-lg font-semibold">Something went wrong</h1>
+          <p className="text-sm text-muted-foreground">
+            {this.state.error.message}
+          </p>
+          <Button onClick={() => this.setState({ error: null })}>
+            Try again
+          </Button>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 export const ErrorBoundaryProvider: FC<PropsWithChildren> = ({ children }) => (
   <Fragment>{children}</Fragment>
