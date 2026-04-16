@@ -73,7 +73,7 @@ export const App = () => {
           <SidebarInset>
             <header className="flex h-14 shrink-0 items-center gap-2 px-4">
               <SidebarTrigger />
-              <Separator orientation="vertical" className="mx-2 !h-4" />
+              <Separator orientation="vertical" className="mx-2 h-4 self-center" />
               <PageBreadCrumbs />
             </header>
             <Banners />
