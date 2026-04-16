@@ -41,6 +41,8 @@
   },
   "devDependencies": {
     "@albatroaz/ts-cfg": "workspace:*",
+    "@keycloakify/keycloak-account-ui": "~260502.0.2",
+    "@keycloakify/keycloak-admin-ui": "~260502.0.0",
     "@storybook/react": "^8.1.10",
     "@storybook/react-vite": "^8.1.10",
     "@tailwindcss/postcss": "^4.1.18",

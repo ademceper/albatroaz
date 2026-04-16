@@ -1135,7 +1135,7 @@ export const KeycloakSelect = ({
 
 /* -------------------------- error boundary ---------------------------- */
 
-export type FallbackProps = { error: Error; resetErrorBoundary: () => void };
+export type FallbackProps = { error?: Error | unknown; resetErrorBoundary?: () => void };
 
 export const ErrorBoundaryFallback = ({
   error,
@@ -1143,8 +1143,16 @@ export const ErrorBoundaryFallback = ({
 }: FallbackProps) => (
   <div className="flex h-full flex-col items-center justify-center gap-3 p-6 text-center">
     <h1 className="text-lg font-semibold">Something went wrong</h1>
-    <p className="text-sm text-muted-foreground">{error.message}</p>
-    <Button onClick={resetErrorBoundary}>Try again</Button>
+    <p className="text-sm text-muted-foreground">
+      {error instanceof Error ? error.message : String(error ?? "Unknown error")}
+    </p>
+    {resetErrorBoundary ? (
+      <Button onClick={resetErrorBoundary}>Try again</Button>
+    ) : (
+      <Button onClick={() => { location.href = location.origin + location.pathname; }}>
+        Try again
+      </Button>
+    )}
   </div>
 );
 
