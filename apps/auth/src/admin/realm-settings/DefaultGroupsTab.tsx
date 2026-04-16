@@ -31,11 +31,11 @@ import {
   Text,
   TextContent,
   ToolbarItem,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import {
   EllipsisVIcon,
   QuestionCircleIcon,
-} from "../lib/pf-icons";
+} from "../lib/icons";
 import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";

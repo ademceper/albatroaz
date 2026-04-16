@@ -19,7 +19,7 @@ import {
   TextControl,
   useEnvironment,
 } from "../../lib/shared";
-import { FormGroup, Title } from "../../lib/pf-core";
+import { FormGroup, Title } from "../../lib/ui";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 

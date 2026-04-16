@@ -13,7 +13,7 @@
 
 import type ResourceServerRepresentation from "@keycloak/keycloak-admin-client/lib/defs/resourceServerRepresentation";
 import { useFetch } from "../../lib/shared";
-import { DescriptionList } from "../../lib/pf-core";
+import { DescriptionList } from "../../lib/ui";
 import { useState } from "react";
 import { useAdminClient } from "../../admin-client";
 import { KeycloakSpinner } from "../../lib/shared";

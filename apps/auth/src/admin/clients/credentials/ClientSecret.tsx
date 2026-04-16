@@ -20,7 +20,7 @@ import {
   InputGroupItem,
   Split,
   SplitItem,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useEffect, useState } from "react";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

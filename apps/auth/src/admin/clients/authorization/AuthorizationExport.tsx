@@ -22,7 +22,7 @@ import {
   AlertVariant,
   Button,
   PageSection,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import CodeEditor from "@uiw/react-textarea-code-editor";
 import { saveAs } from "file-saver";
 import { useState } from "react";

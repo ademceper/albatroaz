@@ -13,7 +13,7 @@
 
 import { useTranslation } from "react-i18next";
 import { Controller, useFormContext } from "react-hook-form";
-import { FormGroup, Radio } from "../../../lib/pf-core";
+import { FormGroup, Radio } from "../../../lib/ui";
 
 import { HelpItem } from "../../../lib/shared";
 

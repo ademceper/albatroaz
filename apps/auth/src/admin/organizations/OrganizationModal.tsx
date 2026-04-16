@@ -18,8 +18,8 @@ import {
   Button,
   Modal,
   ModalVariant,
-} from "../lib/pf-core";
-import { TableText } from "../lib/pf-table";
+} from "../lib/ui";
+import { TableText } from "../lib/table";
 import { differenceBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

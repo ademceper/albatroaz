@@ -19,7 +19,7 @@ import {
   EmptyStateBody,
   EmptyStateHeader,
   TextArea,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useTranslation } from "react-i18next";
 import { CopyToClipboardButton } from "../../components/copy-to-clipboard-button/CopyToClipboardButton";
 

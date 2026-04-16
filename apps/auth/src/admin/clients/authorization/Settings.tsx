@@ -24,7 +24,7 @@ import {
   FormGroup,
   PageSection,
   Radio,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useState } from "react";
 import { Controller, FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

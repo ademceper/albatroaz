@@ -17,7 +17,7 @@ import {
   ButtonVariant,
   PageSection,
   Switch,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import {
   Action,
   KeycloakDataTable,

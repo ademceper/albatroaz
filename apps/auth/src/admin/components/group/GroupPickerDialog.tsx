@@ -34,8 +34,8 @@ import {
   DataListItemRow,
   Modal,
   ModalVariant,
-} from "../../lib/pf-core";
-import { AngleRightIcon } from "../../lib/pf-icons";
+} from "../../lib/ui";
+import { AngleRightIcon } from "../../lib/icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";

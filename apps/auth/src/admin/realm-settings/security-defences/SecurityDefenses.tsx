@@ -18,7 +18,7 @@ import {
   Tab,
   Tabs,
   TabTitleText,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 import type RealmRepresentation from "@keycloak/keycloak-admin-client/lib/defs/realmRepresentation";
 import { HeadersForm } from "./HeadersForm";

@@ -37,7 +37,7 @@ import {
   InputGroupItem,
   Switch,
   TextInput,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { TFunction } from "i18next";
 import { useEffect, useState } from "react";
 import { Controller, FormProvider, UseFormReturn } from "react-hook-form";

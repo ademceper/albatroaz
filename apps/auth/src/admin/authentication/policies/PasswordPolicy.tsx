@@ -33,8 +33,8 @@ import {
   MenuToggle,
   SelectList,
   SelectOption,
-} from "../../lib/pf-core";
-import { PlusCircleIcon } from "../../lib/pf-icons";
+} from "../../lib/ui";
+import { PlusCircleIcon } from "../../lib/icons";
 import { useEffect, useMemo, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

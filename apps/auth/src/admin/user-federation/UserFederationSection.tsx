@@ -27,8 +27,8 @@ import {
   Text,
   TextContent,
   TextVariants,
-} from "../lib/pf-core";
-import { DatabaseIcon } from "../lib/pf-icons";
+} from "../lib/ui";
+import { DatabaseIcon } from "../lib/icons";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";

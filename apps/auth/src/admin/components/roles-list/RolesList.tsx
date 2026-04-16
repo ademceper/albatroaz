@@ -17,7 +17,7 @@ import {
   AlertVariant,
   Button,
   ButtonVariant,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, To, useNavigate } from "react-router-dom";

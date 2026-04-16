@@ -12,8 +12,8 @@
 // @ts-nocheck
 
 import { useEffect, useRef } from "react";
-import { Icon } from "../../lib/pf-core";
-import { CaretDownIcon } from "../../lib/pf-icons";
+import { Icon } from "../../lib/ui";
+import { CaretDownIcon } from "../../lib/icons";
 import "./dropdown-panel.css";
 
 type DropdownPanelProps = {

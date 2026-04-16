@@ -21,7 +21,7 @@ import {
   InputGroup,
   InputGroupItem,
   Switch,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { DefaultSwitchControl } from "../../components/SwitchControl";

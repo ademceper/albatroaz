@@ -35,13 +35,13 @@ import {
   ToolbarContent,
   ToolbarItem,
   Tooltip,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   ExclamationCircleIcon,
   InfoCircleIcon,
   WarningTriangleIcon,
-} from "../../lib/pf-icons";
-import type { IRowData } from "../../lib/pf-table";
+} from "../../lib/icons";
+import type { IRowData } from "../../lib/table";
 import { JSX, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";

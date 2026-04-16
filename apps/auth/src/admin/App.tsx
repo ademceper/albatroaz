@@ -17,7 +17,7 @@ import {
   mainPageContentId,
   useEnvironment,
 } from "./lib/shared";
-import { Flex, FlexItem, Page } from "./lib/pf-core";
+import { Flex, FlexItem, Page } from "./lib/ui";
 import { PropsWithChildren, Suspense, useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 

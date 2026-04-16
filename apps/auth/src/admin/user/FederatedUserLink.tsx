@@ -14,7 +14,7 @@
 import type ComponentRepresentation from "@keycloak/keycloak-admin-client/lib/defs/componentRepresentation";
 import type UserRepresentation from "@keycloak/keycloak-admin-client/lib/defs/userRepresentation";
 import { useFetch } from "../lib/shared";
-import { Button } from "../lib/pf-core";
+import { Button } from "../lib/ui";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAdminClient } from "../admin-client";

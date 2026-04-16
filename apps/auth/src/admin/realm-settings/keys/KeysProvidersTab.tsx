@@ -25,8 +25,8 @@ import {
   Toolbar,
   ToolbarGroup,
   ToolbarItem,
-} from "../../lib/pf-core";
-import { SearchIcon } from "../../lib/pf-icons";
+} from "../../lib/ui";
+import { SearchIcon } from "../../lib/icons";
 import { KeyboardEvent, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";

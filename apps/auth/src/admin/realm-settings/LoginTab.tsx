@@ -16,7 +16,7 @@ import {
   FormGroup,
   PageSection,
   Switch,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { useTranslation } from "react-i18next";
 import { FormPanel, HelpItem } from "../lib/shared";
 import { useAdminClient } from "../admin-client";

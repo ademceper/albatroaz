@@ -37,14 +37,14 @@ import {
   TextInput,
   TextVariants,
   ToolbarItem,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   CheckIcon,
   EllipsisVIcon,
   PencilAltIcon,
   SearchIcon,
   TimesIcon,
-} from "../../lib/pf-icons";
+} from "../../lib/icons";
 import {
   ActionsColumn,
   IRow,
@@ -55,7 +55,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../lib/pf-table";
+} from "../../lib/table";
 import { cloneDeep, isEqual, uniqWith } from "lodash-es";
 import { ChangeEvent, useEffect, useState, type FormEvent } from "react";
 import { useForm } from "react-hook-form";

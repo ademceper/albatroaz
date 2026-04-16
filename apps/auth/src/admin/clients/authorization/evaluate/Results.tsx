@@ -27,14 +27,14 @@ import {
   MenuToggle,
   SelectList,
   SelectOption,
-} from "../../../lib/pf-core";
-import { SearchIcon } from "../../../lib/pf-icons";
+} from "../../../lib/ui";
+import { SearchIcon } from "../../../lib/icons";
 import {
   Table,
   Th,
   Thead,
   Tr,
-} from "../../../lib/pf-table";
+} from "../../../lib/table";
 import { KeyboardEvent, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 

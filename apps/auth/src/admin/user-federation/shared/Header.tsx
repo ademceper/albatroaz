@@ -15,7 +15,7 @@ import {
   AlertVariant,
   ButtonVariant,
   DropdownItem,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { ReactElement } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

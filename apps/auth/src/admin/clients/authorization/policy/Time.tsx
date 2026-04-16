@@ -21,7 +21,7 @@ import {
   Split,
   SplitItem,
   TimePicker,
-} from "../../../lib/pf-core";
+} from "../../../lib/ui";
 import { useState } from "react";
 import { FormErrorText, HelpItem } from "../../../lib/shared";
 import { useTranslation } from "react-i18next";

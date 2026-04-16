@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { TextControl } from "../../lib/shared";
-import { Form } from "../../lib/pf-core";
+import { Form } from "../../lib/ui";
 import { ConfirmDialogModal } from "../../components/confirm-dialog/ConfirmDialog";
 import { useTranslation } from "react-i18next";
 import { FormProvider, useForm } from "react-hook-form";

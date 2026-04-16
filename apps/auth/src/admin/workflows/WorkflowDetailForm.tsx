@@ -16,8 +16,8 @@ import {
   Button,
   FormGroup,
   PageSection,
-} from "../lib/pf-core";
-import { AlertVariant } from "../lib/pf-core";
+} from "../lib/ui";
+import { AlertVariant } from "../lib/ui";
 import {
   Controller,
   FormProvider,

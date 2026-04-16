@@ -23,8 +23,8 @@ import {
   ButtonVariant,
   PageSection,
   ToolbarItem,
-} from "../lib/pf-core";
-import { IRowData } from "../lib/pf-table";
+} from "../lib/ui";
+import { IRowData } from "../lib/table";
 import { get } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

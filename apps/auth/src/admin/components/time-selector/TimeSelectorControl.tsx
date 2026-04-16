@@ -14,7 +14,7 @@
 import {
   FormGroup,
   ValidatedOptions,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   Controller,
   ControllerProps,

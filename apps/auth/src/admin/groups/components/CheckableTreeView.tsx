@@ -16,7 +16,7 @@ import { useEffect, useState } from "react";
 import {
   TreeView,
   TreeViewDataItem,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 type CheckableTreeViewProps = {
   data: TreeViewDataItem[];

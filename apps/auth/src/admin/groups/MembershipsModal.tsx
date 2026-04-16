@@ -13,15 +13,15 @@
 
 import type GroupRepresentation from "@keycloak/keycloak-admin-client/lib/defs/groupRepresentation";
 import UserRepresentation from "@keycloak/keycloak-admin-client/lib/defs/userRepresentation";
-import { Modal, ModalVariant } from "../lib/pf-core";
+import { Modal, ModalVariant } from "../lib/ui";
 import {
   Button,
   ButtonVariant,
   Checkbox,
   Popover,
-} from "../lib/pf-core";
-import { QuestionCircleIcon } from "../lib/pf-icons";
-import { cellWidth } from "../lib/pf-table";
+} from "../lib/ui";
+import { QuestionCircleIcon } from "../lib/icons";
+import { cellWidth } from "../lib/table";
 import { useHelp } from "../lib/shared";
 import { ListEmptyState } from "../lib/shared";
 import { KeycloakDataTable } from "../lib/shared";

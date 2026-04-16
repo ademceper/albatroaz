@@ -27,11 +27,11 @@ import {
   MenuToggle,
   Modal,
   ModalVariant,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   CaretDownIcon,
   FilterIcon,
-} from "../../lib/pf-icons";
+} from "../../lib/icons";
 import { sortBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

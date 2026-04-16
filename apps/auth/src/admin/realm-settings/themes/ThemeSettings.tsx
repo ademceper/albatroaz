@@ -17,7 +17,7 @@ import {
   ActionGroup,
   Button,
   PageSection,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useEffect } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

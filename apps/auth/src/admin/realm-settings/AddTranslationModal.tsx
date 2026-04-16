@@ -17,7 +17,7 @@ import {
   Form,
   Modal,
   ModalVariant,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { FormProvider, SubmitHandler, UseFormReturn } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { TextControl } from "../lib/shared";

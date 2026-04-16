@@ -13,7 +13,7 @@
 
 import { useTranslation } from "react-i18next";
 import { TextControl } from "../../lib/shared";
-import { Form, Title } from "../../lib/pf-core";
+import { Form, Title } from "../../lib/ui";
 
 export const UserProfileClaimsSettings = () => {
   const { t } = useTranslation();

@@ -28,7 +28,7 @@ import {
   Form,
   ButtonVariant,
   AlertVariant,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   SelectControl,
   TextControl,

@@ -16,7 +16,7 @@ import {
   AlertVariant,
   Form,
   ModalVariant,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { isEmpty } from "lodash-es";
 import { FormProvider, useForm, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

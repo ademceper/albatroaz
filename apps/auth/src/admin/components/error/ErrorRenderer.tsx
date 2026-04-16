@@ -21,7 +21,7 @@ import {
   AlertActionLink,
   AlertVariant,
   PageSection,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useTranslation } from "react-i18next";
 
 export const ErrorRenderer = ({ error }: FallbackProps) => {

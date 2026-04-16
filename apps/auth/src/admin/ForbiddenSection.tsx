@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import { PageSection } from "./lib/pf-core";
+import { PageSection } from "./lib/ui";
 
 import type { AccessType } from "@keycloak/keycloak-admin-client/lib/defs/whoAmIRepresentation";
 

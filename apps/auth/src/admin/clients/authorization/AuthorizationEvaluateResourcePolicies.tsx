@@ -20,13 +20,13 @@ import {
   TextContent,
   TextList,
   TextListItem,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   ExpandableRowContent,
   Tbody,
   Td,
   Tr,
-} from "../../lib/pf-table";
+} from "../../lib/table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";

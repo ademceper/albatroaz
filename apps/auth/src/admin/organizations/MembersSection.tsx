@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { Tab, Tabs, TabTitleText } from "../lib/pf-core";
+import { Tab, Tabs, TabTitleText } from "../lib/ui";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Invitations } from "./Invitations";

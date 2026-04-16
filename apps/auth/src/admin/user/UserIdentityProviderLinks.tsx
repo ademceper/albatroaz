@@ -23,8 +23,8 @@ import {
   Text,
   TextContent,
   Spinner,
-} from "../lib/pf-core";
-import { cellWidth } from "../lib/pf-table";
+} from "../lib/ui";
+import { cellWidth } from "../lib/table";
 import { capitalize } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

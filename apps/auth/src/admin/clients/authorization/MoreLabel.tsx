@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import { Label } from "../../lib/pf-core";
+import { Label } from "../../lib/ui";
 
 type MoreLabelProps = {
   array: unknown[] | undefined;

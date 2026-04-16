@@ -22,11 +22,11 @@ import {
   FlexItem,
   FormGroup,
   TextInput,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   MinusCircleIcon,
   PlusCircleIcon,
-} from "../../lib/pf-icons";
+} from "../../lib/icons";
 import { useEffect, useState, useRef } from "react";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

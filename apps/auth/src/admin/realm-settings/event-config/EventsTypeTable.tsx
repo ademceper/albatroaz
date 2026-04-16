@@ -16,7 +16,7 @@ import {
   KeycloakDataTable,
   ListEmptyState,
 } from "../../lib/shared";
-import { Button, ToolbarItem } from "../../lib/pf-core";
+import { Button, ToolbarItem } from "../../lib/ui";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { translationFormatter } from "../../utils/translationFormatter";

@@ -24,9 +24,9 @@ import {
   PageSection,
   Switch,
   ToolbarItem,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { sortBy } from "lodash-es";
-import { BellIcon } from "../lib/pf-icons";
+import { BellIcon } from "../lib/icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";

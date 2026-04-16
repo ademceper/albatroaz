@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import type ComponentRepresentation from "@keycloak/keycloak-admin-client/lib/defs/componentRepresentation";
-import { Tab, TabTitleText } from "../../lib/pf-core";
+import { Tab, TabTitleText } from "../../lib/ui";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 

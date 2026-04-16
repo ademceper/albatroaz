@@ -14,7 +14,7 @@
 import {
   ClipboardCopy,
   FormGroup,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useTranslation } from "react-i18next";
 import { HelpItem, useEnvironment } from "../../lib/shared";
 import { useRealm } from "../../context/realm-context/RealmContext";

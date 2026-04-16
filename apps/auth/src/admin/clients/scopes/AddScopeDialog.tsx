@@ -23,12 +23,12 @@ import {
   Modal,
   ModalVariant,
   SelectOption,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   CaretDownIcon,
   CaretUpIcon,
   FilterIcon,
-} from "../../lib/pf-icons";
+} from "../../lib/icons";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import {

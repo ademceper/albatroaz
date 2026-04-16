@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import KeyStoreConfig from "@keycloak/keycloak-admin-client/lib/defs/keystoreConfig";
-import { Button, Form, Modal } from "../../lib/pf-core";
+import { Button, Form, Modal } from "../../lib/ui";
 import { saveAs } from "file-saver";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

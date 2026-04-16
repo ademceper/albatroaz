@@ -21,7 +21,7 @@ import {
   FormGroup,
   PageSection,
   Switch,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   ActionsColumn,
   Table,
@@ -30,7 +30,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../lib/pf-table";
+} from "../../lib/table";
 import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";

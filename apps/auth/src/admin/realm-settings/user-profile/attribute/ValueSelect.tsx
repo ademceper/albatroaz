@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { KeycloakSelect } from "../../../lib/shared";
-import { SelectOption } from "../../../lib/pf-core";
+import { SelectOption } from "../../../lib/ui";
 import { useState } from "react";
 import { UseControllerProps, useController } from "react-hook-form";
 import { useTranslation } from "react-i18next";

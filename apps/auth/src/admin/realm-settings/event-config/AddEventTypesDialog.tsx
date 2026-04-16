@@ -17,7 +17,7 @@ import {
   Button,
   Modal,
   ModalVariant,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 import { EventsTypeTable, EventType } from "./EventsTypeTable";
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";

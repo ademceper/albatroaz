@@ -29,7 +29,7 @@ import {
   PageSection,
   Text,
   TextContent,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { saveAs } from "file-saver";
 import { useState } from "react";
 import { useFormContext, useWatch } from "react-hook-form";

@@ -26,7 +26,7 @@ import {
   ModalVariant,
   Text,
   TextContent,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { FormProvider, useForm, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";

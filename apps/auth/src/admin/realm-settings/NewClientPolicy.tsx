@@ -39,11 +39,11 @@ import {
   PageSection,
   Text,
   TextVariants,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import {
   PlusCircleIcon,
   TrashIcon,
-} from "../lib/pf-icons";
+} from "../lib/icons";
 import { useState } from "react";
 import { Controller, FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

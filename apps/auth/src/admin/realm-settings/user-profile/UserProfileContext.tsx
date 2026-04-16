@@ -18,7 +18,7 @@ import {
   useFetch,
   useRequiredContext,
 } from "../../lib/shared";
-import { AlertVariant } from "../../lib/pf-core";
+import { AlertVariant } from "../../lib/ui";
 import { PropsWithChildren, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";

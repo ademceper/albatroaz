@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { HelpItem } from "../../lib/shared";
-import { FileUpload, FormGroup } from "../../lib/pf-core";
+import { FileUpload, FormGroup } from "../../lib/ui";
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

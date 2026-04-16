@@ -22,7 +22,7 @@ import {
   Tr,
   type TableProps,
   ThProps,
-} from "../../lib/pf-table";
+} from "../../lib/table";
 import { get } from "lodash-es";
 import {
   DragEvent as ReactDragEvent,

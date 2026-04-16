@@ -17,8 +17,8 @@ import {
   DropdownItem,
   PageSection,
   SelectOption,
-} from "../lib/pf-core";
-import { FilterIcon } from "../lib/pf-icons";
+} from "../lib/ui";
+import { FilterIcon } from "../lib/icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";

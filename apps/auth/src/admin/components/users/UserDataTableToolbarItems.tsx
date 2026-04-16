@@ -24,11 +24,11 @@ import {
   MenuToggle,
   SearchInput,
   ToolbarItem,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   ArrowRightIcon,
   EllipsisVIcon,
-} from "../../lib/pf-icons";
+} from "../../lib/icons";
 import { ReactNode, useState } from "react";
 import { useTranslation } from "react-i18next";
 

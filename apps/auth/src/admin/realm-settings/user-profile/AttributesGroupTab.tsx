@@ -17,7 +17,7 @@ import {
   ButtonVariant,
   PageSection,
   ToolbarItem,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useEffect, useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";

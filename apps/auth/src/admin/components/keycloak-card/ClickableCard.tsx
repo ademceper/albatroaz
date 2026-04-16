@@ -16,7 +16,7 @@ import {
   Card,
   CardHeader,
   CardProps,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 type ClickableCardProps = Omit<CardProps, "onClick"> & {
   onClick: () => void;

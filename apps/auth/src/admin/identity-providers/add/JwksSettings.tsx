@@ -16,7 +16,7 @@ import {
   AlertVariant,
   FormGroup,
   Button,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useFormContext, useWatch } from "react-hook-form";
 import { DefaultSwitchControl } from "../../components/SwitchControl";
 import { useTranslation } from "react-i18next";

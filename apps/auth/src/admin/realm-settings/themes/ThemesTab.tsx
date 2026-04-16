@@ -14,7 +14,7 @@
 import loginCssUrl from "../../assets/theme/login.css?url";
 import type RealmRepresentation from "@keycloak/keycloak-admin-client/lib/defs/realmRepresentation";
 import { useEnvironment } from "../../lib/shared";
-import { Tab, TabTitleText } from "../../lib/pf-core";
+import { Tab, TabTitleText } from "../../lib/ui";
 import JSZip from "jszip";
 import { useTranslation } from "react-i18next";
 import {

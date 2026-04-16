@@ -34,7 +34,7 @@ import {
   PageSection,
   Split,
   SplitItem,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useMemo, useState } from "react";
 import { useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

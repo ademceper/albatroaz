@@ -13,7 +13,7 @@
 
 import AuthenticationFlowRepresentation from "@keycloak/keycloak-admin-client/lib/defs/authenticationFlowRepresentation";
 import { SelectControl, useFetch } from "../../lib/shared";
-import { ActionGroup, Button } from "../../lib/pf-core";
+import { ActionGroup, Button } from "../../lib/ui";
 import { sortBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

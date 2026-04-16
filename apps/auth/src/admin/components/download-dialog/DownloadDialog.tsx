@@ -28,7 +28,7 @@ import {
   Stack,
   StackItem,
   TextArea,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { saveAs } from "file-saver";
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";

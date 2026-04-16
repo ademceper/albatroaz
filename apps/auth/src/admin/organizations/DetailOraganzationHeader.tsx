@@ -14,7 +14,7 @@
 import {
   ButtonVariant,
   DropdownItem,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { ViewHeader } from "../components/view-header/ViewHeader";
 import { useTranslation } from "react-i18next";
 import { useConfirmDialog } from "../components/confirm-dialog/ConfirmDialog";

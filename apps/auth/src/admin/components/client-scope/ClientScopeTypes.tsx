@@ -24,7 +24,7 @@ import {
   Select,
   SelectOption,
   SelectProps,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 export enum ClientScope {
   default = "default",

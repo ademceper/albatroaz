@@ -27,7 +27,7 @@ import {
   Tooltip,
   TreeView,
   TreeViewDataItem,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 import {
   PaginatingTableToolbar,
@@ -37,7 +37,7 @@ import {
 import {
   AngleRightIcon,
   EllipsisVIcon,
-} from "../../lib/pf-icons";
+} from "../../lib/icons";
 import { unionBy } from "lodash-es";
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";

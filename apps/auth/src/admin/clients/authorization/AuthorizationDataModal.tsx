@@ -20,7 +20,7 @@ import {
   TextArea,
   TextContent,
   TextVariants,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useTranslation } from "react-i18next";
 
 import { prettyPrintJSON } from "../../util";

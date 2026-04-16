@@ -20,7 +20,7 @@ import {
   Split,
   SplitItem,
   ToolbarItem,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { HelpItem } from "../../lib/shared";

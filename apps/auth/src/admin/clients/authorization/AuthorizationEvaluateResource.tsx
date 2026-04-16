@@ -20,8 +20,8 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../lib/pf-table";
-import { DescriptionList } from "../../lib/pf-core";
+} from "../../lib/table";
+import { DescriptionList } from "../../lib/ui";
 import { useTranslation } from "react-i18next";
 import { AuthorizationEvaluateResourcePolicies } from "./AuthorizationEvaluateResourcePolicies";
 import type EvaluationResultRepresentation from "@keycloak/keycloak-admin-client/lib/defs/evaluationResultRepresentation";

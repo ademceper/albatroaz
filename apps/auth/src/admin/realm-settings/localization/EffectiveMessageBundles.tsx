@@ -30,7 +30,7 @@ import {
   TextContent,
   TextInput,
   TextVariants,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { pickBy } from "lodash-es";
 import { useMemo, useState } from "react";
 import { Controller, useForm } from "react-hook-form";

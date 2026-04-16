@@ -25,7 +25,7 @@ import {
   Button,
   Form,
   PageSection,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { flatten } from "flat";
 import { useState } from "react";
 import { FormProvider, useForm, useFormContext } from "react-hook-form";

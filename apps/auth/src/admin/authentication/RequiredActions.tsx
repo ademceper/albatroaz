@@ -19,8 +19,8 @@ import {
   AlertVariant,
   Button,
   Switch,
-} from "../lib/pf-core";
-import { CogIcon } from "../lib/pf-icons";
+} from "../lib/ui";
+import { CogIcon } from "../lib/icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";

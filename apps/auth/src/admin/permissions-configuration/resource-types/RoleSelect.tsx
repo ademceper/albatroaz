@@ -16,8 +16,8 @@ import {
   HelpItem,
   useFetch,
 } from "../../lib/shared";
-import { Button, FormGroup } from "../../lib/pf-core";
-import { MinusCircleIcon } from "../../lib/pf-icons";
+import { Button, FormGroup } from "../../lib/ui";
+import { MinusCircleIcon } from "../../lib/icons";
 import {
   Table,
   Tbody,
@@ -25,7 +25,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../lib/pf-table";
+} from "../../lib/table";
 import { useState } from "react";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

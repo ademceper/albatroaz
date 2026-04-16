@@ -22,7 +22,7 @@ import {
   Form,
   Modal,
   ModalVariant,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { useEffect } from "react";
 import { FormProvider, useForm, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

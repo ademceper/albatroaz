@@ -21,7 +21,7 @@ import {
   Modal,
   ModalVariant,
   TextInput,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { capitalize } from "lodash-es";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

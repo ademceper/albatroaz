@@ -18,7 +18,7 @@ import {
   List,
   ListItem,
   Text,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useTranslation } from "react-i18next";
 import { sortBy } from "lodash-es";
 

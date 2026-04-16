@@ -17,7 +17,7 @@ import {
   AlertVariant,
   PageSection,
   PageSectionVariants,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

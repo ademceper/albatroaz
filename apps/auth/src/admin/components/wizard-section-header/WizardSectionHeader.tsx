@@ -15,7 +15,7 @@ import {
   Text,
   TextContent,
   Title,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 import "./wizard-section-header.css";
 

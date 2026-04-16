@@ -18,7 +18,7 @@ import {
   TextContent,
   Text,
   TextVariants,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   Table,
   Tbody,
@@ -26,7 +26,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../lib/pf-table";
+} from "../../lib/table";
 
 import type PolicyProviderRepresentation from "@keycloak/keycloak-admin-client/lib/defs/policyProviderRepresentation";
 import { isValidComponentType } from "./policy/PolicyDetails";

@@ -21,8 +21,8 @@ import {
   Switch,
   TextInput,
   ValidatedOptions,
-} from "../../lib/pf-core";
-import { MinusCircleIcon } from "../../lib/pf-icons";
+} from "../../lib/ui";
+import { MinusCircleIcon } from "../../lib/icons";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { FormErrorText, HelpItem } from "../../lib/shared";

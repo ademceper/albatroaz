@@ -16,7 +16,7 @@ import {
   SelectControl,
   TextControl,
 } from "../../lib/shared";
-import { FormGroup, Switch } from "../../lib/pf-core";
+import { FormGroup, Switch } from "../../lib/ui";
 import { isEqual } from "lodash-es";
 import { useEffect } from "react";
 import {

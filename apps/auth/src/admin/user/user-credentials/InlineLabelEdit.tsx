@@ -18,12 +18,12 @@ import {
   Form,
   FormGroup,
   TextInput,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   CheckIcon,
   PencilAltIcon,
   TimesIcon,
-} from "../../lib/pf-icons";
+} from "../../lib/icons";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";

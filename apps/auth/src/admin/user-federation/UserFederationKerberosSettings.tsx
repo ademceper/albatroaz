@@ -19,7 +19,7 @@ import {
   Button,
   Form,
   PageSection,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";

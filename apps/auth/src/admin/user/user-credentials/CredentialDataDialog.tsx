@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import { Modal, ModalVariant } from "../../lib/pf-core";
+import { Modal, ModalVariant } from "../../lib/ui";
 import {
   Table,
   TableVariant,
@@ -21,7 +21,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../lib/pf-table";
+} from "../../lib/table";
 
 type CredentialDataDialogProps = {
   title: string;

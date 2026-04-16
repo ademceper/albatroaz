@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import type GroupRepresentation from "@keycloak/keycloak-admin-client/lib/defs/groupRepresentation";
-import { ButtonVariant } from "../../lib/pf-core";
+import { ButtonVariant } from "../../lib/ui";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
 import { useAlerts } from "../../lib/shared";

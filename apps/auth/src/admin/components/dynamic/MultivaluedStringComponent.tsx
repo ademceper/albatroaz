@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { HelpItem } from "../../lib/shared";
-import { FormGroup } from "../../lib/pf-core";
+import { FormGroup } from "../../lib/ui";
 import { useTranslation } from "react-i18next";
 import { MultiLineInput } from "../multi-line-input/MultiLineInput";
 import type { ComponentProps } from "./components";

@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { useTranslation } from "react-i18next";
-import { FormGroup, Radio } from "../../lib/pf-core";
+import { FormGroup, Radio } from "../../lib/ui";
 import { HelpItem } from "../../lib/shared";
 import { useFormContext } from "react-hook-form";
 import { useState, type JSX } from "react";

@@ -28,7 +28,7 @@ import {
   Radio,
   SelectOption,
   Switch,
-} from "../../../lib/pf-core";
+} from "../../../lib/ui";
 import { isEqual } from "lodash-es";
 import { useState } from "react";
 import {

@@ -12,13 +12,13 @@
 // @ts-nocheck
 
 import { HelpItem } from "../../lib/shared";
-import { Label } from "../../lib/pf-core";
+import { Label } from "../../lib/ui";
 import {
   CodeBranchIcon,
   MapMarkerIcon,
   ProcessAutomationIcon,
   TaskIcon,
-} from "../../lib/pf-icons";
+} from "../../lib/icons";
 import { useTranslation } from "react-i18next";
 import { useAuthenticationProvider } from "./AuthenticationProviderContext";
 import { FlowType } from "./FlowRow";

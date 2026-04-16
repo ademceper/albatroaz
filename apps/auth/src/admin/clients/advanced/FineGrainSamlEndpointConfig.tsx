@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { ActionGroup, Button } from "../../lib/pf-core";
+import { ActionGroup, Button } from "../../lib/ui";
 import { useTranslation } from "react-i18next";
 
 import { FormAccess } from "../../components/form/FormAccess";

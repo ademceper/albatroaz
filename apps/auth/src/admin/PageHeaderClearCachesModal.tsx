@@ -20,7 +20,7 @@ import {
   ListItem,
   Modal,
   ModalVariant,
-} from "./lib/pf-core";
+} from "./lib/ui";
 import { useRealm } from "./context/realm-context/RealmContext";
 import { useAdminClient } from "./admin-client";
 import { useTranslation } from "react-i18next";

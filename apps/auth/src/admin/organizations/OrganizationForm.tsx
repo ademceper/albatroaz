@@ -18,7 +18,7 @@ import {
   TextAreaControl,
   TextControl,
 } from "../lib/shared";
-import { FormGroup } from "../lib/pf-core";
+import { FormGroup } from "../lib/ui";
 import { useEffect } from "react";
 import { useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

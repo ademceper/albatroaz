@@ -16,7 +16,7 @@ import {
   PageSection,
   Tab,
   TabTitleText,
-} from "../lib/pf-core";
+} from "../lib/ui";
 
 import { ViewHeader } from "../components/view-header/ViewHeader";
 import { useRealm } from "../context/realm-context/RealmContext";

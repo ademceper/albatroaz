@@ -19,7 +19,7 @@ import {
   DataListItemRow,
   Modal,
   ModalVariant,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useServerInfo } from "../../context/server-info/ServerInfoProvider";

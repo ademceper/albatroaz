@@ -19,7 +19,7 @@ import {
   FlexItem,
   Title,
   TitleSizes,
-} from "../lib/pf-core";
+} from "../lib/ui";
 
 import type AuthenticationFlowRepresentation from "@keycloak/keycloak-admin-client/lib/defs/authenticationFlowRepresentation";
 import type { AuthenticationProviderRepresentation } from "@keycloak/keycloak-admin-client/lib/defs/authenticatorConfigRepresentation";

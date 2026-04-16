@@ -28,8 +28,8 @@ import {
   Form,
   Modal,
   ModalVariant,
-} from "../../lib/pf-core";
-import { TrashIcon } from "../../lib/pf-icons";
+} from "../../lib/ui";
+import { TrashIcon } from "../../lib/icons";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

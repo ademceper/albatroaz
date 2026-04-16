@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { FormGroup } from "../../lib/pf-core";
+import { FormGroup } from "../../lib/ui";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { HelpItem, TextControl } from "../../lib/shared";

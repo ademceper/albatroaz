@@ -19,8 +19,8 @@ import {
   DropdownList,
   MenuToggle,
   Tooltip,
-} from "../../lib/pf-core";
-import { PlusIcon } from "../../lib/pf-icons";
+} from "../../lib/ui";
+import { PlusIcon } from "../../lib/icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";

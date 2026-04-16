@@ -15,7 +15,7 @@ import {
   ActionGroup,
   Button,
   PageSection,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   SubmitHandler,
   UseFormReturn,

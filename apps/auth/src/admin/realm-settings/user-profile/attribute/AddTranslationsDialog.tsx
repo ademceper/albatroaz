@@ -29,8 +29,8 @@ import {
   TextContent,
   TextInput,
   TextVariants,
-} from "../../../lib/pf-core";
-import { SearchIcon } from "../../../lib/pf-icons";
+} from "../../../lib/ui";
+import { SearchIcon } from "../../../lib/icons";
 import {
   Table,
   Tbody,
@@ -38,7 +38,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../lib/pf-table";
+} from "../../../lib/table";
 import { useState } from "react";
 import { useFormContext } from "react-hook-form";
 import { Trans, useTranslation } from "react-i18next";

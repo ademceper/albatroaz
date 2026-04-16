@@ -21,7 +21,7 @@ import {
   Divider,
   PageSection,
   PageSectionVariants,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import {
   Table,
   Tbody,
@@ -29,7 +29,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../lib/pf-table";
+} from "../lib/table";
 import {
   Fragment,
   DragEvent as ReactDragEvent,

@@ -11,8 +11,8 @@
 
 // @ts-nocheck
 
-import { Banner, Flex, FlexItem } from "./lib/pf-core";
-import { ExclamationTriangleIcon } from "./lib/pf-icons";
+import { Banner, Flex, FlexItem } from "./lib/ui";
+import { ExclamationTriangleIcon } from "./lib/icons";
 import { useWhoAmI } from "./context/whoami/WhoAmI";
 import { useTranslation } from "react-i18next";
 

@@ -25,8 +25,8 @@ import {
   MenuToggle,
   Modal,
   ModalVariant,
-} from "../../lib/pf-core";
-import { cellWidth, TableText } from "../../lib/pf-table";
+} from "../../lib/ui";
+import { cellWidth, TableText } from "../../lib/table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";

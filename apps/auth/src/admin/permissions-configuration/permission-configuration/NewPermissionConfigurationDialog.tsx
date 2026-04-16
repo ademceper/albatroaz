@@ -20,7 +20,7 @@ import {
   Text,
   TextVariants,
   Alert,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   Table,
   Tbody,
@@ -28,7 +28,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../lib/pf-table";
+} from "../../lib/table";
 
 type NewPermissionConfigurationDialogProps = {
   resourceTypes?: ResourceTypesRepresentation[];

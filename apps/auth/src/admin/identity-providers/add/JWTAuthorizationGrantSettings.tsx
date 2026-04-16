@@ -14,7 +14,7 @@
 import { useTranslation } from "react-i18next";
 import { TextControl, NumberControl } from "../../lib/shared";
 import { JWTAuthorizationGrantAssertionSettings } from "./JWTAuthorizationGrantAssertionSettings";
-import { Divider } from "../../lib/pf-core";
+import { Divider } from "../../lib/ui";
 import { JwksSettings } from "./JwksSettings";
 import { useParams } from "react-router-dom";
 import type { IdentityProviderParams } from "../routes/IdentityProvider";

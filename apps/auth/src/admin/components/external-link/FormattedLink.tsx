@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { ExternalLinkAltIcon } from "../../lib/pf-icons";
+import { ExternalLinkAltIcon } from "../../lib/icons";
 import { AnchorHTMLAttributes } from "react";
 
 export type FormattedLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {

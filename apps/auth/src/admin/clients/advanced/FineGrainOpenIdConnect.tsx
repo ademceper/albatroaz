@@ -17,7 +17,7 @@ import {
   Button,
   FormGroup,
   Switch,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useTranslation } from "react-i18next";
 import { HelpItem, SelectControl } from "../../lib/shared";
 import { FormAccess } from "../../components/form/FormAccess";

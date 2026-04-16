@@ -36,7 +36,7 @@ import {
   TabTitleText,
   Text,
   ToolbarItem,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useMemo, useState } from "react";
 import {
   Controller,

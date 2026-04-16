@@ -38,12 +38,12 @@ import {
   Icon,
   SelectOption,
   Tooltip,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import {
   CheckCircleIcon,
   WarningTriangleIcon,
-} from "../lib/pf-icons";
-import { cellWidth } from "../lib/pf-table";
+} from "../lib/icons";
+import { cellWidth } from "../lib/table";
 import { pickBy } from "lodash-es";
 import { useState } from "react";
 import { Controller, FormProvider, useForm } from "react-hook-form";

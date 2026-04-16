@@ -24,8 +24,8 @@ import {
   Tabs,
   TabTitleText,
   Tooltip,
-} from "../lib/pf-core";
-import { InfoCircleIcon } from "../lib/pf-icons";
+} from "../lib/ui";
+import { InfoCircleIcon } from "../lib/icons";
 import { cloneDeep, sortBy } from "lodash-es";
 import { useMemo, useState } from "react";
 import { Controller, FormProvider, useForm, useWatch } from "react-hook-form";

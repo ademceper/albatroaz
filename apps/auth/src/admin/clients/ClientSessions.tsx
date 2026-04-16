@@ -13,7 +13,7 @@
 
 import type ClientRepresentation from "@keycloak/keycloak-admin-client/lib/defs/clientRepresentation";
 import type UserSessionRepresentation from "@keycloak/keycloak-admin-client/lib/defs/userSessionRepresentation";
-import { PageSection } from "../lib/pf-core";
+import { PageSection } from "../lib/ui";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
 import { fetchAdminUI } from "../context/auth/admin-ui-endpoint";

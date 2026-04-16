@@ -17,7 +17,7 @@ import {
   SelectVariant,
   useFetch,
 } from "../../lib/shared";
-import { SelectOption } from "../../lib/pf-core";
+import { SelectOption } from "../../lib/ui";
 import { useRef, useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

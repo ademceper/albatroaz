@@ -30,7 +30,7 @@ import {
   Text,
   TextContent,
   Title,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { saveAs } from "file-saver";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";

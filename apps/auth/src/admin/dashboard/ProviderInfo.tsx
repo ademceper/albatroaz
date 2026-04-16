@@ -15,7 +15,7 @@ import { TableToolbar } from "../lib/shared";
 import {
   ExpandableSection,
   PageSection,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import {
   Table,
   Tbody,
@@ -23,7 +23,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../lib/pf-table";
+} from "../lib/table";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useServerInfo } from "../context/server-info/ServerInfoProvider";

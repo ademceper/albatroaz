@@ -22,7 +22,7 @@ import {
   ModalVariant,
   TextContent,
   TextInput,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";

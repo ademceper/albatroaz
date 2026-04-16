@@ -24,13 +24,13 @@ import {
   TabTitleText,
   ToolbarItem,
   Tooltip,
-} from "../lib/pf-core";
-import { WarningTriangleIcon } from "../lib/pf-icons";
+} from "../lib/ui";
+import { WarningTriangleIcon } from "../lib/icons";
 import {
   IRowData,
   TableText,
   cellWidth,
-} from "../lib/pf-table";
+} from "../lib/table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";

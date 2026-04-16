@@ -41,7 +41,7 @@ import {
   TextContent,
   TextVariants,
   ToolbarItem,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { groupBy, sortBy } from "lodash-es";
 import { Fragment, useState } from "react";
 import { useTranslation } from "react-i18next";

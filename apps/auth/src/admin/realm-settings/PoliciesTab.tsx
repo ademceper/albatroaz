@@ -32,7 +32,7 @@ import {
   Switch,
   Title,
   ToolbarItem,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { omit } from "lodash-es";
 import { useState } from "react";
 import { Controller, useForm, type UseFormReturn } from "react-hook-form";

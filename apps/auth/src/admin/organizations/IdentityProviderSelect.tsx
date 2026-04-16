@@ -30,8 +30,8 @@ import {
   TextInputGroup,
   TextInputGroupMain,
   TextInputGroupUtilities,
-} from "../lib/pf-core";
-import { TimesIcon } from "../lib/pf-icons";
+} from "../lib/ui";
+import { TimesIcon } from "../lib/icons";
 import { debounce } from "lodash-es";
 import { useCallback, useRef, useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";

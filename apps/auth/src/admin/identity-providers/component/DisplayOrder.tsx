@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { FormGroup, TextInput } from "../../lib/pf-core";
+import { FormGroup, TextInput } from "../../lib/ui";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 

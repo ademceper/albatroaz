@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { Button } from "../../lib/pf-core";
+import { Button } from "../../lib/ui";
 import JSZip from "jszip";
 import { ChangeEvent } from "react";
 import { useTranslation } from "react-i18next";

@@ -23,7 +23,7 @@ import {
   TextListItem,
   TextListItemVariants,
   TextListVariants,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 type AuthorizationScopesDetailsProps = {
   row: {

@@ -18,8 +18,8 @@ import {
   DropdownList,
   MenuToggle,
   ToolbarItem,
-} from "../../lib/pf-core";
-import { EllipsisVIcon } from "../../lib/pf-icons";
+} from "../../lib/ui";
+import { EllipsisVIcon } from "../../lib/icons";
 import { useTranslation } from "react-i18next";
 import { useAccess } from "../../context/access/Access";
 import useToggle from "../../utils/useToggle";

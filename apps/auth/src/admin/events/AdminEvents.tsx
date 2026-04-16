@@ -38,7 +38,7 @@ import {
   Modal,
   ModalVariant,
   SelectOption,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import {
   Table,
   TableVariant,
@@ -48,7 +48,7 @@ import {
   Thead,
   Tr,
   cellWidth,
-} from "../lib/pf-table";
+} from "../lib/table";
 import { pickBy } from "lodash-es";
 import { PropsWithChildren, useMemo, useState } from "react";
 import { Controller, FormProvider, useForm } from "react-hook-form";

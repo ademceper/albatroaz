@@ -17,7 +17,7 @@ import {
   TextControl,
   useAlerts,
 } from "../../lib/shared";
-import { Button, Modal } from "../../lib/pf-core";
+import { Button, Modal } from "../../lib/ui";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

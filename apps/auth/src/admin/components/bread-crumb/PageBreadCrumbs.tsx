@@ -14,7 +14,7 @@
 import {
   Breadcrumb,
   BreadcrumbItem,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { uniqBy } from "lodash-es";
 import { isValidElement } from "react";
 import { useTranslation } from "react-i18next";

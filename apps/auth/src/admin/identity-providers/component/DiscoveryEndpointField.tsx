@@ -15,7 +15,7 @@ import {
   FormGroup,
   Spinner,
   Switch,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import debouncePromise from "p-debounce";
 import { ReactNode, useMemo, useState } from "react";
 import { useFormContext } from "react-hook-form";

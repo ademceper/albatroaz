@@ -24,7 +24,7 @@ import {
   PageSection,
   Text,
   TextContent,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useEffect, useMemo } from "react";
 import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

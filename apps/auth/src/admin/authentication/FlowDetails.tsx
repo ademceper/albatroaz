@@ -29,9 +29,9 @@ import {
   Toolbar,
   ToolbarContent,
   ToolbarItem,
-} from "../lib/pf-core";
-import { DomainIcon, TableIcon } from "../lib/pf-icons";
-import { Table, Tbody } from "../lib/pf-table";
+} from "../lib/ui";
+import { DomainIcon, TableIcon } from "../lib/icons";
+import { Table, Tbody } from "../lib/table";
 import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { useNavigate, useParams } from "react-router-dom";

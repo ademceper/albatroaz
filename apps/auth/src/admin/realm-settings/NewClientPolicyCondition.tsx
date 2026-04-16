@@ -29,7 +29,7 @@ import {
   FormGroup,
   PageSection,
   SelectOption,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { camelCase } from "lodash-es";
 import { useState } from "react";
 import { Controller, FormProvider, useForm } from "react-hook-form";

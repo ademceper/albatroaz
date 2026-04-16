@@ -22,8 +22,8 @@ import {
   Popover,
   Text,
   TextContent,
-} from "../../lib/pf-core";
-import { QuestionCircleIcon } from "../../lib/pf-icons";
+} from "../../lib/ui";
+import { QuestionCircleIcon } from "../../lib/icons";
 import { useEffect } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

@@ -21,9 +21,9 @@ import {
   MenuToggle,
   PageSection,
   ToolbarItem,
-} from "../lib/pf-core";
-import { EllipsisVIcon } from "../lib/pf-icons";
-import { cellWidth } from "../lib/pf-table";
+} from "../lib/ui";
+import { EllipsisVIcon } from "../lib/icons";
+import { cellWidth } from "../lib/table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";

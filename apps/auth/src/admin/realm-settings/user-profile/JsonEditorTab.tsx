@@ -17,7 +17,7 @@ import {
   Button,
   Form,
   PageSection,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import CodeEditor from "../../components/form/CodeEditor";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

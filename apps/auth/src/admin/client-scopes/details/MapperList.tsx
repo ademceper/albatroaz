@@ -30,7 +30,7 @@ import {
   DropdownItem,
   DropdownList,
   MenuToggle,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 type MapperListProps = {
   model: ClientScopeRepresentation | ClientRepresentation;

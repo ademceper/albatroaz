@@ -13,7 +13,7 @@
 
 import type { OrganizationInvitationRepresentation } from "@keycloak/keycloak-admin-client";
 import { OrganizationInvitationStatus } from "@keycloak/keycloak-admin-client";
-import { Button, Chip, ToolbarItem } from "../lib/pf-core";
+import { Button, Chip, ToolbarItem } from "../lib/ui";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";

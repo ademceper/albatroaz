@@ -17,7 +17,7 @@ import {
   Select,
   SelectList,
   SelectOption,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 type CheckboxFilterOptions = {
   value: string;

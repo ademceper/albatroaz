@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { Switch } from "../../lib/pf-core";
+import { Switch } from "../../lib/ui";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 

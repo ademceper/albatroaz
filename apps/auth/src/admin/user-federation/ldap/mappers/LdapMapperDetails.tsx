@@ -32,7 +32,7 @@ import {
   FormGroup,
   PageSection,
   SelectOption,
-} from "../../../lib/pf-core";
+} from "../../../lib/ui";
 import { useState } from "react";
 import { Controller, FormProvider, useForm, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

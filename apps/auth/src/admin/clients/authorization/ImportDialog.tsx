@@ -23,7 +23,7 @@ import {
   Modal,
   Radio,
   Switch,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 import type ResourceServerRepresentation from "@keycloak/keycloak-admin-client/lib/defs/resourceServerRepresentation";
 import { JsonFileUpload } from "../../components/json-file-upload/JsonFileUpload";

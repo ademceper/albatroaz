@@ -16,7 +16,7 @@ import {
   ActionGroup,
   ActionGroupProps,
   Button,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 import style from "./fixed-buttons.module.css";
 

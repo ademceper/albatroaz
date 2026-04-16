@@ -21,7 +21,7 @@ import {
   Tabs,
   TabTitleText,
   TextInput,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { Header } from "../../PageHeader";
 
 type PreviewWindowProps = {

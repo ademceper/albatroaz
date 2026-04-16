@@ -24,7 +24,7 @@ import {
   ModalVariant,
   PageSection,
   Radio,
-} from "../../../lib/pf-core";
+} from "../../../lib/ui";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../../admin-client";

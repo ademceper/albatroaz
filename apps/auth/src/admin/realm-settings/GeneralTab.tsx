@@ -31,7 +31,7 @@ import {
   PageSection,
   Stack,
   StackItem,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { useEffect, useState } from "react";
 import { Controller, FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

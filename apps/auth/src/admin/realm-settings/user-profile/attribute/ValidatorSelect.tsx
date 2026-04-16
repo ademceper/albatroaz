@@ -16,7 +16,7 @@ import { KeycloakSelect } from "../../../lib/shared";
 import {
   FormGroup,
   SelectOption,
-} from "../../../lib/pf-core";
+} from "../../../lib/ui";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useServerInfo } from "../../../context/server-info/ServerInfoProvider";

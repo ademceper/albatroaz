@@ -27,7 +27,7 @@ import {
   Toolbar,
   ToolbarContent,
   ToolbarItem,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   ReactElement,
   ReactNode,

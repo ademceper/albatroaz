@@ -23,7 +23,7 @@ import {
   Switch,
   Text,
   TextContent,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { saveAs } from "file-saver";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

@@ -17,8 +17,8 @@ import {
   Divider,
   Text,
   TextVariants,
-} from "../../../lib/pf-core";
-import { PlusCircleIcon } from "../../../lib/pf-icons";
+} from "../../../lib/ui";
+import { PlusCircleIcon } from "../../../lib/icons";
 import {
   Table,
   Tbody,
@@ -26,7 +26,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../lib/pf-table";
+} from "../../../lib/table";
 import { useEffect, useState } from "react";
 import { useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

@@ -26,7 +26,7 @@ import {
   Text,
   TextContent,
   TextVariants,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 import type ProtocolMapperRepresentation from "@keycloak/keycloak-admin-client/lib/defs/protocolMapperRepresentation";
 import type { ProtocolMapperTypeRepresentation } from "@keycloak/keycloak-admin-client/lib/defs/serverInfoRepesentation";

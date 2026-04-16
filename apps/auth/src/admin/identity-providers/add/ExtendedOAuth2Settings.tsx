@@ -18,7 +18,7 @@ import {
 import {
   ExpandableSection,
   Form,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { SwitchField } from "../component/SwitchField";

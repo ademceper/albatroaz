@@ -13,7 +13,7 @@
 
 import { useTranslation } from "react-i18next";
 import { DefaultSwitchControl } from "../../components/SwitchControl";
-import { FormGroup } from "../../lib/pf-core";
+import { FormGroup } from "../../lib/ui";
 import { useFormContext, Controller } from "react-hook-form";
 import { TimeSelector } from "../../components/time-selector/TimeSelector";
 import { SelectControl, HelpItem } from "../../lib/shared";

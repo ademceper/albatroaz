@@ -21,7 +21,7 @@ import {
 import {
   FormGroup,
   SelectOption,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useEffect, useState } from "react";
 import { Controller, FormProvider, UseFormReturn } from "react-hook-form";
 import { useTranslation } from "react-i18next";

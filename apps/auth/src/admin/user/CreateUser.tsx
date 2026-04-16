@@ -19,7 +19,7 @@ import {
   useAlerts,
   useFetch,
 } from "../lib/shared";
-import { AlertVariant, PageSection } from "../lib/pf-core";
+import { AlertVariant, PageSection } from "../lib/ui";
 import { TFunction } from "i18next";
 import { useState } from "react";
 import { useForm } from "react-hook-form";

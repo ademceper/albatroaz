@@ -20,8 +20,8 @@ import {
   Text,
   TextContent,
   TextVariants,
-} from "../../lib/pf-core";
-import { CheckCircleIcon } from "../../lib/pf-icons";
+} from "../../lib/ui";
+import { CheckCircleIcon } from "../../lib/icons";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
 import { fetchUsedBy } from "../../components/role-mapping/resource";

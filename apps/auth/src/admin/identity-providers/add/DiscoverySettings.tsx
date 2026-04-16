@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import IdentityProviderRepresentation from "@keycloak/keycloak-admin-client/lib/defs/identityProviderRepresentation";
-import { ExpandableSection } from "../../lib/pf-core";
+import { ExpandableSection } from "../../lib/ui";
 import { useState } from "react";
 import { useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

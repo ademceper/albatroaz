@@ -16,8 +16,8 @@ import {
   AlertVariant,
   Button,
   ButtonVariant,
-} from "../../lib/pf-core";
-import { wrappable } from "../../lib/pf-table";
+} from "../../lib/ui";
+import { wrappable } from "../../lib/table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";

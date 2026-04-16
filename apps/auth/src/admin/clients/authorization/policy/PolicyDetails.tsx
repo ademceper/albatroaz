@@ -20,7 +20,7 @@ import {
   ButtonVariant,
   DropdownItem,
   PageSection,
-} from "../../../lib/pf-core";
+} from "../../../lib/ui";
 import { useState, type JSX } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

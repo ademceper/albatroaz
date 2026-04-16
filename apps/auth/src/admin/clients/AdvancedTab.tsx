@@ -17,7 +17,7 @@ import {
   AlertVariant,
   PageSection,
   Text,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import type { TFunction } from "i18next";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

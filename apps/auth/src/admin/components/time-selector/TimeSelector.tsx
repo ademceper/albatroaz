@@ -22,7 +22,7 @@ import {
   SplitItem,
   TextInput,
   TextInputProps,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 

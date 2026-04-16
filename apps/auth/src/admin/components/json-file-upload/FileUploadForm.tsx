@@ -22,7 +22,7 @@ import {
   HelperTextItem,
   Modal,
   ModalVariant,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   ChangeEvent,
   DragEvent as ReactDragEvent,

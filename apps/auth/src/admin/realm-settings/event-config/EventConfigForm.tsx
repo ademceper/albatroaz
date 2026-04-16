@@ -17,7 +17,7 @@ import {
   Divider,
   FormGroup,
   Switch,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { Controller, FormProvider, UseFormReturn } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { HelpItem } from "../../lib/shared";

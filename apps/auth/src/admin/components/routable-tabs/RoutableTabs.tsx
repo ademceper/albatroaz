@@ -17,7 +17,7 @@ import {
   Tabs,
   TabsComponent,
   TabsProps,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   Children,
   JSXElementConstructor,

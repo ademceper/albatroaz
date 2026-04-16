@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { FormGroup, Switch } from "../../lib/pf-core";
+import { FormGroup, Switch } from "../../lib/ui";
 import {
   Controller,
   FormProvider,

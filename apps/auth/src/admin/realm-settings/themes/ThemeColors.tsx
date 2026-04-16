@@ -24,7 +24,7 @@ import {
   Text,
   TextContent,
   TextInputProps,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useEffect, useMemo } from "react";
 import {
   FormProvider,

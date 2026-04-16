@@ -27,8 +27,8 @@ import {
   Modal,
   ModalVariant,
   Tooltip,
-} from "../../lib/pf-core";
-import { CogIcon, TrashIcon } from "../../lib/pf-icons";
+} from "../../lib/ui";
+import { CogIcon, TrashIcon } from "../../lib/icons";
 import { useEffect, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

@@ -31,8 +31,8 @@ import {
   Tabs,
   TabTitleText,
   Tooltip,
-} from "../lib/pf-core";
-import { InfoCircleIcon } from "../lib/pf-icons";
+} from "../lib/ui";
+import { InfoCircleIcon } from "../lib/icons";
 import { TFunction } from "i18next";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";

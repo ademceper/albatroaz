@@ -30,7 +30,7 @@ import {
   Switch,
   Text,
   TextContent,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { saveAs } from "file-saver";
 import { Fragment, useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";

@@ -17,7 +17,7 @@ import { useTranslation } from "react-i18next";
 import {
   Breadcrumb,
   BreadcrumbItem,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 import { useSubGroups } from "../../groups/SubGroupsContext";
 import { useRealm } from "../../context/realm-context/RealmContext";

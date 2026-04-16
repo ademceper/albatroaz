@@ -15,7 +15,7 @@ import { label } from "../lib/shared";
 import {
   IFormatter,
   IFormatterValueType,
-} from "../lib/pf-table";
+} from "../lib/table";
 import { TFunction } from "i18next";
 
 export const translationFormatter =

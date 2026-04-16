@@ -17,8 +17,8 @@ import {
   Modal,
   ModalVariant,
   Label,
-} from "../lib/pf-core";
-import { InfoCircleIcon } from "../lib/pf-icons";
+} from "../lib/ui";
+import { InfoCircleIcon } from "../lib/icons";
 import { differenceBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

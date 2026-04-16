@@ -16,9 +16,9 @@ import {
   Button,
   Draggable,
   Tooltip,
-} from "../../lib/pf-core";
-import { TrashIcon } from "../../lib/pf-icons";
-import { Td, TreeRowWrapper } from "../../lib/pf-table";
+} from "../../lib/ui";
+import { TrashIcon } from "../../lib/icons";
+import { Td, TreeRowWrapper } from "../../lib/table";
 import { useTranslation } from "react-i18next";
 import type { ExpandableExecution } from "../execution-model";
 import { AddFlowDropdown } from "./AddFlowDropdown";

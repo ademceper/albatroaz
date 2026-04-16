@@ -38,7 +38,7 @@ import {
   StackItem,
   Text,
   TextContent,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { FormEvent, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";

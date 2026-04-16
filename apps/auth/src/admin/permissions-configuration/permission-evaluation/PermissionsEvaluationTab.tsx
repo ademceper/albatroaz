@@ -32,8 +32,8 @@ import {
   Split,
   SplitItem,
   Title,
-} from "../../lib/pf-core";
-import { BellIcon } from "../../lib/pf-icons";
+} from "../../lib/ui";
+import { BellIcon } from "../../lib/icons";
 import { useMemo, useState } from "react";
 import { FormProvider, useForm, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

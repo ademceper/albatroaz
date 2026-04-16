@@ -18,8 +18,8 @@ import { useAlerts, useFetch } from "../../lib/shared";
 import {
   AlertVariant,
   PageSection,
-} from "../../lib/pf-core";
-import { InfoCircleIcon } from "../../lib/pf-icons";
+} from "../../lib/ui";
+import { InfoCircleIcon } from "../../lib/icons";
 import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";

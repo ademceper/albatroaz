@@ -27,7 +27,7 @@ import {
   Tab,
   TabTitleText,
   ToolbarItem,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { sortBy } from "lodash-es";
 import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";

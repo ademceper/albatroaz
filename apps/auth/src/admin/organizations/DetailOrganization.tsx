@@ -23,7 +23,7 @@ import {
   Tab,
   Tabs,
   TabTitleText,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";

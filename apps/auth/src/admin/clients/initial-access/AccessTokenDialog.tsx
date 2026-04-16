@@ -20,7 +20,7 @@ import {
   FormGroup,
   Modal,
   ModalVariant,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 
 type AccessTokenDialogProps = {
   token: string;

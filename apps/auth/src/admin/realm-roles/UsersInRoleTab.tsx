@@ -15,8 +15,8 @@ import {
   Button,
   PageSection,
   Popover,
-} from "../lib/pf-core";
-import { QuestionCircleIcon } from "../lib/pf-icons";
+} from "../lib/ui";
+import { QuestionCircleIcon } from "../lib/icons";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useHelp } from "../lib/shared";

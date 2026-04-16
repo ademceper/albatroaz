@@ -19,7 +19,7 @@ import {
   WizardFooter,
   WizardFooterWrapper,
   WizardStep,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 

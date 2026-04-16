@@ -17,7 +17,7 @@ import {
   HelpItem,
   useFetch,
 } from "../../lib/shared";
-import { FormGroup } from "../../lib/pf-core";
+import { FormGroup } from "../../lib/ui";
 import { useState } from "react";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

@@ -22,7 +22,7 @@ import {
   Tab,
   TabTitleText,
   Tabs,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useMemo, useState } from "react";
 import { FormProvider, useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

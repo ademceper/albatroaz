@@ -23,7 +23,7 @@ import {
   Stack,
   StackItem,
   TextArea,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   Children,
   cloneElement,

@@ -20,11 +20,11 @@ import {
   Button,
   SelectOption,
   TextInput,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import {
   MinusCircleIcon,
   PlusCircleIcon,
-} from "../../lib/pf-icons";
+} from "../../lib/icons";
 import {
   Table,
   Tbody,
@@ -32,7 +32,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../lib/pf-table";
+} from "../../lib/table";
 import { camelCase } from "lodash-es";
 import { useEffect, useMemo, useState } from "react";
 import { Controller, useFieldArray, useFormContext } from "react-hook-form";

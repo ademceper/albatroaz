@@ -21,12 +21,12 @@ import {
   ListVariant,
   ToolbarItem,
   Tooltip,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import {
   CubesIcon,
   InfoCircleIcon,
-} from "../lib/pf-icons";
-import { IRowData } from "../lib/pf-table";
+} from "../lib/icons";
+import { IRowData } from "../lib/table";
 import { ReactNode, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useMatch, useNavigate } from "react-router-dom";

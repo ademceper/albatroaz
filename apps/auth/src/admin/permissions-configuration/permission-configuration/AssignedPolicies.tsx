@@ -27,7 +27,7 @@ import {
   DropdownList,
   FormGroup,
   MenuToggle,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
@@ -38,10 +38,10 @@ import { ExistingPoliciesDialog } from "./ExistingPoliciesDialog";
 import {
   CaretDownIcon,
   FilterIcon,
-} from "../../lib/pf-icons";
+} from "../../lib/icons";
 import { capitalize, sortBy } from "lodash-es";
 import useToggle from "../../utils/useToggle";
-import { IRowData } from "../../lib/pf-table";
+import { IRowData } from "../../lib/table";
 
 type AssignedPoliciesProps = {
   permissionClientId: string;

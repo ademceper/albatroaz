@@ -18,7 +18,7 @@ import { useServerInfo } from "../../context/server-info/ServerInfoProvider";
 import { convertAttributeNameToForm } from "../../util";
 import { FormFields } from "../ClientDetails";
 import { TimeSelector } from "../../components/time-selector/TimeSelector";
-import { FormGroup } from "../../lib/pf-core";
+import { FormGroup } from "../../lib/ui";
 import { HelpItem } from "../../lib/shared";
 
 type SignedJWTProps = {

@@ -21,7 +21,7 @@ import {
   Tab,
   Tabs,
   TabTitleText,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { isEqual } from "lodash-es";
 import { useState } from "react";
 import { useForm } from "react-hook-form";

@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { KeycloakSpinner } from "../../lib/shared";
-import { FileUpload } from "../../lib/pf-core";
+import { FileUpload } from "../../lib/ui";
 import { useEffect, useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 

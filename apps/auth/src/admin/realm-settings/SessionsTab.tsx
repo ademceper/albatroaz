@@ -18,7 +18,7 @@ import {
   FormGroup,
   PageSection,
   Switch,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { Controller, useFormContext, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { FormPanel, HelpItem } from "../lib/shared";

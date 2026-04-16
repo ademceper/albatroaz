@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { FormGroup } from "../../lib/pf-core";
+import { FormGroup } from "../../lib/ui";
 import { PropsWithChildren } from "react";
 import { useTranslation } from "react-i18next";
 

@@ -30,11 +30,11 @@ import {
   Label,
   MenuToggle,
   ToolbarItem,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import {
   EllipsisVIcon,
   InfoCircleIcon,
-} from "../lib/pf-icons";
+} from "../lib/icons";
 import { uniqBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

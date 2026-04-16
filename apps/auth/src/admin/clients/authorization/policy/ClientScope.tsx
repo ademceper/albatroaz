@@ -17,8 +17,8 @@ import {
   Button,
   Checkbox,
   FormGroup,
-} from "../../../lib/pf-core";
-import { MinusCircleIcon } from "../../../lib/pf-icons";
+} from "../../../lib/ui";
+import { MinusCircleIcon } from "../../../lib/icons";
 import {
   Table,
   Tbody,
@@ -26,7 +26,7 @@ import {
   Th,
   Thead,
   Tr,
-} from "../../../lib/pf-table";
+} from "../../../lib/table";
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

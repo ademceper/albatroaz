@@ -17,9 +17,9 @@ import {
   ButtonVariant,
   Chip,
   ChipGroup,
-} from "../lib/pf-core";
-import { CubesIcon } from "../lib/pf-icons";
-import { cellWidth } from "../lib/pf-table";
+} from "../lib/ui";
+import { CubesIcon } from "../lib/icons";
+import { cellWidth } from "../lib/table";
 import { sortBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

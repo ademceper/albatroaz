@@ -24,9 +24,9 @@ import {
   ButtonVariant,
   PageSection,
   SelectOption,
-} from "../../lib/pf-core";
-import { FilterIcon } from "../../lib/pf-icons";
-import { cellWidth } from "../../lib/pf-table";
+} from "../../lib/ui";
+import { FilterIcon } from "../../lib/icons";
+import { cellWidth } from "../../lib/table";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";

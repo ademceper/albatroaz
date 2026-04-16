@@ -21,8 +21,8 @@ import {
   Split,
   SplitItem,
   Switch,
-} from "../../lib/pf-core";
-import { HelpIcon } from "../../lib/pf-icons";
+} from "../../lib/ui";
+import { HelpIcon } from "../../lib/icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import helpUrls from "../../help-urls";

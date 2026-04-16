@@ -16,7 +16,7 @@ import { useAlerts, useFetch } from "../lib/shared";
 import {
   ButtonVariant,
   DropdownItem,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { get } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

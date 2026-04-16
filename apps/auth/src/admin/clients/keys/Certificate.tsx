@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import type CertificateRepresentation from "@keycloak/keycloak-admin-client/lib/defs/certificateRepresentation";
-import { FormGroup, TextArea } from "../../lib/pf-core";
+import { FormGroup, TextArea } from "../../lib/ui";
 import { useId } from "react";
 import { useTranslation } from "react-i18next";
 import { HelpItem } from "../../lib/shared";

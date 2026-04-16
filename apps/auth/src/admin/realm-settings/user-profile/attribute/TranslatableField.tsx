@@ -21,8 +21,8 @@ import {
   InputGroup,
   InputGroupItem,
   TextInput,
-} from "../../../lib/pf-core";
-import { GlobeRouteIcon } from "../../../lib/pf-icons";
+} from "../../../lib/ui";
+import { GlobeRouteIcon } from "../../../lib/icons";
 import { TFunction } from "i18next";
 import { useEffect } from "react";
 import { useFormContext, useWatch } from "react-hook-form";

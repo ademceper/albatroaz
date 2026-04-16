@@ -18,7 +18,7 @@ import {
   NavGroup,
   PageSidebar,
   PageSidebarBody,
-} from "./lib/pf-core";
+} from "./lib/ui";
 import { FormEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink, useNavigate } from "react-router-dom";

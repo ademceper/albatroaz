@@ -30,7 +30,7 @@ import {
   ModalVariant,
   Text,
   TextContent,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { sortBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

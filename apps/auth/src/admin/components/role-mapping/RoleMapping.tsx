@@ -22,8 +22,8 @@ import {
   ButtonVariant,
   Checkbox,
   ToolbarItem,
-} from "../../lib/pf-core";
-import { cellWidth } from "../../lib/pf-table";
+} from "../../lib/ui";
+import { cellWidth } from "../../lib/table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";

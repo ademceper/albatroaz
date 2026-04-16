@@ -11,8 +11,8 @@
 
 // @ts-nocheck
 
-import { DataListDragButton } from "../../lib/pf-core";
-import { Th, Tr } from "../../lib/pf-table";
+import { DataListDragButton } from "../../lib/ui";
+import { Th, Tr } from "../../lib/table";
 import { useTranslation } from "react-i18next";
 
 import "./flow-header.css";

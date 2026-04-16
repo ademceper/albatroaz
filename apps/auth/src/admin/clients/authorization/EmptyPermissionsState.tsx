@@ -21,8 +21,8 @@ import {
   Tooltip,
   EmptyStateHeader,
   EmptyStateFooter,
-} from "../../lib/pf-core";
-import { PlusCircleIcon } from "../../lib/pf-icons";
+} from "../../lib/ui";
+import { PlusCircleIcon } from "../../lib/icons";
 
 import { PermissionType, toNewPermission } from "../routes/NewPermission";
 import { useRealm } from "../../context/realm-context/RealmContext";

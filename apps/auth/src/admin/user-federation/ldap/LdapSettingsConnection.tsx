@@ -26,7 +26,7 @@ import {
   FormGroup,
   SelectOption,
   Switch,
-} from "../../lib/pf-core";
+} from "../../lib/ui";
 import { get, isEqual } from "lodash-es";
 import { useState } from "react";
 import {

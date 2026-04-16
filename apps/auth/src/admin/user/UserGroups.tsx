@@ -20,9 +20,9 @@ import {
   ButtonVariant,
   Checkbox,
   Popover,
-} from "../lib/pf-core";
-import { QuestionCircleIcon } from "../lib/pf-icons";
-import { cellWidth } from "../lib/pf-table";
+} from "../lib/ui";
+import { QuestionCircleIcon } from "../lib/icons";
+import { cellWidth } from "../lib/table";
 import { intersectionBy, sortBy, uniqBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";

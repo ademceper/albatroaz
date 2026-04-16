@@ -23,7 +23,7 @@ import {
   Radio,
   FormGroup,
   PageSection,
-} from "../lib/pf-core";
+} from "../lib/ui";
 import { Controller, FormProvider, useForm, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
