@@ -1,39 +1,27 @@
-/**
- * WARNING: Before modifying this file, run the following command:
- *
- * $ npx keycloakify own --path "admin/components/bread-crumb/PageBreadCrumbs.tsx"
- *
- * This file is provided by @keycloakify/keycloak-admin-ui version 260502.0.0.
- * It was copied into your repository by the postinstall script: `keycloakify sync-extensions`.
- */
-
-/* eslint-disable */
-
 // @ts-nocheck
-
 import {
   Breadcrumb,
   BreadcrumbItem,
-} from "../../lib/ui";
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@albatroaz/ui/components/breadcrumb";
 import { uniqBy } from "lodash-es";
-import { isValidElement } from "react";
+import { Fragment, isValidElement } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import useBreadcrumbs, {
-  BreadcrumbData,
-  BreadcrumbsRoute,
-} from "use-react-router-breadcrumbs";
-
+import useBreadcrumbs from "use-react-router-breadcrumbs";
 import { useRealm } from "../../context/realm-context/RealmContext";
 import { routes } from "../../routes";
 
 export const PageBreadCrumbs = () => {
   const { t } = useTranslation();
   const { realm } = useRealm();
-  const elementText = (crumb: BreadcrumbData) =>
+  const elementText = (crumb) =>
     isValidElement(crumb.breadcrumb) && crumb.breadcrumb.props.children;
 
-  const routesWithCrumbs: BreadcrumbsRoute[] = routes.map((route) => ({
+  const routesWithCrumbs = routes.map((route) => ({
     ...route,
     breadcrumb: route.breadcrumb?.(t),
   }));
@@ -45,17 +33,27 @@ export const PageBreadCrumbs = () => {
     }),
     elementText,
   );
-  return crumbs.length > 1 ? (
+
+  if (crumbs.length <= 1) return null;
+
+  return (
     <Breadcrumb>
-      {crumbs.map(({ match, breadcrumb: crumb }, i) => (
-        <BreadcrumbItem key={i} isActive={crumbs.length - 1 === i}>
-          {crumbs.length - 1 !== i ? (
-            <Link to={match.pathname}>{crumb}</Link>
-          ) : (
-            crumb
-          )}
-        </BreadcrumbItem>
-      ))}
+      <BreadcrumbList>
+        {crumbs.map(({ match, breadcrumb: crumb }, i) => (
+          <Fragment key={i}>
+            {i > 0 && <BreadcrumbSeparator />}
+            <BreadcrumbItem>
+              {i < crumbs.length - 1 ? (
+                <BreadcrumbLink asChild>
+                  <Link to={match.pathname}>{crumb}</Link>
+                </BreadcrumbLink>
+              ) : (
+                <BreadcrumbPage>{crumb}</BreadcrumbPage>
+              )}
+            </BreadcrumbItem>
+          </Fragment>
+        ))}
+      </BreadcrumbList>
     </Breadcrumb>
-  ) : null;
+  );
 };

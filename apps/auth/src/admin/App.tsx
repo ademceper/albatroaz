@@ -1,32 +1,19 @@
-/**
- * WARNING: Before modifying this file, run the following command:
- *
- * $ npx keycloakify own --path "admin/App.tsx"
- *
- * This file is provided by @keycloakify/keycloak-admin-ui version 260502.0.0.
- * It was copied into your repository by the postinstall script: `keycloakify sync-extensions`.
- */
-
-/* eslint-disable */
-
-// @ts-nocheck
-
 import { SessionExpirationWarningOverlay } from "./lib/SessionExpirationWarningOverlay";
 import KeycloakAdminClient from "@keycloak/keycloak-admin-client";
-import {
-  mainPageContentId,
-  useEnvironment,
-} from "./lib/shared";
-import { Flex, FlexItem, Page } from "./lib/ui";
-import { PropsWithChildren, Suspense, useEffect, useState } from "react";
+import { useEnvironment } from "./lib/shared";
+import { type PropsWithChildren, Suspense, useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
-
+import { Separator } from "@albatroaz/ui/components/separator";
+import {
+  SidebarInset,
+  SidebarProvider,
+  SidebarTrigger,
+} from "@albatroaz/ui/components/sidebar";
 import {
   ErrorBoundaryFallback,
   ErrorBoundaryProvider,
   KeycloakSpinner,
 } from "./lib/shared";
-import { Header } from "./PageHeader";
 import { PageNav } from "./PageNav";
 import { AdminClientContext, initAdminClient } from "./admin-client";
 import { PageBreadCrumbs } from "./components/bread-crumb/PageBreadCrumbs";
@@ -77,26 +64,22 @@ export const App = () => {
   }, [environment, keycloak]);
 
   if (!adminClient) return <KeycloakSpinner />;
+
   return (
     <AdminClientContext.Provider value={{ keycloak, adminClient }}>
       <AppContexts>
-        <Flex
-          direction={{ default: "column" }}
-          flexWrap={{ default: "nowrap" }}
-          spaceItems={{ default: "spaceItemsNone" }}
-          style={{ height: "100%" }}
-        >
-          <FlexItem>
+        <SidebarProvider>
+          <PageNav />
+          <SidebarInset>
+            <header className="flex h-14 shrink-0 items-center gap-2">
+              <div className="flex items-center gap-2 px-4">
+                <SidebarTrigger className="-ml-1" />
+                <Separator orientation="vertical" className="mr-2 h-4" />
+                <PageBreadCrumbs />
+              </div>
+            </header>
             <Banners />
-          </FlexItem>
-          <FlexItem grow={{ default: "grow" }} style={{ minHeight: 0 }}>
-            <Page
-              header={<Header />}
-              isManagedSidebar
-              sidebar={<PageNav />}
-              breadcrumb={<PageBreadCrumbs />}
-              mainContainerId={mainPageContentId}
-            >
+            <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
               <ErrorBoundaryFallback fallback={ErrorRenderer}>
                 <Suspense fallback={<KeycloakSpinner />}>
                   <AuthWall>
@@ -104,9 +87,9 @@ export const App = () => {
                   </AuthWall>
                 </Suspense>
               </ErrorBoundaryFallback>
-            </Page>
-          </FlexItem>
-        </Flex>
+            </div>
+          </SidebarInset>
+        </SidebarProvider>
         <SessionExpirationWarningOverlay warnUserSecondsBeforeAutoLogout={45} />
       </AppContexts>
     </AdminClientContext.Provider>
