@@ -39,10 +39,7 @@ import {
   SelectOption,
   Tooltip,
 } from "../lib/ui";
-import {
-  CheckCircleIcon,
-  WarningTriangleIcon,
-} from "../lib/icons";
+import { CheckCircleIcon, WarningIcon } from "@phosphor-icons/react";
 import { cellWidth } from "../lib/table";
 import { pickBy } from "lodash-es";
 import { useState } from "react";
@@ -80,7 +77,7 @@ const StatusRow = (event: EventRepresentation) =>
     <Tooltip content={event.error}>
       <span>
         <Icon status="warning">
-          <WarningTriangleIcon />
+          <WarningIcon />
         </Icon>
         {event.type}
       </span>

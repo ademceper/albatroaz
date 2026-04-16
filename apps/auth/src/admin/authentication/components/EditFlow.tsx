@@ -19,7 +19,7 @@ import {
   ModalVariant,
   Tooltip,
 } from "../../lib/ui";
-import { PencilAltIcon } from "../../lib/icons";
+import { PencilIcon } from "@phosphor-icons/react";
 import { useEffect } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
@@ -61,7 +61,7 @@ export const EditFlow = ({ execution, onRowChange }: EditFlowProps) => {
           aria-label={t("edit")}
           onClick={toggle}
         >
-          <PencilAltIcon />
+          <PencilIcon />
         </Button>
       </Tooltip>
       {show && (

@@ -18,7 +18,7 @@ import {
   useFetch,
 } from "../../lib/shared";
 import { Button, FormGroup } from "../../lib/ui";
-import { MinusCircleIcon } from "../../lib/icons";
+import { MinusCircleIcon } from "@phosphor-icons/react";
 import {
   Table,
   Tbody,

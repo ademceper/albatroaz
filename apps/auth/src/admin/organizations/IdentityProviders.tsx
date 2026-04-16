@@ -26,7 +26,7 @@ import {
   ToolbarItem,
 } from "../lib/ui";
 import { sortBy } from "lodash-es";
-import { BellIcon } from "../lib/icons";
+import { BellIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";

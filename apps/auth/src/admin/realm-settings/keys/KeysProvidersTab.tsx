@@ -26,7 +26,7 @@ import {
   ToolbarGroup,
   ToolbarItem,
 } from "../../lib/ui";
-import { SearchIcon } from "../../lib/icons";
+import { MagnifyingGlassIcon } from "@phosphor-icons/react";
 import { KeyboardEvent, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -196,7 +196,7 @@ export const KeysProvidersTab = ({
                     aria-label={t("search")}
                     onClick={onSearch}
                   >
-                    <SearchIcon />
+                    <MagnifyingGlassIcon />
                   </Button>
                 </InputGroupItem>
               </InputGroup>

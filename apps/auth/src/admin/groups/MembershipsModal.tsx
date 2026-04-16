@@ -20,7 +20,7 @@ import {
   Checkbox,
   Popover,
 } from "../lib/ui";
-import { QuestionCircleIcon } from "../lib/icons";
+import { QuestionIcon } from "@phosphor-icons/react";
 import { cellWidth } from "../lib/table";
 import { useHelp } from "../lib/shared";
 import { ListEmptyState } from "../lib/shared";
@@ -133,7 +133,7 @@ export const MembershipsModal = ({
                   variant="link"
                   className="kc-who-will-appear-button"
                   key="who-will-appear-button"
-                  icon={<QuestionCircleIcon />}
+                  icon={<QuestionIcon />}
                 >
                   {t("whoWillAppearLinkTextUsers")}
                 </Button>

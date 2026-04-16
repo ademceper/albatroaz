@@ -22,7 +22,7 @@ import {
   InputGroupItem,
   TextInput,
 } from "../../../lib/ui";
-import { GlobeRouteIcon } from "../../../lib/icons";
+import { GlobeSimpleIcon } from "@phosphor-icons/react";
 import { TFunction } from "i18next";
 import { useEffect } from "react";
 import { useFormContext, useWatch } from "react-hook-form";
@@ -158,7 +158,7 @@ export const TranslatableField = ({
               data-testid={`addAttribute${fieldName}TranslationBtn`}
               aria-label={t("addAttributeTranslation", { fieldName })}
               onClick={toggle}
-              icon={<GlobeRouteIcon />}
+              icon={<GlobeSimpleIcon />}
             />
           </InputGroupItem>
         )}

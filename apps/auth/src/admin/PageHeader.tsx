@@ -18,7 +18,7 @@ import {
   useHelp,
 } from "./lib/shared";
 import { DropdownItem, ToolbarItem } from "./lib/ui";
-import { HelpIcon } from "./lib/icons";
+import { QuestionIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 import { Link, useHref } from "react-router-dom";
 import { PageHeaderClearCachesModal } from "./PageHeaderClearCachesModal";
@@ -79,7 +79,7 @@ const HelpDropdownItem = () => {
   return (
     <DropdownItem
       data-testId="helpIcon"
-      icon={<HelpIcon />}
+      icon={<QuestionIcon />}
       onClick={toggleHelp}
     >
       {enabled ? t("helpEnabled") : t("helpDisabled")}

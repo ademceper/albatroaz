@@ -29,7 +29,7 @@ import { ReactElement, useState } from "react";
 import { Link, To } from "react-router-dom";
 
 import "./keycloak-card.css";
-import { EllipsisVIcon } from "../../lib/icons";
+import { DotsThreeVerticalIcon } from "@phosphor-icons/react";
 
 export type KeycloakCardProps = {
   title: string;
@@ -71,7 +71,7 @@ export const KeycloakCard = ({
                   variant="plain"
                   data-testid={`${title}-dropdown`}
                 >
-                  <EllipsisVIcon />
+                  <DotsThreeVerticalIcon />
                 </MenuToggle>
               )}
               isOpen={isDropdownOpen}

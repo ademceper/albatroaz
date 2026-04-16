@@ -19,7 +19,7 @@ import {
   MenuToggle,
   ToolbarItem,
 } from "../../lib/ui";
-import { EllipsisVIcon } from "../../lib/icons";
+import { DotsThreeVerticalIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 import { useAccess } from "../../context/access/Access";
 import useToggle from "../../utils/useToggle";
@@ -69,7 +69,7 @@ export const GroupToolbar = ({
               variant="plain"
               aria-label="Actions"
             >
-              <EllipsisVIcon />
+              <DotsThreeVerticalIcon />
             </MenuToggle>
           )}
           isOpen={openKebab}

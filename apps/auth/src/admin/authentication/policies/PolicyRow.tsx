@@ -22,7 +22,7 @@ import {
   TextInput,
   ValidatedOptions,
 } from "../../lib/ui";
-import { MinusCircleIcon } from "../../lib/icons";
+import { MinusCircleIcon } from "@phosphor-icons/react";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { FormErrorText, HelpItem } from "../../lib/shared";

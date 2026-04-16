@@ -24,10 +24,7 @@ import {
   HelperTextItem,
   TextInput,
 } from "../../lib/ui";
-import {
-  MinusCircleIcon,
-  PlusCircleIcon,
-} from "../../lib/icons";
+import { MinusCircleIcon, PlusCircleIcon } from "@phosphor-icons/react";
 import { Fragment, FunctionComponent, PropsWithChildren } from "react";
 import {
   FieldValues,

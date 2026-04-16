@@ -19,7 +19,7 @@ import {
   AlertVariant,
   PageSection,
 } from "../../lib/ui";
-import { InfoCircleIcon } from "../../lib/icons";
+import { InfoIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -86,7 +86,7 @@ export const ServiceAccount = ({ client }: ServiceAccountProps) => {
   return serviceAccount ? (
     <>
       <PageSection className="pf-v5-u-pb-0">
-        <InfoCircleIcon className="pf-v5-c-alert__icon keycloak--service-account--info-text" />
+        <InfoIcon className="pf-v5-c-alert__icon keycloak--service-account--info-text" />
         <span className="pf-v5-u-pl-sm">
           <Trans i18nKey="manageServiceAccountUser">
             {""}

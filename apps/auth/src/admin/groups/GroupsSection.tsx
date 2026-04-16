@@ -28,7 +28,7 @@ import {
   Tabs,
   Tooltip,
 } from "../lib/ui";
-import { AngleLeftIcon, TreeIcon } from "../lib/icons";
+import { CaretLeftIcon, TreeStructureIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -164,7 +164,7 @@ export default function GroupsSection() {
                 <Button
                   aria-label={open ? t("hide") : t("show")}
                   variant="plain"
-                  icon={open ? <AngleLeftIcon /> : <TreeIcon />}
+                  icon={open ? <CaretLeftIcon /> : <TreeStructureIcon />}
                   onClick={toggle}
                 />
               </Tooltip>

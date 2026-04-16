@@ -40,7 +40,7 @@ import {
   Text,
   TextContent,
 } from "../../lib/ui";
-import { QuestionCircleIcon } from "../../lib/icons";
+import { QuestionIcon } from "@phosphor-icons/react";
 import { useEffect, useRef, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
@@ -254,7 +254,7 @@ export const EvaluateScopes = ({ clientId, protocol }: EvaluateScopesProps) => {
         {enabled && (
           <TextContent className="keycloak__section_intro__help">
             <Text>
-              <QuestionCircleIcon /> {t("evaluateExplain")}
+              <QuestionIcon /> {t("evaluateExplain")}
             </Text>
           </TextContent>
         )}

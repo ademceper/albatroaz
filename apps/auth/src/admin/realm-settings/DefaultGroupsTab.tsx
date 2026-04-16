@@ -32,10 +32,7 @@ import {
   TextContent,
   ToolbarItem,
 } from "../lib/ui";
-import {
-  EllipsisVIcon,
-  QuestionCircleIcon,
-} from "../lib/icons";
+import { DotsThreeVerticalIcon, QuestionIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -167,7 +164,7 @@ export const DefaultsGroupsTab = () => {
             }}
           >
             <Text>
-              <QuestionCircleIcon /> {t("whatIsDefaultGroups")}
+              <QuestionIcon /> {t("whatIsDefaultGroups")}
             </Text>
           </TextContent>
         </Popover>
@@ -202,7 +199,7 @@ export const DefaultsGroupsTab = () => {
                       onClick={toggleKebab}
                       isDisabled={selectedRows!.length === 0}
                     >
-                      <EllipsisVIcon />
+                      <DotsThreeVerticalIcon />
                     </MenuToggle>
                   )}
                   isOpen={isKebabOpen}

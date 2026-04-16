@@ -20,7 +20,7 @@ import {
   SelectOption,
   ToolbarItem,
 } from "../../lib/ui";
-import { FilterIcon } from "../../lib/icons";
+import { FunnelIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -63,7 +63,7 @@ export const SearchDropdown = ({
           ref={ref}
           id="toggle-id"
           onClick={() => setSearchToggle(!searchToggle)}
-          icon={<FilterIcon />}
+          icon={<FunnelIcon />}
         >
           {t(`searchType.${searchType}`)}
         </MenuToggle>

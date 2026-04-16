@@ -13,7 +13,7 @@
 
 import { useEffect, useRef } from "react";
 import { Icon } from "../../lib/ui";
-import { CaretDownIcon } from "../../lib/icons";
+import { CaretDownIcon } from "@phosphor-icons/react";
 import "./dropdown-panel.css";
 
 type DropdownPanelProps = {

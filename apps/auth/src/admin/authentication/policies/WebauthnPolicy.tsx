@@ -23,7 +23,7 @@ import {
   Text,
   TextContent,
 } from "../../lib/ui";
-import { QuestionCircleIcon } from "../../lib/icons";
+import { QuestionIcon } from "@phosphor-icons/react";
 import { useEffect } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
@@ -163,7 +163,7 @@ export const WebauthnPolicy = ({
         <Popover bodyContent={t(`${namePrefix}FormHelp`)}>
           <TextContent className="keycloak__section_intro__help">
             <Text>
-              <QuestionCircleIcon /> {t("webauthnIntro")}
+              <QuestionIcon /> {t("webauthnIntro")}
             </Text>
           </TextContent>
         </Popover>

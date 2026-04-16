@@ -31,10 +31,7 @@ import {
   MenuToggle,
   ToolbarItem,
 } from "../lib/ui";
-import {
-  EllipsisVIcon,
-  InfoCircleIcon,
-} from "../lib/icons";
+import { DotsThreeVerticalIcon, InfoIcon } from "@phosphor-icons/react";
 import { uniqBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -58,7 +55,7 @@ const UserDetailLink = (user: UserRepresentation) => {
     <Link key={user.id} to={toUser({ realm, id: user.id!, tab: "settings" })}>
       {user.username}{" "}
       {!user.enabled && (
-        <Label color="red" icon={<InfoCircleIcon />}>
+        <Label color="red" icon={<InfoIcon />}>
           {t("disabled")}
         </Label>
       )}
@@ -230,7 +227,7 @@ export const Members = () => {
                       isDisabled={selectedRows.length === 0}
                       aria-label="Actions"
                     >
-                      <EllipsisVIcon />
+                      <DotsThreeVerticalIcon />
                     </MenuToggle>
                   )}
                   shouldFocusToggleOnSelect

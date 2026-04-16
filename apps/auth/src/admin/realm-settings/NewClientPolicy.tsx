@@ -40,10 +40,7 @@ import {
   Text,
   TextVariants,
 } from "../lib/ui";
-import {
-  PlusCircleIcon,
-  TrashIcon,
-} from "../lib/icons";
+import { PlusCircleIcon, TrashIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 import { Controller, FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

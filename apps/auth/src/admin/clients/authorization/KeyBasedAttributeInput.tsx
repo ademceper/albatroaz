@@ -21,10 +21,7 @@ import {
   SelectOption,
   TextInput,
 } from "../../lib/ui";
-import {
-  MinusCircleIcon,
-  PlusCircleIcon,
-} from "../../lib/icons";
+import { MinusCircleIcon, PlusCircleIcon } from "@phosphor-icons/react";
 import {
   Table,
   Tbody,

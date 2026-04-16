@@ -22,7 +22,7 @@ import {
   PageSection,
   ToolbarItem,
 } from "../lib/ui";
-import { EllipsisVIcon } from "../lib/icons";
+import { DotsThreeVerticalIcon } from "@phosphor-icons/react";
 import { cellWidth } from "../lib/table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -276,7 +276,7 @@ export default function ClientScopesSection() {
                       onClick={() => setKebabOpen(!kebabOpen)}
                       variant="plain"
                     >
-                      <EllipsisVIcon />
+                      <DotsThreeVerticalIcon />
                     </MenuToggle>
                   )}
                   isOpen={kebabOpen}

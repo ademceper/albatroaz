@@ -22,7 +22,7 @@ import {
   SplitItem,
   Switch,
 } from "../../lib/ui";
-import { HelpIcon } from "../../lib/icons";
+import { QuestionIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import helpUrls from "../../help-urls";
@@ -76,7 +76,7 @@ export const HelpHeader = () => {
           id="help"
           data-testid="help-toggle"
         >
-          <HelpIcon />
+          <QuestionIcon />
         </MenuToggle>
       )}
     >

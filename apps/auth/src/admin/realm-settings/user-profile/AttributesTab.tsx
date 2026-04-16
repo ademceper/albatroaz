@@ -25,7 +25,7 @@ import {
   ToolbarContent,
   ToolbarItem,
 } from "../../lib/ui";
-import { FilterIcon } from "../../lib/icons";
+import { FunnelIcon } from "@phosphor-icons/react";
 import { uniqBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -188,7 +188,7 @@ export const AttributesTab = ({ setTableData }: AttributesTabProps) => {
               isOpen={isFilterTypeDropdownOpen}
               variant={SelectVariant.single}
               onToggle={toggleIsFilterTypeDropdownOpen}
-              toggleIcon={<FilterIcon />}
+              toggleIcon={<FunnelIcon />}
               onSelect={(value) => {
                 const filter = value.toString();
                 setFilter(filter);

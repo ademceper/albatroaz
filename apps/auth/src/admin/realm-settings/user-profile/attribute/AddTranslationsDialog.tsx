@@ -30,7 +30,7 @@ import {
   TextInput,
   TextVariants,
 } from "../../../lib/ui";
-import { SearchIcon } from "../../../lib/icons";
+import { MagnifyingGlassIcon } from "@phosphor-icons/react";
 import {
   Table,
   Tbody,
@@ -214,7 +214,7 @@ export const AddTranslationsDialog = ({
                 {translations.length === 0 && filter && (
                   <ListEmptyState
                     hasIcon
-                    icon={SearchIcon}
+                    icon={MagnifyingGlassIcon}
                     isSearchVariant
                     message={t("noSearchResults")}
                     instructions={t("noLanguagesSearchResultsInstructions")}

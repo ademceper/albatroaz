@@ -25,7 +25,7 @@ import {
   ToolbarItem,
   Tooltip,
 } from "../lib/ui";
-import { WarningTriangleIcon } from "../lib/icons";
+import { WarningIcon } from "@phosphor-icons/react";
 import {
   IRowData,
   TableText,
@@ -76,7 +76,7 @@ const ClientDetailLink = (client: ClientRepresentation) => {
       </Link>
       {client.attributes?.["is_temporary_admin"] === "true" && (
         <Tooltip content={t("temporaryService")}>
-          <WarningTriangleIcon
+          <WarningIcon
             className="pf-v5-u-ml-sm"
             id="temporary-admin-label"
           />

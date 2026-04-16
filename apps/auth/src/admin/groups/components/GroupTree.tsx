@@ -34,10 +34,7 @@ import {
   useAlerts,
   useFetch,
 } from "../../lib/shared";
-import {
-  AngleRightIcon,
-  EllipsisVIcon,
-} from "../../lib/icons";
+import { CaretRightIcon, DotsThreeVerticalIcon } from "@phosphor-icons/react";
 import { unionBy } from "lodash-es";
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -134,7 +131,7 @@ const GroupTreeContextMenu = ({
             variant="plain"
             aria-label="Actions"
           >
-            <EllipsisVIcon />
+            <DotsThreeVerticalIcon />
           </MenuToggle>
         )}
         isOpen={isOpen}
@@ -283,7 +280,7 @@ export const GroupTree = ({
                         variant="plain"
                         onClick={() => setFirstSub(firstSub + SUBGROUP_COUNT)}
                       >
-                        <AngleRightIcon />
+                        <CaretRightIcon />
                       </Button>
                     ),
                   },

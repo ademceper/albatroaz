@@ -17,7 +17,7 @@ import {
   Draggable,
   Tooltip,
 } from "../../lib/ui";
-import { TrashIcon } from "../../lib/icons";
+import { TrashIcon } from "@phosphor-icons/react";
 import { Td, TreeRowWrapper } from "../../lib/table";
 import { useTranslation } from "react-i18next";
 import type { ExpandableExecution } from "../execution-model";

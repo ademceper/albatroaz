@@ -34,7 +34,7 @@ import {
   SelectList,
   SelectOption,
 } from "../../lib/ui";
-import { PlusCircleIcon } from "../../lib/icons";
+import { PlusCircleIcon } from "@phosphor-icons/react";
 import { useEffect, useMemo, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

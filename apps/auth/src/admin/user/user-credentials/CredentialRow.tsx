@@ -26,7 +26,7 @@ import useToggle from "../../utils/useToggle";
 import useLocaleSort from "../../utils/useLocaleSort";
 import { CredentialDataDialog } from "./CredentialDataDialog";
 import useFormatDate from "../../utils/useFormatDate";
-import { EllipsisVIcon } from "../../lib/icons";
+import { DotsThreeVerticalIcon } from "@phosphor-icons/react";
 
 type CredentialRowProps = {
   credential: CredentialRepresentation;
@@ -117,7 +117,7 @@ export const CredentialRow = ({
               variant="plain"
               aria-label="Kebab toggle"
             >
-              <EllipsisVIcon />
+              <DotsThreeVerticalIcon />
             </MenuToggle>
           )}
           isOpen={kebabOpen}

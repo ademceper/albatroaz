@@ -24,11 +24,7 @@ import {
   ModalVariant,
   SelectOption,
 } from "../../lib/ui";
-import {
-  CaretDownIcon,
-  CaretUpIcon,
-  FilterIcon,
-} from "../../lib/icons";
+import { CaretDownIcon, CaretUpIcon, FunnelIcon } from "@phosphor-icons/react";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
@@ -261,7 +257,7 @@ export const AddScopeDialog = ({
                 data-testid="filter-type-dropdown"
                 id="toggle-id-9"
                 onClick={toggleIsFilterTypeDropdownOpen}
-                icon={<FilterIcon />}
+                icon={<FunnelIcon />}
                 statusIcon={<CaretDownIcon />}
               >
                 {filterType}
@@ -294,7 +290,7 @@ export const AddScopeDialog = ({
                     id="toggle-id-9"
                     onClick={toggleIsFilterTypeDropdownOpen}
                     statusIcon={<CaretDownIcon />}
-                    icon={<FilterIcon />}
+                    icon={<FunnelIcon />}
                   >
                     {filterType}
                   </MenuToggle>

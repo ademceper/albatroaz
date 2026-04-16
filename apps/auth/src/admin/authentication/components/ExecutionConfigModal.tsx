@@ -28,7 +28,7 @@ import {
   ModalVariant,
   Tooltip,
 } from "../../lib/ui";
-import { CogIcon, TrashIcon } from "../../lib/icons";
+import { GearIcon, TrashIcon } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
@@ -162,7 +162,7 @@ export const ExecutionConfigModal = ({
           aria-label={t("settings")}
           onClick={() => setShow(true)}
         >
-          <CogIcon />
+          <GearIcon />
         </Button>
       </Tooltip>
       {configDescription && (

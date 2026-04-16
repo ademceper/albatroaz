@@ -36,11 +36,7 @@ import {
   ToolbarItem,
   Tooltip,
 } from "../../lib/ui";
-import {
-  ExclamationCircleIcon,
-  InfoCircleIcon,
-  WarningTriangleIcon,
-} from "../../lib/icons";
+import { WarningCircleIcon, InfoIcon, WarningIcon } from "@phosphor-icons/react";
 import type { IRowData } from "../../lib/table";
 import { JSX, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -80,7 +76,7 @@ const UserDetailLink = (user: BruteUser) => {
       </Link>
       {user.attributes?.["is_temporary_admin"]?.[0] === "true" && (
         <Tooltip content={t("temporaryAdmin")}>
-          <WarningTriangleIcon
+          <WarningIcon
             className="pf-v5-u-ml-sm"
             id="temporary-admin-label"
           />
@@ -99,12 +95,12 @@ const StatusRow = ({ user }: StatusRowProps) => {
   return (
     <>
       {!user.enabled && (
-        <Label color="red" icon={<InfoCircleIcon />}>
+        <Label color="red" icon={<InfoIcon />}>
           {t("disabled")}
         </Label>
       )}
       {user.bruteForceStatus?.disabled && (
-        <Label color="orange" icon={<WarningTriangleIcon />}>
+        <Label color="orange" icon={<WarningIcon />}>
           {t("temporaryLocked")}
         </Label>
       )}
@@ -118,7 +114,7 @@ const ValidatedEmail = (user: UserRepresentation) => {
     <>
       {!user.emailVerified && (
         <Tooltip content={t("notVerified")}>
-          <ExclamationCircleIcon className="keycloak__user-section__email-verified" />
+          <WarningCircleIcon className="keycloak__user-section__email-verified" />
         </Tooltip>
       )}{" "}
       {emptyFormatter()(user.email) as JSX.Element}

@@ -20,7 +20,7 @@ import {
   Button,
   Switch,
 } from "../lib/ui";
-import { CogIcon } from "../lib/icons";
+import { GearIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
@@ -231,7 +231,7 @@ export const RequiredActions = () => {
                   aria-label={t("settings")}
                   onClick={() => setSelectedAction(row.data)}
                 >
-                  <CogIcon />
+                  <GearIcon />
                 </Button>
               ) : undefined,
             width: 10,

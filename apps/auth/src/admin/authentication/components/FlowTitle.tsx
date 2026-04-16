@@ -13,12 +13,7 @@
 
 import { HelpItem } from "../../lib/shared";
 import { Label } from "../../lib/ui";
-import {
-  CodeBranchIcon,
-  MapMarkerIcon,
-  ProcessAutomationIcon,
-  TaskIcon,
-} from "../../lib/icons";
+import { GitBranchIcon, MapPinIcon, PlugsIcon, ListChecksIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 import { useAuthenticationProvider } from "./AuthenticationProviderContext";
 import { FlowType } from "./FlowRow";
@@ -34,13 +29,13 @@ type FlowTitleProps = {
 const FlowIcon = ({ type }: { type: FlowType }) => {
   switch (type) {
     case "condition":
-      return <TaskIcon />;
+      return <ListChecksIcon />;
     case "flow":
-      return <CodeBranchIcon />;
+      return <GitBranchIcon />;
     case "execution":
-      return <ProcessAutomationIcon />;
+      return <PlugsIcon />;
     case "step":
-      return <MapMarkerIcon />;
+      return <MapPinIcon />;
     default:
       return undefined;
   }

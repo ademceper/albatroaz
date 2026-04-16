@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { Banner, Flex, FlexItem } from "./lib/ui";
-import { ExclamationTriangleIcon } from "./lib/icons";
+import { WarningIcon } from "@phosphor-icons/react";
 import { useWhoAmI } from "./context/whoami/WhoAmI";
 import { useTranslation } from "react-i18next";
 
@@ -39,7 +39,7 @@ const WarnBanner = ({ msg, className }: WarnBannerProps) => {
         flexWrap={{ default: "wrap" }}
       >
         <FlexItem style={{ whiteSpace: "normal" }}>
-          <ExclamationTriangleIcon style={{ marginRight: "0.3rem" }} />
+          <WarningIcon style={{ marginRight: "0.3rem" }} />
           {t(msg)}
         </FlexItem>
       </Flex>

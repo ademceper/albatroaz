@@ -30,7 +30,7 @@ import {
   TextInputGroupMain,
   TextInputGroupUtilities,
 } from "../../lib/ui";
-import { TimesIcon } from "../../lib/icons";
+import { XIcon } from "@phosphor-icons/react";
 import { debounce } from "lodash-es";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
@@ -214,7 +214,7 @@ export const UserSelect = ({
                         }}
                         aria-label="Clear input value"
                       >
-                        <TimesIcon aria-hidden />
+                        <XIcon aria-hidden />
                       </Button>
                     )}
                   </TextInputGroupUtilities>

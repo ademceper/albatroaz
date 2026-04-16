@@ -18,7 +18,7 @@ import {
   PageSection,
   SelectOption,
 } from "../lib/ui";
-import { FilterIcon } from "../lib/icons";
+import { FunnelIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../admin-client";
@@ -51,7 +51,7 @@ const SessionFilter = ({ filterType, onChange }: SessionFilterProps) => {
       data-testid="filter-session-type-select"
       isOpen={open}
       onToggle={toggle}
-      toggleIcon={<FilterIcon />}
+      toggleIcon={<FunnelIcon />}
       onSelect={(value) => {
         const filter = value as FilterType;
         onChange(filter);

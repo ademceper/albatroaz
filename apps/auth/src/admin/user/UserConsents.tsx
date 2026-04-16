@@ -18,7 +18,7 @@ import {
   Chip,
   ChipGroup,
 } from "../lib/ui";
-import { CubesIcon } from "../lib/icons";
+import { CubeIcon } from "@phosphor-icons/react";
 import { cellWidth } from "../lib/table";
 import { sortBy } from "lodash-es";
 import { useState } from "react";
@@ -140,7 +140,7 @@ export const UserConsents = () => {
         emptyState={
           <ListEmptyState
             hasIcon={true}
-            icon={CubesIcon}
+            icon={CubeIcon}
             message={t("noConsents")}
             instructions={t("noConsentsText")}
           />

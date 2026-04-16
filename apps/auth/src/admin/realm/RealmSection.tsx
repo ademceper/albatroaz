@@ -25,7 +25,7 @@ import {
   Popover,
   ToolbarItem,
 } from "../lib/ui";
-import { EllipsisVIcon } from "../lib/icons";
+import { DotsThreeVerticalIcon } from "@phosphor-icons/react";
 import { cellWidth } from "../lib/table";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -106,7 +106,7 @@ const KebabDropdown = ({ onClick, isDisabled }: KebabDropdownProps) => {
           variant="plain"
           isDisabled={isDisabled}
         >
-          <EllipsisVIcon />
+          <DotsThreeVerticalIcon />
         </MenuToggle>
       )}
       isOpen={open}

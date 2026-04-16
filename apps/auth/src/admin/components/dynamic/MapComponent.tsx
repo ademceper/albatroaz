@@ -24,10 +24,7 @@ import {
   FormGroup,
   TextInput,
 } from "../../lib/ui";
-import {
-  MinusCircleIcon,
-  PlusCircleIcon,
-} from "../../lib/icons";
+import { MinusCircleIcon, PlusCircleIcon } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";

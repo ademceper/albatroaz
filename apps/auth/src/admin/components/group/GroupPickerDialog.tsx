@@ -35,7 +35,7 @@ import {
   Modal,
   ModalVariant,
 } from "../../lib/ui";
-import { AngleRightIcon } from "../../lib/icons";
+import { CaretRightIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
@@ -391,7 +391,7 @@ const GroupRow = ({
         >
           {(canBrowse || type === "selectOne") && group.subGroupCount !== 0 && (
             <Button variant="link" aria-label={t("select")}>
-              <AngleRightIcon />
+              <CaretRightIcon />
             </Button>
           )}
         </DataListAction>

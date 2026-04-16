@@ -20,7 +20,7 @@ import {
   MenuToggle,
   Tooltip,
 } from "../../lib/ui";
-import { PlusIcon } from "../../lib/icons";
+import { PlusIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";

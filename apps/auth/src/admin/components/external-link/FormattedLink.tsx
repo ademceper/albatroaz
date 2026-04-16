@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { ExternalLinkAltIcon } from "../../lib/icons";
+import { ArrowSquareOutIcon } from "@phosphor-icons/react";
 import { AnchorHTMLAttributes } from "react";
 
 export type FormattedLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
@@ -37,7 +37,7 @@ export const FormattedLink = ({
       {...rest}
     >
       {title ? title : href}{" "}
-      {href?.startsWith("http") && <ExternalLinkAltIcon />}
+      {href?.startsWith("http") && <ArrowSquareOutIcon />}
     </a>
   );
 };

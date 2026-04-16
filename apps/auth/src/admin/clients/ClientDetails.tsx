@@ -25,7 +25,7 @@ import {
   TabTitleText,
   Tooltip,
 } from "../lib/ui";
-import { InfoCircleIcon } from "../lib/icons";
+import { InfoIcon } from "@phosphor-icons/react";
 import { cloneDeep, sortBy } from "lodash-es";
 import { useMemo, useState } from "react";
 import { Controller, FormProvider, useForm, useWatch } from "react-hook-form";
@@ -131,7 +131,7 @@ const ClientDetailHeader = ({
       >
         <Label
           data-testid="bearer-only-explainer-label"
-          icon={<InfoCircleIcon />}
+          icon={<InfoIcon />}
         >
           {protocolName}
         </Label>

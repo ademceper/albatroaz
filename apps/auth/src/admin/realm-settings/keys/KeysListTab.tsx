@@ -25,7 +25,7 @@ import {
   PageSection,
   SelectOption,
 } from "../../lib/ui";
-import { FilterIcon } from "../../lib/icons";
+import { FunnelIcon } from "@phosphor-icons/react";
 import { cellWidth } from "../../lib/table";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -71,7 +71,7 @@ const SelectFilter = ({ onFilter }: SelectFilterProps) => {
       className="kc-filter-type-select"
       variant={SelectVariant.single}
       onToggle={toggleFilter}
-      toggleIcon={<FilterIcon />}
+      toggleIcon={<FunnelIcon />}
       onSelect={(value) => {
         const filter =
           FILTER_OPTIONS.find((o) => o === value.toString()) ||

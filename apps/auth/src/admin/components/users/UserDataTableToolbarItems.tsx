@@ -25,10 +25,7 @@ import {
   SearchInput,
   ToolbarItem,
 } from "../../lib/ui";
-import {
-  ArrowRightIcon,
-  EllipsisVIcon,
-} from "../../lib/icons";
+import { ArrowRightIcon, DotsThreeVerticalIcon } from "@phosphor-icons/react";
 import { ReactNode, useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -195,7 +192,7 @@ export function UserDataTableToolbarItems({
             variant="plain"
             onClick={() => setKebabOpen(!kebabOpen)}
           >
-            <EllipsisVIcon />
+            <DotsThreeVerticalIcon />
           </MenuToggle>
         )}
         isOpen={kebabOpen}

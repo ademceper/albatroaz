@@ -28,7 +28,7 @@ import {
   TextContent,
   TextVariants,
 } from "../lib/ui";
-import { DatabaseIcon } from "../lib/icons";
+import { DatabaseIcon } from "@phosphor-icons/react";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";

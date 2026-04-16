@@ -19,11 +19,7 @@ import {
   FormGroup,
   TextInput,
 } from "../../lib/ui";
-import {
-  CheckIcon,
-  PencilAltIcon,
-  TimesIcon,
-} from "../../lib/icons";
+import { CheckIcon, PencilIcon, XIcon } from "@phosphor-icons/react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
@@ -101,7 +97,7 @@ export const InlineLabelEdit = ({
                   className="kc-editUserLabel-cancelBtn"
                   aria-label={t("cancelBtn")}
                   onClick={toggle}
-                  icon={<TimesIcon />}
+                  icon={<XIcon />}
                 />
               </div>
             </>
@@ -114,7 +110,7 @@ export const InlineLabelEdit = ({
                 className="kc-editUserLabel-btn"
                 onClick={toggle}
                 data-testid="editUserLabelBtn"
-                icon={<PencilAltIcon />}
+                icon={<PencilIcon />}
               />
             </>
           )}

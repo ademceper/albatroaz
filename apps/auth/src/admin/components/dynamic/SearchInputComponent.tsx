@@ -17,11 +17,7 @@ import {
   TextInputGroupMain,
   TextInputGroupUtilities,
 } from "../../lib/ui";
-import {
-  ArrowRightIcon,
-  SearchIcon,
-  TimesIcon,
-} from "../../lib/icons";
+import { ArrowRightIcon, MagnifyingGlassIcon, XIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 
 type SearchInputComponentProps = {
@@ -47,7 +43,7 @@ export const SearchInputComponent = ({
     <>
       <TextInputGroup>
         <TextInputGroupMain
-          icon={<SearchIcon />}
+          icon={<MagnifyingGlassIcon />}
           value={value}
           onChange={(event: React.FormEvent<HTMLInputElement>) =>
             onChange(event.currentTarget.value)
@@ -63,7 +59,7 @@ export const SearchInputComponent = ({
               onClick={onClear}
               aria-label={t("clear")}
               data-testid="clear-search"
-              icon={<TimesIcon />}
+              icon={<XIcon />}
             />
           )}
         </TextInputGroupUtilities>

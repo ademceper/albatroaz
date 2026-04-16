@@ -18,7 +18,7 @@ import {
   ModalVariant,
   Label,
 } from "../lib/ui";
-import { InfoCircleIcon } from "../lib/icons";
+import { InfoIcon } from "@phosphor-icons/react";
 import { differenceBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -40,7 +40,7 @@ const UserDetail = (user: UserRepresentation) => {
     <>
       {user.username}{" "}
       {!user.enabled && (
-        <Label color="red" icon={<InfoCircleIcon />}>
+        <Label color="red" icon={<InfoIcon />}>
           {t("disabled")}
         </Label>
       )}

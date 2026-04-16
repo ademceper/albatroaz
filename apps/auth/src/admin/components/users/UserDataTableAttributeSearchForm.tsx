@@ -33,7 +33,7 @@ import {
   TextInput,
   TextVariants,
 } from "../../lib/ui";
-import { CheckIcon } from "../../lib/icons";
+import { CheckIcon } from "@phosphor-icons/react";
 import { ReactNode, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";

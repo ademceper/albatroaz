@@ -35,10 +35,7 @@ import { useAdminClient } from "../../admin-client";
 import { NewPermissionPolicyDialog } from "./NewPermissionPolicyDialog";
 import PolicyProviderRepresentation from "@keycloak/keycloak-admin-client/lib/defs/policyProviderRepresentation";
 import { ExistingPoliciesDialog } from "./ExistingPoliciesDialog";
-import {
-  CaretDownIcon,
-  FilterIcon,
-} from "../../lib/icons";
+import { CaretDownIcon, FunnelIcon } from "@phosphor-icons/react";
 import { capitalize, sortBy } from "lodash-es";
 import useToggle from "../../utils/useToggle";
 import { IRowData } from "../../lib/table";
@@ -233,7 +230,7 @@ export const AssignedPolicies = ({
                   data-testid="filter-type-dropdown-existingPolicies"
                   id="toggle-id-10"
                   onClick={toggleIsFilterTypeDropdownOpen}
-                  icon={<FilterIcon />}
+                  icon={<FunnelIcon />}
                   statusIcon={<CaretDownIcon />}
                 >
                   {filterType ? capitalize(filterType) : t("allTypes")}

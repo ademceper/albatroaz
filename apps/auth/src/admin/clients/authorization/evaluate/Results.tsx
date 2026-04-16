@@ -28,7 +28,7 @@ import {
   SelectList,
   SelectOption,
 } from "../../../lib/ui";
-import { SearchIcon } from "../../../lib/icons";
+import { MagnifyingGlassIcon } from "@phosphor-icons/react";
 import {
   Table,
   Th,
@@ -125,7 +125,7 @@ export const Results = ({ evaluateResult, refresh, back }: ResultProps) => {
                   aria-label={t("search")}
                   onClick={() => confirmSearchQuery()}
                 >
-                  <SearchIcon />
+                  <MagnifyingGlassIcon />
                 </Button>
               </InputGroupItem>
             </InputGroup>

@@ -21,7 +21,7 @@ import {
   Checkbox,
   Popover,
 } from "../lib/ui";
-import { QuestionCircleIcon } from "../lib/icons";
+import { QuestionIcon } from "@phosphor-icons/react";
 import { cellWidth } from "../lib/table";
 import { intersectionBy, sortBy, uniqBy } from "lodash-es";
 import { useState } from "react";
@@ -240,7 +240,7 @@ export const UserGroups = ({ user }: UserGroupsProps) => {
                   variant="link"
                   className="kc-who-will-appear-button"
                   key="who-will-appear-button"
-                  icon={<QuestionCircleIcon />}
+                  icon={<QuestionIcon />}
                 >
                   {t("whoWillAppearLinkTextUsers")}
                 </Button>

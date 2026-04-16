@@ -33,7 +33,7 @@ import {
   SplitItem,
   Title,
 } from "../../lib/ui";
-import { BellIcon } from "../../lib/icons";
+import { BellIcon } from "@phosphor-icons/react";
 import { useMemo, useState } from "react";
 import { FormProvider, useForm, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";

@@ -23,7 +23,7 @@ import {
   SelectOption,
   ToolbarItem,
 } from "../../lib/ui";
-import { FilterIcon } from "../../lib/icons";
+import { FunnelIcon } from "@phosphor-icons/react";
 
 import {
   AllClientScopes,
@@ -95,7 +95,7 @@ export const SearchDropdown = ({
           id="toggle-id"
           onClick={() => setSearchToggle(!searchToggle)}
         >
-          <FilterIcon /> {t(`clientScopeSearch.${searchType}`)}
+          <FunnelIcon /> {t(`clientScopeSearch.${searchType}`)}
         </MenuToggle>
       )}
       isOpen={searchToggle}

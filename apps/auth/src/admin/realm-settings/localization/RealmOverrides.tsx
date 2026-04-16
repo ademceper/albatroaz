@@ -38,13 +38,7 @@ import {
   TextVariants,
   ToolbarItem,
 } from "../../lib/ui";
-import {
-  CheckIcon,
-  EllipsisVIcon,
-  PencilAltIcon,
-  SearchIcon,
-  TimesIcon,
-} from "../../lib/icons";
+import { CheckIcon, DotsThreeVerticalIcon, PencilIcon, MagnifyingGlassIcon, XIcon } from "@phosphor-icons/react";
 import {
   ActionsColumn,
   IRow,
@@ -408,7 +402,7 @@ export const RealmOverrides = ({
                     data-testid="toolbar-deleteBtn"
                     aria-label="kebab"
                   >
-                    <EllipsisVIcon />
+                    <DotsThreeVerticalIcon />
                   </MenuToggle>
                 )}
                 isOpen={kebabOpen}
@@ -473,7 +467,7 @@ export const RealmOverrides = ({
         {translations.length === 0 && filter && (
           <ListEmptyState
             hasIcon
-            icon={SearchIcon}
+            icon={MagnifyingGlassIcon}
             isSearchVariant
             message={t("noSearchResults")}
             instructions={t("noRealmOverridesSearchResultsInstructions")}
@@ -564,7 +558,7 @@ export const RealmOverrides = ({
                               variant="link"
                               className="pf-m-plain"
                               data-testid={`editTranslationCancelBtn-${rowIndex}`}
-                              icon={<TimesIcon />}
+                              icon={<XIcon />}
                               aria-label={t("cancelBtn")}
                               onClick={() => {
                                 setEditStates((prevEditStates) => ({
@@ -596,7 +590,7 @@ export const RealmOverrides = ({
                               className="pf-m-plain"
                               data-testid={`editTranslationBtn-${rowIndex}`}
                             >
-                              <PencilAltIcon />
+                              <PencilIcon />
                             </Button>
                           </>
                         )}

@@ -30,7 +30,7 @@ import {
   ToolbarContent,
   ToolbarItem,
 } from "../lib/ui";
-import { DomainIcon, TableIcon } from "../lib/icons";
+import { GlobeIcon, TableIcon } from "@phosphor-icons/react";
 import { Table, Tbody } from "../lib/table";
 import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
@@ -392,7 +392,7 @@ export default function FlowDetails() {
                       onChange={() => setTableView(true)}
                     />
                     <ToggleGroupItem
-                      icon={<DomainIcon />}
+                      icon={<GlobeIcon />}
                       aria-label={t("diagramView")}
                       buttonId="diagramView"
                       isSelected={!tableView}

@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import { PlusIcon } from "../../../lib/icons";
+import { PlusIcon } from "@phosphor-icons/react";
 import { ComponentType, MouseEvent as ReactMouseEvent } from "react";
 import { EdgeProps, getBezierPath, getMarkerEnd, MarkerType } from "reactflow";
 

@@ -18,7 +18,7 @@ import {
   Text,
   TextVariants,
 } from "../../../lib/ui";
-import { PlusCircleIcon } from "../../../lib/icons";
+import { PlusCircleIcon } from "@phosphor-icons/react";
 import {
   Table,
   Tbody,

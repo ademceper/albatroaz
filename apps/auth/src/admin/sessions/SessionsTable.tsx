@@ -22,10 +22,7 @@ import {
   ToolbarItem,
   Tooltip,
 } from "../lib/ui";
-import {
-  CubesIcon,
-  InfoCircleIcon,
-} from "../lib/icons";
+import { CubeIcon, InfoIcon } from "@phosphor-icons/react";
 import { IRowData } from "../lib/table";
 import { ReactNode, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -77,7 +74,7 @@ const UsernameCell = (row: UserSessionRepresentation) => {
           <Tooltip content={t("transientUserTooltip")}>
             <Label
               data-testid="user-details-label-transient-user"
-              icon={<InfoCircleIcon />}
+              icon={<InfoIcon />}
               isCompact
             >
               {t("transientUser")}
@@ -252,7 +249,7 @@ export default function SessionsTable({
         emptyState={
           <ListEmptyState
             hasIcon
-            icon={CubesIcon}
+            icon={CubeIcon}
             message={t("noSessions")}
             primaryActionText={t("refresh")}
             onPrimaryAction={refresh}

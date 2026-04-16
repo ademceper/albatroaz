@@ -22,7 +22,7 @@ import {
   EmptyStateHeader,
   EmptyStateFooter,
 } from "../../lib/ui";
-import { PlusCircleIcon } from "../../lib/icons";
+import { PlusCircleIcon } from "@phosphor-icons/react";
 
 import { PermissionType, toNewPermission } from "../routes/NewPermission";
 import { useRealm } from "../../context/realm-context/RealmContext";

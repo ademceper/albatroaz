@@ -12,7 +12,7 @@
 // @ts-nocheck
 
 import { Label } from "../lib/ui";
-import { CheckCircleIcon } from "../lib/icons";
+import { CheckCircleIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 
 import style from "./build-in-label.module.css";

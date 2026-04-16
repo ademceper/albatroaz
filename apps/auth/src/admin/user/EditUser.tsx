@@ -32,7 +32,7 @@ import {
   TabTitleText,
   Tooltip,
 } from "../lib/ui";
-import { InfoCircleIcon } from "../lib/icons";
+import { InfoIcon } from "@phosphor-icons/react";
 import { TFunction } from "i18next";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
@@ -313,7 +313,7 @@ export default function EditUser() {
                     <Tooltip content={t("transientUserTooltip")}>
                       <Label
                         data-testid="user-details-label-transient-user"
-                        icon={<InfoCircleIcon />}
+                        icon={<InfoIcon />}
                       >
                         {t("transientUser")}
                       </Label>

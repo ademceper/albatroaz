@@ -16,7 +16,7 @@ import {
   PageSection,
   Popover,
 } from "../lib/ui";
-import { QuestionCircleIcon } from "../lib/icons";
+import { QuestionIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useHelp } from "../lib/shared";
@@ -102,7 +102,7 @@ export const UsersInRoleTab = () => {
                 variant="link"
                 className="kc-who-will-appear-button"
                 key="who-will-appear-button"
-                icon={<QuestionCircleIcon />}
+                icon={<QuestionIcon />}
               >
                 {t("whoWillAppearLinkTextRoles")}
               </Button>

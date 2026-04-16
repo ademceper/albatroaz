@@ -23,7 +23,7 @@ import {
   MenuToggle,
   ToolbarItem,
 } from "../../lib/ui";
-import { EllipsisVIcon } from "../../lib/icons";
+import { DotsThreeVerticalIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -333,7 +333,7 @@ export const ClientScopes = ({
                         onClick={() => setKebabOpen(!kebabOpen)}
                         isExpanded={kebabOpen}
                       >
-                        <EllipsisVIcon />
+                        <DotsThreeVerticalIcon />
                       </MenuToggle>
                     )}
                     isOpen={kebabOpen}

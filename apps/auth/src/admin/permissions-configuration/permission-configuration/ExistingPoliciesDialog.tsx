@@ -28,10 +28,7 @@ import {
   Modal,
   ModalVariant,
 } from "../../lib/ui";
-import {
-  CaretDownIcon,
-  FilterIcon,
-} from "../../lib/icons";
+import { CaretDownIcon, FunnelIcon } from "@phosphor-icons/react";
 import { sortBy } from "lodash-es";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -150,7 +147,7 @@ export const ExistingPoliciesDialog = ({
                 data-testid="filter-type-dropdown-existingPolicies"
                 id="toggle-id-10"
                 onClick={toggleIsFilterTypeDropdownOpen}
-                icon={<FilterIcon />}
+                icon={<FunnelIcon />}
                 statusIcon={<CaretDownIcon />}
               >
                 {filterType ? filterType : t("allTypes")}

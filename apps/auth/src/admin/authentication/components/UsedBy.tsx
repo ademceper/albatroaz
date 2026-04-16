@@ -21,7 +21,7 @@ import {
   TextContent,
   TextVariants,
 } from "../../lib/ui";
-import { CheckCircleIcon } from "../../lib/icons";
+import { CheckCircleIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 import { useAdminClient } from "../../admin-client";
 import { fetchUsedBy } from "../../components/role-mapping/resource";
